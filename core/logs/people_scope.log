@@ -1,0 +1,629 @@
+[2026-01-11 16:12:42,605] [INFO] [PeopleScope] [PeopleScopeApi.py:10] - 测试连接成功，收到请求！
+[2026-01-11 23:31:48,903] [INFO] [PeopleScope] [PeopleScopeApi.py:24] - 添加问题
+[2026-01-11 23:33:22,714] [INFO] [PeopleScope] [PeopleScopeApi.py:24] - 添加问题
+[2026-01-11 23:38:17,803] [INFO] [PeopleScope] [PeopleScopeApi.py:24] - 添加问题
+[2026-01-11 23:38:58,280] [INFO] [PeopleScope] [PeopleScopeApi.py:24] - 添加问题
+[2026-01-11 23:38:58,397] [INFO] [PeopleScope] [PeopleScopeApi.py:26] - 问题添加成功
+[2026-01-12 21:04:24,517] [INFO] [PeopleScope] [PeopleScopeApi.py:35] - agent生成10个问题
+[2026-01-12 21:04:47,340] [INFO] [PeopleScope] [QuestionGenerateAgent.py:74] - 生成<sqlalchemy.orm.session.Session object at 0x000001CEA70C0B50>个问题
+[2026-01-12 21:04:47,346] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 1,question: 在社交场合中，你通常主动与人交谈吗？
+[2026-01-12 21:04:47,346] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 2,question: 你愿意为了帮助朋友而改变自己的计划吗？
+[2026-01-12 21:04:47,346] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 3,question: 你做事前会制定详细的计划吗？
+[2026-01-12 21:04:47,346] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 4,question: 你是否经常感到担忧或焦虑？
+[2026-01-12 21:04:47,347] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 5,question: 你喜欢尝试新奇的餐厅或食物吗？
+[2026-01-12 21:04:47,347] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 6,question: 在团队中，你倾向于主导讨论和决策吗？
+[2026-01-12 21:04:47,347] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 7,question: 看到别人难过时，你很容易感同身受吗？
+[2026-01-12 21:04:47,348] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 8,question: 你愿意为了高回报而进行有风险的投资吗？
+[2026-01-12 21:04:47,348] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 9,question: 面对压力时，你通常能保持冷静吗？
+[2026-01-12 21:04:47,348] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 10,question: 即使很生气，你也能控制自己不立刻发火吗？
+[2026-01-12 21:07:26,202] [INFO] [PeopleScope] [PeopleScopeApi.py:35] - agent生成10个问题
+[2026-01-12 21:07:47,965] [INFO] [PeopleScope] [QuestionGenerateAgent.py:74] - 生成10个问题
+[2026-01-12 21:07:47,965] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 1,question: 在社交场合中，你通常主动与陌生人交谈吗？
+[2026-01-12 21:07:47,966] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 2,question: 你是否经常愿意帮助他人，即使这会给你带来不便？
+[2026-01-12 21:07:47,966] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 3,question: 你是否总是按时完成计划好的任务？
+[2026-01-12 21:07:47,966] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 4,question: 你是否经常感到担忧或焦虑？
+[2026-01-12 21:07:47,967] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 5,question: 你是否喜欢尝试新食物或去没去过的地方？
+[2026-01-12 21:07:47,967] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 6,question: 在团队中，你是否倾向于主导讨论和决策？
+[2026-01-12 21:07:47,967] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 7,question: 看到别人难过时，你是否很容易感同身受？
+[2026-01-12 21:07:47,967] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 8,question: 你是否愿意为了高回报而尝试有风险的投资？
+[2026-01-12 21:07:47,968] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 9,question: 面对压力时，你是否通常能保持冷静？
+[2026-01-12 21:07:47,968] [INFO] [PeopleScope] [QuestionGenerateAgent.py:82] - 生成问题，Trait: 10,question: 当感到生气时，你是否能控制自己不立刻发火？
+[2026-01-12 21:07:48,099] [INFO] [PeopleScope] [PeopleScopeApi.py:38] - 问题生成成功
+[2026-01-13 14:27:14,587] [INFO] [PeopleScope] [PeopleScopeApi.py:46] - 获取10个问题
+[2026-01-13 14:27:14,643] [INFO] [PeopleScope] [PeopleScopeApi.py:49] - 获取全部问题
+[2026-01-13 15:44:27,591] [INFO] [PeopleScope] [ReflectionAgent.py:102] - 更新用户：user_1的用户画像
+[2026-01-13 16:12:22,145] [INFO] [PeopleScope] [ReflectionAgent.py:86] - 反馈用户本次分析结果：user_1的本轮分析为summary='用户倾向于在社交场合中主动与陌生人交谈，表现出较高的外向性和社交主动性。' traits=Traits(extroversion=8, agreeableness=6, conscientiousness=5, neuroticism=4, openness=6, dominance=5, empathy=5, risk_taking=5, emotional_stability=6, self_control=5)
+[2026-01-13 16:13:41,982] [INFO] [PeopleScope] [ReflectionAgent.py:86] - 反馈用户本次分析结果：user_1的本轮分析为summary='用户倾向于在社交场合中主动与陌生人交谈，表现出较高的外向性和社交主动性。' traits=Traits(extroversion=8, agreeableness=7, conscientiousness=6, neuroticism=4, openness=6, dominance=5, empathy=6, risk_taking=5, emotional_stability=7, self_control=6)
+[2026-01-13 16:52:38,215] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 分析user='user_1' question='在陌生环境中，你是否会主动与他人交流？' answer='我一般会主动交流'
+[2026-01-13 16:52:52,163] [INFO] [PeopleScope] [ReflectionAgent.py:79] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出一定的外向性和社交主动性，倾向于在陌生环境中主动与他人交流，显示出较高的社交意愿和适应性。' traits=Traits(extroversion=7, agreeableness=6, conscientiousness=5, neuroticism=4, openness=6, dominance=5, empathy=5, risk_taking=5, emotional_stability=6, self_control=5)
+[2026-01-13 16:55:23,426] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 分析user='user_1' question='在陌生环境中，你是否会主动与他人交流？' answer='我一般会主动交流'
+[2026-01-13 16:55:31,035] [INFO] [PeopleScope] [ReflectionAgent.py:79] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出一定的外向性和社交主动性，在陌生环境中倾向于主动交流，显示出中等程度的开放性和适应性。' traits=Traits(extroversion=7, agreeableness=6, conscientiousness=5, neuroticism=4, openness=6, dominance=5, empathy=5, risk_taking=5, emotional_stability=6, self_control=5)
+[2026-01-13 17:00:57,448] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 分析user='user_1' question='在陌生环境中，你是否会主动与他人交流？' answer='我一般会主动交流'
+[2026-01-13 17:01:08,640] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户倾向于在陌生环境中主动与他人交流，表现出一定的外向性和社交意愿。' traits=Traits(extroversion=7, agreeableness=6, conscientiousness=5, neuroticism=4, openness=6, dominance=5, empathy=5, risk_taking=5, emotional_stability=6, self_control=5)
+[2026-01-13 17:01:08,663] [INFO] [PeopleScope] [PeopleScopeApi.py:61] - 成功存储并返回分析结果
+[2026-01-13 22:06:07,390] [INFO] [PeopleScope] [PeopleScopeApi.py:69] - 总结用户user_1的全部测试结果
+[2026-01-13 22:06:07,428] [INFO] [PeopleScope] [AggregationService.py:23] - 更新Traits参数成功
+[2026-01-13 22:06:20,532] [INFO] [PeopleScope] [AggregateAgent.py:65] - 反馈用户本次分析结果：user_1的本轮分析为: summary='根据十维人格特质分析，该用户展现出中等偏高的外向性、宜人性和尽责性，情绪稳定性良好，但神经质水平略高。在开放性、支配性、同理心、风险承担和自我控制方面表现均衡，整体人格特征较为稳定，无明显极端倾向。'
+[2026-01-13 22:06:20,543] [INFO] [PeopleScope] [AggregationService.py:25] - 生成新的summary：根据十维人格特质分析，该用户展现出中等偏高的外向性、宜人性和尽责性，情绪稳定性良好，但神经质水平略高。在开放性、支配性、同理心、风险承担和自我控制方面表现均衡，整体人格特征较为稳定，无明显极端倾向。
+[2026-01-13 22:06:20,555] [INFO] [PeopleScope] [PeopleScopeApi.py:71] - 成功存储更新结果
+[2026-01-14 10:14:47,701] [INFO] [PeopleScope] [PeopleScopeApi.py:50] - 获取10个问题
+[2026-01-14 10:14:47,861] [INFO] [PeopleScope] [PeopleScopeApi.py:53] - 获取全部问题
+[2026-01-14 10:15:27,635] [INFO] [PeopleScope] [PeopleScopeApi.py:50] - 获取10个问题
+[2026-01-14 10:15:27,640] [INFO] [PeopleScope] [PeopleScopeApi.py:53] - 获取全部问题
+[2026-01-14 10:17:59,487] [INFO] [PeopleScope] [PeopleScopeApi.py:50] - 获取10个问题
+[2026-01-14 10:17:59,491] [INFO] [PeopleScope] [PeopleScopeApi.py:53] - 获取全部问题
+[2026-01-14 10:19:58,560] [INFO] [PeopleScope] [PeopleScopeApi.py:58] - 获取10个问题
+[2026-01-14 10:19:58,568] [INFO] [PeopleScope] [PeopleScopeApi.py:61] - 获取全部问题
+[2026-01-14 10:25:24,992] [INFO] [PeopleScope] [PeopleScopeApi.py:58] - 获取10个问题
+[2026-01-14 10:25:24,999] [INFO] [PeopleScope] [PeopleScopeApi.py:61] - 获取全部问题
+[2026-01-14 10:25:25,014] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 10:25:25,034] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-14 10:31:03,426] [INFO] [PeopleScope] [PeopleScopeApi.py:58] - 获取10个问题
+[2026-01-14 10:31:03,429] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 10:31:03,430] [INFO] [PeopleScope] [PeopleScopeApi.py:61] - 获取全部问题
+[2026-01-14 10:31:03,436] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-14 10:36:23,551] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 10:36:23,553] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-14 10:39:09,665] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 10:39:09,688] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-14 10:39:09,689] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - AggregationModel()
+[2026-01-14 10:39:40,741] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 10:39:40,752] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-14 10:39:40,752] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 根据十维人格特质分析，该用户展现出中等偏高的外向性、宜人性和尽责性，情绪稳定性良好，但神经质水平略高。在开放性、支配性、同理心、风险承担和自我控制方面表现均衡，整体人格特征较为稳定，无明显极端倾向。
+[2026-01-14 10:45:10,171] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 10:45:10,187] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 10:45:10,223] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 10:45:10,230] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 10:45:17,635] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 10:45:17,635] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 10:47:12,478] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 10:47:12,504] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:17:56,435] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:17:56,459] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:18:39,136] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 11:18:39,144] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 11:18:39,149] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:18:39,152] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:20:46,299] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:20:46,299] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 11:20:46,310] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:20:46,310] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 11:22:13,489] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 11:22:13,496] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 11:22:13,506] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:22:13,512] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:22:14,808] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 11:22:14,810] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:22:14,812] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 11:22:14,812] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:23:42,641] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 11:23:42,644] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:23:42,647] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 11:23:42,647] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:23:43,743] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:23:43,743] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 11:23:43,745] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:23:43,747] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 11:26:32,908] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 11:26:32,912] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:26:32,912] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 11:26:32,916] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 11:27:12,234] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='在陌生环境中，你是否会主动与他人交流？' answer='我常常主动进行交流\n'
+[2026-01-14 11:27:24,220] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出较高的社交主动性，倾向于在陌生环境中主动发起交流，显示出外向和自信的特质。' traits=Traits(extroversion=8, agreeableness=6, conscientiousness=5, neuroticism=3, openness=7, dominance=7, empathy=5, risk_taking=6, emotional_stability=7, self_control=5)
+[2026-01-14 11:27:24,264] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 11:28:01,913] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='面对压力时，你是否通常能保持冷静？' answer='大部分时候可以，但压力过大我可能需要时间去进行消化\n'
+[2026-01-14 11:28:14,518] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户在面对压力时通常能保持冷静，但承认在压力过大时需要时间消化，显示出一定的情绪调节能力和自我认知，但可能在高压力情境下需要更多恢复时间。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=7, neuroticism=4, openness=5, dominance=5, empathy=6, risk_taking=4, emotional_stability=7, self_control=7)
+[2026-01-14 11:28:14,523] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 11:29:13,436] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='你是否经常愿意帮助他人，即使这会给你带来不便？' answer='我并不乐于助人，但小的需求我一般都会满足'
+[2026-01-14 11:29:25,120] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户倾向于在自身便利范围内提供帮助，对助人行为持实用主义态度，不主动寻求或过度投入。' traits=Traits(extroversion=4, agreeableness=5, conscientiousness=6, neuroticism=5, openness=4, dominance=5, empathy=4, risk_taking=3, emotional_stability=6, self_control=7)
+[2026-01-14 11:29:25,125] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 11:32:35,351] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='当感到生气时，你是否能控制自己不立刻发火？' answer='一般情况下都不太可以，但我正在努力改进这个问题\n'
+[2026-01-14 11:32:47,013] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户承认在生气时通常难以控制立刻发火的冲动，但表现出积极的改进意愿，显示自我觉察和成长动机。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=6, neuroticism=7, openness=7, dominance=4, empathy=5, risk_taking=3, emotional_stability=3, self_control=3)
+[2026-01-14 11:32:47,020] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 11:33:37,997] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='你是否愿意为了高回报而尝试有风险的投资？' answer='不太愿意股票都不敢买太多'
+[2026-01-14 11:33:52,053] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出对高风险投资的谨慎态度，倾向于规避风险，偏好稳定和安全的财务决策。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=7, neuroticism=4, openness=3, dominance=3, empathy=5, risk_taking=2, emotional_stability=7, self_control=8)
+[2026-01-14 11:33:52,058] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 11:34:03,908] [INFO] [PeopleScope] [PeopleScopeApi.py:78] - 总结用户user_1的全部测试结果
+[2026-01-14 11:34:03,914] [INFO] [PeopleScope] [AggregationService.py:22] - 更新Traits参数成功
+[2026-01-14 11:34:19,426] [INFO] [PeopleScope] [AggregateAgent.py:65] - 反馈用户本次分析结果：user_1的本轮分析为: summary='根据十维人格特质分析，该用户展现出中等偏高的外向性（extroversion）和宜人性（agreeableness），表明其善于社交且合作性良好。尽责性（conscientiousness）和自控力（self_control）得分较高，反映其组织性强、目标导向明确。情绪稳定性（emotional_stability）和神经质（neuroticism）得分适中，显示情绪管理能力平衡。开放性（openness）和同理心（empathy）得分突出，体现其好奇心强、富有创造力且能理解他人感受。支配性（dominance）和风险承担（risk_taking）得分中等，说明其在决策中既保持一定主导性又不过于冒险。整体而言，用户是一个适应性强、注重细节且富有同情心的个体，适合团队协作和创新型任务。'
+[2026-01-14 11:34:19,426] [INFO] [PeopleScope] [AggregationService.py:24] - 生成新的summary：根据十维人格特质分析，该用户展现出中等偏高的外向性（extroversion）和宜人性（agreeableness），表明其善于社交且合作性良好。尽责性（conscientiousness）和自控力（self_control）得分较高，反映其组织性强、目标导向明确。情绪稳定性（emotional_stability）和神经质（neuroticism）得分适中，显示情绪管理能力平衡。开放性（openness）和同理心（empathy）得分突出，体现其好奇心强、富有创造力且能理解他人感受。支配性（dominance）和风险承担（risk_taking）得分中等，说明其在决策中既保持一定主导性又不过于冒险。整体而言，用户是一个适应性强、注重细节且富有同情心的个体，适合团队协作和创新型任务。
+[2026-01-14 11:34:19,435] [INFO] [PeopleScope] [PeopleScopeApi.py:80] - 成功存储更新结果
+[2026-01-14 11:34:24,637] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 11:34:24,642] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 14:40:15,188] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 14:40:15,191] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 14:40:15,196] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 14:40:15,200] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 14:50:54,468] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 14:50:54,501] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 14:50:54,508] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 14:50:54,515] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 14:52:38,291] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 14:52:38,295] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 14:52:38,295] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 14:52:38,310] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 14:53:10,539] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 14:53:10,541] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 14:53:10,543] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 14:53:10,547] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 14:53:12,174] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 14:53:12,174] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 14:53:12,174] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 14:53:12,181] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 14:53:13,197] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 14:53:13,198] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 14:53:13,200] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 14:53:13,202] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 14:54:13,845] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='你是否总是按时完成计划好的任务？' answer='我在计划时就会将任务细化，我基本上可以完成好每一个小任务，使得大任务按时完成'
+[2026-01-14 14:54:39,988] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='你是否总是按时完成计划好的任务？' answer='我在计划时就会将任务细化，我基本上可以完成好每一个小任务，使得大任务按时完成'
+[2026-01-14 14:54:47,932] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户展现出高度的计划性和执行力，通过将大任务细化为可管理的小任务来确保按时完成，体现了良好的组织能力和自律性。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=9, neuroticism=3, openness=7, dominance=6, empathy=5, risk_taking=4, emotional_stability=8, self_control=9)
+[2026-01-14 14:54:47,941] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 14:54:51,636] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户展现出高度的计划性和执行力，通过将大任务细化为可管理的小任务来确保按时完成，体现了良好的组织能力和自律性。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=9, neuroticism=3, openness=7, dominance=6, empathy=5, risk_taking=4, emotional_stability=8, self_control=9)
+[2026-01-14 14:54:51,641] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 14:55:01,213] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='你是否愿意为了高回报而尝试有风险的投资？' answer='不愿意'
+[2026-01-14 14:55:29,513] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出谨慎和风险规避的倾向，在财务决策中优先考虑安全而非潜在的高回报。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=7, neuroticism=4, openness=3, dominance=3, empathy=5, risk_taking=2, emotional_stability=7, self_control=8)
+[2026-01-14 14:55:29,515] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 14:55:45,177] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='在陌生环境中，你是否会主动与他人交流？' answer='一般情况下会、\n'
+[2026-01-14 14:56:03,378] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户倾向于在陌生环境中主动与他人交流，表现出一定的外向性和社交意愿，但回答较为简短，可能暗示其主动性并非非常强烈或存在情境依赖。' traits=Traits(extroversion=7, agreeableness=6, conscientiousness=5, neuroticism=4, openness=6, dominance=5, empathy=5, risk_taking=5, emotional_stability=6, self_control=6)
+[2026-01-14 14:56:03,434] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 14:57:14,140] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='你是否经常感到担忧或焦虑？' answer='确实会'
+[2026-01-14 14:57:26,896] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户承认经常感到担忧或焦虑，表明情绪稳定性较低，可能伴随较高的神经质倾向，需关注其情感波动和压力应对方式。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=5, neuroticism=8, openness=5, dominance=4, empathy=6, risk_taking=3, emotional_stability=2, self_control=4)
+[2026-01-14 14:57:26,901] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 14:57:30,124] [INFO] [PeopleScope] [PeopleScopeApi.py:78] - 总结用户user_1的全部测试结果
+[2026-01-14 15:01:52,688] [INFO] [PeopleScope] [PeopleScopeApi.py:78] - 总结用户user_1的全部测试结果
+[2026-01-14 15:01:52,717] [INFO] [PeopleScope] [AggregationService.py:24] - 更新Traits参数成功
+[2026-01-14 15:02:44,755] [INFO] [PeopleScope] [AggregateAgent.py:65] - 反馈用户本次分析结果：user_1的本轮分析为: summary='根据十维人格特质分析，该用户展现出中等偏高的外向性（extroversion）和宜人性（agreeableness），表明其善于社交且合作倾向较强。尽责性（conscientiousness）和自控力（self_control）得分较高，反映其组织性和自律性良好。情绪稳定性（emotional_stability）和神经质（neuroticism）得分适中，显示情绪管理能力一般，偶有波动。开放性（openness）和同理心（empathy）得分突出，说明其思维开放且富有同情心。支配性（dominance）和冒险性（risk_taking）处于中等水平，体现其平衡的决策风格。整体而言，用户是一个适应性强、注重细节且富有创造力的个体，在团队环境中表现稳定。'
+[2026-01-14 15:02:44,755] [INFO] [PeopleScope] [AggregationService.py:26] - 生成新的summary：根据十维人格特质分析，该用户展现出中等偏高的外向性（extroversion）和宜人性（agreeableness），表明其善于社交且合作倾向较强。尽责性（conscientiousness）和自控力（self_control）得分较高，反映其组织性和自律性良好。情绪稳定性（emotional_stability）和神经质（neuroticism）得分适中，显示情绪管理能力一般，偶有波动。开放性（openness）和同理心（empathy）得分突出，说明其思维开放且富有同情心。支配性（dominance）和冒险性（risk_taking）处于中等水平，体现其平衡的决策风格。整体而言，用户是一个适应性强、注重细节且富有创造力的个体，在团队环境中表现稳定。
+[2026-01-14 15:02:44,763] [INFO] [PeopleScope] [PeopleScopeApi.py:80] - 成功存储更新结果
+[2026-01-14 15:03:02,402] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:03:02,409] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 15:03:02,413] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 15:03:02,415] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 15:03:03,818] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:03:03,818] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 15:03:03,818] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 15:03:03,826] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 15:03:04,783] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:03:04,783] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 15:03:04,785] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 15:03:04,785] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 15:06:45,865] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:06:45,874] [INFO] [PeopleScope] [PeopleScopeApi.py:86] - 获取用户user_1的aggregation
+[2026-01-14 15:06:45,874] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 15:06:45,886] [INFO] [PeopleScope] [PeopleScopeApi.py:88] - 成功获取
+[2026-01-14 15:06:53,738] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 分析user='user_1' question='你是否总是按时完成计划好的任务？' answer='是的'
+[2026-01-14 15:08:38,262] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出较强的计划性和责任感，倾向于遵守既定安排，显示出较高的自律性。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=8, neuroticism=3, openness=5, dominance=4, empathy=5, risk_taking=3, emotional_stability=7, self_control=8)
+[2026-01-14 15:08:38,270] [INFO] [PeopleScope] [PeopleScopeApi.py:72] - 成功存储并返回分析结果
+[2026-01-14 15:10:02,740] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:10:02,741] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 15:10:02,752] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 15:10:02,756] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-14 15:10:08,617] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 收到分析请求：user='user_1' question='你是否总是按时完成计划好的任务？' answer='可以'
+[2026-01-14 15:10:20,830] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出一定的责任感和计划性，但回答较为简洁，可能倾向于务实和直接，在尽责性方面有基础但未充分展现细节。' traits=Traits(extroversion=3, agreeableness=5, conscientiousness=6, neuroticism=4, openness=4, dominance=4, empathy=4, risk_taking=3, emotional_stability=5, self_control=6)
+[2026-01-14 15:10:31,125] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 收到分析请求：user='user_1' question='在团队中，你是否倾向于主导讨论和决策？' answer='一般情况下会主导\n'
+[2026-01-14 15:10:43,781] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户倾向于在团队中主动承担领导角色，表现出较强的支配欲和自信，可能具有较高的外向性和决断力。' traits=Traits(extroversion=8, agreeableness=5, conscientiousness=7, neuroticism=3, openness=6, dominance=9, empathy=4, risk_taking=7, emotional_stability=8, self_control=6)
+[2026-01-14 15:28:50,062] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:29:59,694] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:29:59,719] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 15:35:22,068] [INFO] [PeopleScope] [PeopleScopeApi.py:59] - 获取10个问题
+[2026-01-14 15:35:22,072] [INFO] [PeopleScope] [PeopleScopeApi.py:62] - 获取全部问题
+[2026-01-14 15:35:22,081] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 15:35:22,085] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-14 15:35:36,327] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 收到分析请求：user='user_1' question='在陌生环境中，你是否会主动与他人交流？' question_id=1 answer='是的，一般情况下我都会主动交流'
+[2026-01-14 15:35:57,075] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出在陌生环境中主动交流的倾向，显示出一定的外向性和社交意愿。' traits=Traits(extroversion=7, agreeableness=6, conscientiousness=5, neuroticism=4, openness=6, dominance=5, empathy=5, risk_taking=5, emotional_stability=6, self_control=5)
+[2026-01-14 15:37:54,666] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 收到分析请求：user='user_1' question='你是否经常感到担忧或焦虑？' question_id=5 answer='大环境不好了，常常焦虑能不能找到工作\n'
+[2026-01-14 15:38:06,645] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 收到分析请求：user='user_1' question='当感到生气时，你是否能控制自己不立刻发火？' question_id=11 answer='不太可以'
+[2026-01-14 15:38:22,022] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户可能在情绪管理和冲动控制方面存在一定挑战，倾向于在生气时难以抑制即时反应。' traits=Traits(extroversion=5, agreeableness=4, conscientiousness=4, neuroticism=7, openness=5, dominance=6, empathy=5, risk_taking=5, emotional_stability=3, self_control=3)
+[2026-01-14 15:38:23,278] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出对就业市场和个人职业前景的显著担忧，反映了较高的环境敏感性和现实压力下的焦虑倾向。' traits=Traits(extroversion=4, agreeableness=5, conscientiousness=7, neuroticism=8, openness=5, dominance=3, empathy=6, risk_taking=3, emotional_stability=3, self_control=6)
+[2026-01-14 15:38:27,056] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 收到分析请求：user='user_1' question='看到别人难过时，你是否很容易感同身受？' question_id=8 answer='分情况感觉有时候会'
+[2026-01-14 15:38:33,161] [INFO] [PeopleScope] [PeopleScopeApi.py:70] - 收到分析请求：user='user_1' question='你是否愿意为了高回报而尝试有风险的投资？' question_id=9 answer='不愿意'
+[2026-01-14 15:38:47,195] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出一定的共情能力，但具有选择性，并非总是感同身受，情绪反应较为审慎和情境化。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=6, neuroticism=4, openness=5, dominance=4, empathy=6, risk_taking=3, emotional_stability=7, self_control=7)
+[2026-01-14 15:38:47,354] [INFO] [PeopleScope] [PeopleScopeApi.py:77] - 总结用户user_1的全部测试结果
+[2026-01-14 15:38:47,357] [INFO] [PeopleScope] [AggregationService.py:24] - 更新Traits参数成功
+[2026-01-14 15:38:54,863] [INFO] [PeopleScope] [ReflectionAgent.py:78] - 反馈用户本次分析结果：user_1的本轮分析为: summary='用户表现出谨慎和风险规避的倾向，在投资决策中优先考虑安全性而非高回报，体现了较强的风险意识和保守态度。' traits=Traits(extroversion=5, agreeableness=6, conscientiousness=7, neuroticism=4, openness=5, dominance=4, empathy=5, risk_taking=2, emotional_stability=7, self_control=8)
+[2026-01-14 15:39:10,030] [INFO] [PeopleScope] [AggregateAgent.py:65] - 反馈用户本次分析结果：user_1的本轮分析为: summary='根据十维人格特质分析，该用户展现出中等偏高的外向性、宜人性和尽责性，情绪稳定性良好，但神经质水平略高。在开放性、支配性、同理心、风险承担和自我控制方面表现均衡，整体人格特征较为稳定，无明显极端倾向。'
+[2026-01-14 15:39:10,030] [INFO] [PeopleScope] [AggregationService.py:26] - 生成新的summary：根据十维人格特质分析，该用户展现出中等偏高的外向性、宜人性和尽责性，情绪稳定性良好，但神经质水平略高。在开放性、支配性、同理心、风险承担和自我控制方面表现均衡，整体人格特征较为稳定，无明显极端倾向。
+[2026-01-14 15:39:10,037] [INFO] [PeopleScope] [PeopleScopeApi.py:79] - 成功存储更新结果
+[2026-01-14 15:39:14,518] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 获取用户user_1的aggregation
+[2026-01-14 15:39:14,521] [INFO] [PeopleScope] [PeopleScopeApi.py:87] - 成功获取
+[2026-01-15 15:47:41,689] [INFO] [PeopleScope] [PeopleScopeApi.py:95] - 获取用户www的Session
+[2026-01-15 15:47:41,715] [INFO] [PeopleScope] [PeopleScopeApi.py:97] - 成功获取
+[2026-01-15 15:49:13,288] [INFO] [PeopleScope] [PeopleScopeApi.py:95] - 获取用户www的Session
+[2026-01-15 15:49:13,312] [INFO] [PeopleScope] [PeopleScopeApi.py:97] - 成功获取
+[2026-01-15 15:52:08,609] [INFO] [PeopleScope] [PeopleScopeApi.py:95] - 获取用户www的Session
+[2026-01-15 15:53:24,108] [INFO] [PeopleScope] [PeopleScopeApi.py:95] - 获取用户www的Session
+[2026-01-15 15:56:06,867] [INFO] [PeopleScope] [PeopleScopeApi.py:95] - 获取用户www的Session
+[2026-01-15 15:56:06,877] [INFO] [PeopleScope] [PeopleScopeApi.py:97] - 成功获取
+[2026-01-15 16:00:21,109] [INFO] [PeopleScope] [PeopleScopeApi.py:95] - 获取用户www的Session
+[2026-01-15 16:00:21,137] [INFO] [PeopleScope] [PeopleScopeApi.py:97] - 成功获取
+[2026-01-15 16:24:50,667] [INFO] [PeopleScope] [PeopleScopeApi.py:105] - 获取1对应的chats
+[2026-01-15 16:24:50,679] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 成功获取
+[2026-01-15 16:26:01,234] [INFO] [PeopleScope] [PeopleScopeApi.py:105] - 获取1对应的chats
+[2026-01-15 16:26:01,236] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 成功获取
+[2026-01-16 15:35:50,689] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 生成user_1对应的tags
+[2026-01-16 15:38:13,134] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 生成user_1对应的tags
+[2026-01-16 15:38:20,984] [INFO] [PeopleScope] [UserTagGenerateAgent.py:65] - 反馈用户本次分析结果: 
+[2026-01-16 15:40:03,658] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 生成user_1对应的tags
+[2026-01-16 15:40:08,101] [INFO] [PeopleScope] [UserTagGenerateAgent.py:64] - 反馈用户本次分析结果: style_tags=['理性', '结构化', '温和', '均衡'] topic_tags=['技术', '学习', '职业规划', '学术探讨']
+[2026-01-16 15:40:08,113] [INFO] [PeopleScope] [PeopleScopeApi.py:109] - 成功生成：{'style': ['理性', '结构化', '温和', '均衡'], 'topic': ['技术', '学习', '职业规划', '学术探讨']}
+[2026-01-16 17:14:52,903] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:15:17,510] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:19:11,595] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:19:46,676] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:20:38,625] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:23:53,585] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:25:23,504] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:25:37,764] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-16 17:26:09,555] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:26:29,007] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-16 17:32:18,158] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-16 17:32:24,697] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-27 10:56:56,049] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 10:56:56,090] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 10:56:56,135] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 10:56:56,135] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 10:56:56,159] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 10:56:56,165] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 10:57:15,785] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-27 10:57:15,787] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 10:57:19,237] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 10:57:19,242] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 10:57:21,455] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 10:57:21,458] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 10:57:21,468] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 10:57:21,470] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 10:57:21,481] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 10:57:21,484] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 10:57:23,492] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-27 10:57:23,494] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 10:57:26,043] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 10:57:26,043] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 16:52:40,099] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 16:52:40,282] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 16:52:40,331] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 16:52:40,339] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 16:52:40,351] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 16:52:40,360] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 16:55:47,272] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 16:55:47,277] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 16:55:47,309] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 16:55:47,313] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 16:55:47,329] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 16:55:47,332] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 16:56:33,903] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-27 16:56:33,903] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 16:56:36,252] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 16:56:36,255] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:01:35,970] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 17:01:35,973] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 17:01:35,981] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:01:35,983] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:01:35,996] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:01:35,998] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:01:43,401] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 17:01:43,403] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 17:01:43,426] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:01:43,427] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:01:43,447] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:01:43,449] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:01:59,585] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 17:01:59,589] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 17:01:59,608] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:01:59,610] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:01:59,631] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:01:59,633] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:03:04,887] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 17:03:04,891] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 17:03:04,953] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:03:04,956] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:03:04,964] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:03:04,964] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:10:53,194] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 17:10:53,198] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 17:10:53,214] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:10:53,217] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:10:53,264] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:10:53,268] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:20:35,171] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 17:20:35,173] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 17:20:35,192] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:20:35,194] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:20:35,221] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:20:35,224] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:23:35,140] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-27 17:23:35,142] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-27 17:23:35,152] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:23:35,152] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:23:35,171] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:23:35,171] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:23:45,281] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 收到分析请求：生成user_1对应的tags
+[2026-01-27 17:23:52,462] [INFO] [PeopleScope] [UserTagGenerateAgent.py:64] - 反馈用户本次分析结果: style_tags=['理性', '结构化', '均衡', '稳定'] topic_tags=['技术', '学习', '职业规划']
+[2026-01-27 17:23:57,466] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:23:57,469] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:24:04,883] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-27 17:24:04,886] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-27 17:24:54,563] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-27 17:24:54,565] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-27 17:24:55,237] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-27 17:24:55,239] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 10:58:34,539] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-28 11:00:10,616] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-28 11:00:10,627] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-28 11:00:10,651] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:00:10,660] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:00:10,660] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-28 11:00:10,678] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-28 11:00:15,668] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-28 11:00:23,913] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-28 11:15:37,376] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-28 11:15:37,400] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-28 11:15:37,407] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:15:37,418] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:15:37,431] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-28 11:15:37,437] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-28 11:15:41,197] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-28 11:15:48,725] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-28 11:16:51,519] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-28 11:16:51,537] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-28 11:16:51,553] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:16:51,562] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:16:51,575] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-28 11:16:51,582] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-28 11:16:57,126] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-28 11:17:07,951] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-28 11:18:30,317] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-28 11:18:30,337] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-28 11:18:30,357] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:18:30,361] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:18:30,372] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-28 11:18:30,377] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-28 11:18:34,095] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-28 11:18:42,102] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-28 11:18:42,143] [INFO] [PeopleScope] [PeopleScopeApi.py:130] - 成功存储请求和ai返回
+[2026-01-28 11:18:50,054] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-28 11:18:55,258] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-28 11:18:55,266] [INFO] [PeopleScope] [PeopleScopeApi.py:130] - 成功存储请求和ai返回
+[2026-01-28 11:20:58,054] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-28 11:20:58,054] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-28 11:20:58,076] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:20:58,079] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:20:58,089] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-28 11:20:58,090] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-28 11:24:46,621] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-28 11:24:46,621] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-28 11:24:46,647] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:24:46,654] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:24:46,658] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-28 11:24:46,669] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-28 11:25:10,629] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 用户user_1,session_id=1,发来对话
+[2026-01-28 11:25:22,772] [INFO] [PeopleScope] [PeopleScopeApi.py:127] - 成功回复
+[2026-01-28 11:25:22,774] [INFO] [PeopleScope] [PeopleScopeApi.py:130] - 成功存储请求和ai返回
+[2026-01-28 11:25:30,500] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-28 11:25:30,500] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:25:41,532] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:25:41,532] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:25:47,248] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-28 11:25:47,248] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:25:48,797] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:25:48,797] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:25:52,174] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-28 11:25:52,174] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:33:31,948] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:33:31,953] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:33:35,018] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-28 11:33:35,021] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-28 11:33:35,030] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:33:35,033] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:33:35,044] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-28 11:33:35,047] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-28 11:34:07,116] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-28 11:34:07,118] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:34:08,073] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:34:08,073] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:38:04,663] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取2对应的chats
+[2026-01-28 11:38:04,663] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-28 11:38:06,845] [INFO] [PeopleScope] [PeopleScopeApi.py:114] - 获取1对应的chats
+[2026-01-28 11:38:06,845] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 成功获取
+[2026-01-30 11:44:15,614] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:44:15,818] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:44:20,690] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:44:20,693] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:44:37,122] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:44:37,126] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:45:09,236] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 为用户user_1创建新Session，初始问题：我想了解如何实现快速排序
+[2026-01-30 11:47:59,874] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:47:59,918] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:48:10,769] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 为用户user_1创建新Session，初始问题：我想了解快速排序
+[2026-01-30 11:48:44,942] [INFO] [PeopleScope] [PeopleScopeApi.py:109] - 成功创建Session: 3
+[2026-01-30 11:48:44,957] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取3对应的chats
+[2026-01-30 11:48:44,959] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 11:48:51,972] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:48:51,974] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:51:59,991] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:51:59,991] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:52:02,252] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:52:02,255] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:55:41,351] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:55:41,351] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:55:42,801] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:55:42,803] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:56:02,268] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:56:02,283] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:59:02,335] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 11:59:02,343] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 11:59:02,365] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取1对应的chats
+[2026-01-30 11:59:02,367] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 11:59:02,375] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 11:59:02,392] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 11:59:15,858] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取2对应的chats
+[2026-01-30 11:59:15,859] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 11:59:17,457] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取3对应的chats
+[2026-01-30 11:59:17,475] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 11:59:18,957] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取2对应的chats
+[2026-01-30 11:59:18,957] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 11:59:41,356] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 为用户user_1创建新Session，初始问题：最近有什么好看的电影
+[2026-01-30 11:59:55,110] [INFO] [PeopleScope] [PeopleScopeApi.py:109] - 成功创建Session: 4
+[2026-01-30 11:59:55,117] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 11:59:55,119] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 11:59:55,128] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取4对应的chats
+[2026-01-30 11:59:55,129] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 12:00:01,735] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取3对应的chats
+[2026-01-30 12:00:01,735] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 12:00:02,385] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取4对应的chats
+[2026-01-30 12:00:02,385] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:00:10,674] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 14:00:10,717] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 14:00:10,725] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取1对应的chats
+[2026-01-30 14:00:10,739] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:00:10,756] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 14:00:10,761] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 14:00:26,179] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 为用户user_1创建新Session，初始问题：最近有什么好看的动漫
+[2026-01-30 14:00:50,064] [INFO] [PeopleScope] [PeopleScopeApi.py:109] - 成功创建Session: 5
+[2026-01-30 14:00:50,065] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 14:00:50,065] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 14:00:50,086] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取5对应的chats
+[2026-01-30 14:00:50,086] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:50,549] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取4对应的chats
+[2026-01-30 14:28:50,550] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:52,163] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取3对应的chats
+[2026-01-30 14:28:52,165] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:54,161] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取2对应的chats
+[2026-01-30 14:28:54,163] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:55,398] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取1对应的chats
+[2026-01-30 14:28:55,398] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:56,565] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取3对应的chats
+[2026-01-30 14:28:56,565] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:57,851] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取4对应的chats
+[2026-01-30 14:28:57,851] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:58,331] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取5对应的chats
+[2026-01-30 14:28:58,331] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 14:28:59,452] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取4对应的chats
+[2026-01-30 14:28:59,452] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 16:04:25,062] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 16:04:25,121] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 16:04:25,138] [INFO] [PeopleScope] [PeopleScopeApi.py:123] - 获取1对应的chats
+[2026-01-30 16:04:25,142] [INFO] [PeopleScope] [PeopleScopeApi.py:125] - 成功获取
+[2026-01-30 16:04:25,158] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 16:04:25,163] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 16:06:05,446] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 16:06:05,493] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 16:06:05,502] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 16:06:05,510] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:06:05,524] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 16:06:05,530] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 16:06:10,211] [INFO] [PeopleScope] [PeopleScopeApi.py:124] - 删除Session 5
+[2026-01-30 16:06:18,793] [INFO] [PeopleScope] [PeopleScopeApi.py:115] - 重命名Session 4 为 近期电影推荐嘿嘿
+[2026-01-30 16:17:12,038] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 16:17:12,053] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 16:17:12,067] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 16:17:12,073] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:17:12,089] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 16:17:12,095] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 16:17:22,719] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取4对应的chats
+[2026-01-30 16:17:22,726] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:17:28,480] [INFO] [PeopleScope] [PeopleScopeApi.py:115] - 重命名Session 4 为 近期电影推荐
+[2026-01-30 16:17:30,806] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取3对应的chats
+[2026-01-30 16:17:30,806] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:17:31,374] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取2对应的chats
+[2026-01-30 16:17:31,374] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:17:32,424] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 16:17:32,424] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:17:33,357] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取3对应的chats
+[2026-01-30 16:17:33,357] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:17:33,907] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取4对应的chats
+[2026-01-30 16:17:33,907] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:26:47,970] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取3对应的chats
+[2026-01-30 16:26:47,972] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:26:48,625] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取2对应的chats
+[2026-01-30 16:26:48,625] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 16:26:49,625] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 16:26:49,625] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 17:17:32,121] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:17:32,148] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:17:32,163] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 17:17:32,170] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 17:17:32,185] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:17:32,188] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:17:35,297] [INFO] [PeopleScope] [PeopleScopeApi.py:134] - 收到分析请求：生成user_1对应的tags
+[2026-01-30 17:17:44,214] [INFO] [PeopleScope] [UserTagGenerateAgent.py:64] - 反馈用户本次分析结果: style_tags=['外向', '宜人', '尽责', '理性', '均衡'] topic_tags=['技术', '学习', '生活', '娱乐', '算法']
+[2026-01-30 17:18:42,421] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:18:42,423] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:18:42,434] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 17:18:42,436] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 17:18:42,449] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:18:42,452] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:25:34,940] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:25:34,943] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:25:34,960] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 17:25:34,964] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 17:25:34,984] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:25:34,986] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:25:46,789] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:25:46,796] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:25:59,031] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:25:59,033] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:25:59,042] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 17:25:59,044] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 17:25:59,057] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:25:59,059] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:27:12,114] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:27:12,118] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:27:12,133] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-01-30 17:27:12,136] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-01-30 17:27:12,148] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:27:12,150] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:27:33,601] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:27:33,627] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:27:33,642] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-01-30 17:28:30,426] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:28:30,428] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:28:30,438] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取1对应的chats
+[2026-01-30 17:28:30,442] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-30 17:28:30,457] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:28:30,459] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:28:30,469] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-01-30 17:30:35,129] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:30:35,129] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:30:35,147] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取1对应的chats
+[2026-01-30 17:30:35,149] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-30 17:30:35,163] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:30:35,165] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:30:35,171] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-01-30 17:30:45,079] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:30:45,079] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:30:45,110] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取1对应的chats
+[2026-01-30 17:30:45,114] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-30 17:30:45,127] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:30:45,129] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:30:45,137] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-01-30 17:31:36,207] [INFO] [PeopleScope] [PeopleScopeApi.py:107] - 为用户user_1创建新Session，初始问题：你知道一人之下这个动漫吗
+[2026-01-30 17:31:45,956] [INFO] [PeopleScope] [PeopleScopeApi.py:109] - 成功创建Session: 6
+[2026-01-30 17:31:45,963] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:31:45,965] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:31:45,965] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取6对应的chats
+[2026-01-30 17:31:45,975] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-30 17:31:51,865] [INFO] [PeopleScope] [PeopleScopeApi.py:134] - 收到分析请求：生成user_1对应的tags
+[2026-01-30 17:31:58,633] [INFO] [PeopleScope] [UserTagGenerateAgent.py:64] - 反馈用户本次分析结果: style_tags=['外向', '宜人', '尽责', '理性', '均衡'] topic_tags=['技术', '学习', '娱乐', '动漫', '算法']
+[2026-01-30 17:33:03,859] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:33:03,861] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:33:03,868] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-01-30 17:33:16,545] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-30 17:33:16,545] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-30 17:33:16,560] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取1对应的chats
+[2026-01-30 17:33:16,562] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-30 17:33:16,578] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-30 17:33:16,580] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-30 17:33:16,596] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-01-30 17:33:18,091] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取6对应的chats
+[2026-01-30 17:33:18,091] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-31 11:48:57,493] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-01-31 11:48:57,691] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-01-31 11:48:57,727] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取1对应的chats
+[2026-01-31 11:48:57,736] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-31 11:48:57,778] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-01-31 11:48:57,791] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-01-31 11:48:57,818] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-01-31 11:49:00,815] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取6对应的chats
+[2026-01-31 11:49:00,821] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-01-31 11:49:01,796] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取1对应的chats
+[2026-01-31 11:49:01,804] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
