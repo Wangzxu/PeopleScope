@@ -1,4 +1,5 @@
 .env
+submit
 .idea/
 __pycache__/
 *.log

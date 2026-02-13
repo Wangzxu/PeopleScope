@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Text, TIMESTAMP, JSON, func
-from core.db.database import Base
+from core.db.mysql import Base
 from model.trait_vector import TraitVector
 
 

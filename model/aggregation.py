@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Text, TIMESTAMP, func
 from model.reflection import ReflectionModel
 from model.trait_vector import TraitVector
-from core.db.database import Base
+from core.db.mysql import Base
 
 
 class AggregationModel(Base):

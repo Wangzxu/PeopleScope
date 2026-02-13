@@ -5,18 +5,20 @@ from core.config import DATABASE_URL
 # 定义 Base，供模型使用
 Base = declarative_base()
 
+
 class MySQLHandler:
     """
     MySQL 数据库处理类，负责初始化引擎和会话工厂。
     """
+
     def __init__(self):
         # 初始化 MySQL 引擎
         self.engine = create_engine(
             DATABASE_URL,
             pool_pre_ping=True,  # 自动重连
-            pool_size=10,        # 连接池大小
-            max_overflow=20,     # 最大溢出连接数
-            echo=False           # 是否打印 SQL 语句
+            pool_size=10,  # 连接池大小
+            max_overflow=20,  # 最大溢出连接数
+            echo=False  # 是否打印 SQL 语句
         )
         # 创建会话工厂
         self.session_factory = sessionmaker(

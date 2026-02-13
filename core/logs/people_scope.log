@@ -644,3 +644,10 @@
 [2026-02-13 20:52:47,111] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
 [2026-02-13 20:52:47,116] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
 [2026-02-13 20:52:47,130] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
+[2026-02-13 21:30:43,104] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 获取用户user_1的Session
+[2026-02-13 21:30:43,118] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功获取
+[2026-02-13 21:30:43,121] [INFO] [PeopleScope] [PeopleScopeApi.py:150] - 获取1对应的chats
+[2026-02-13 21:30:43,130] [INFO] [PeopleScope] [PeopleScopeApi.py:152] - 成功获取
+[2026-02-13 21:30:43,146] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的aggregation
+[2026-02-13 21:30:43,151] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-13 21:30:43,161] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取用户user_1的信息
