@@ -1,34 +1,33 @@
-from dataclasses import dataclass
 from sqlalchemy import Column, Integer, String, Text, TIMESTAMP, JSON, func
-from sqlalchemy.ext.declarative import declarative_base
-from model.trait_vector import TraitVector  # 假设这是你自己的类
-
-Base = declarative_base()
+from core.db.database import Base
+from model.trait_vector import TraitVector
 
 
-@dataclass
 class ReflectionModel(Base):
+    """
+    反思模型，存储用户对问题的回答及生成的性格特征分析。
+    """
     __tablename__ = "reflection"
 
-    id: int = Column(Integer, primary_key=True, autoincrement=True)
-    user: str = Column(String(64), nullable=False)
-    question: str = Column(Text, nullable=False)
-    answer: str = Column(Text, nullable=False)
-    summary: str = Column(Text, nullable=True)
-    question_id: int = Column(Integer, nullable=False)
-
-    # traits 可以存成 JSON
-    traits: dict = Column(JSON, nullable=False)
-
-    created_at = Column(TIMESTAMP, server_default=func.now())
+    id = Column(Integer, primary_key=True, autoincrement=True, comment="主键ID")
+    user = Column(String(64), nullable=False, comment="用户名")
+    question = Column(Text, nullable=False, comment="问题内容")
+    answer = Column(Text, nullable=False, comment="用户回答")
+    summary = Column(Text, nullable=True, comment="回答摘要")
+    question_id = Column(Integer, nullable=False, comment="关联的问题ID")
+    traits = Column(JSON, nullable=False, comment="分析出的性格特征(JSON)")
+    created_at = Column(TIMESTAMP, server_default=func.now(), comment="创建时间")
 
     @staticmethod
     def from_model(user: str, question: str, question_id: int, answer: str, summary: str, traits: TraitVector):
+        """
+        工厂方法：从业务数据创建模型实例
+        """
         return ReflectionModel(
             user=user,
             question=question,
             answer=answer,
             summary=summary,
             question_id=question_id,
-            traits=traits.__dict__
+            traits=traits.dict() if hasattr(traits, 'dict') else traits.__dict__
         )
