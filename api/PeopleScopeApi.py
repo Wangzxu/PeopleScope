@@ -11,7 +11,7 @@ from service.QuestionService import QuestionService
 from service.AggregationService import AggregationService
 from fastapi import Depends
 from sqlalchemy.orm import Session
-from core.db_container import db_container
+from core.container import db_container
 from schema.questionSchema import QuestionTraitCreate
 from schema.aggreSchema import AggregationRequest
 from schema.aggreSchema import AggregationResponse

@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, Text
-from core.database import Base
+from core.db.database import Base
 
 
 class QuestionTrait(Base):

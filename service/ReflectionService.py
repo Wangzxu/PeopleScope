@@ -1,5 +1,5 @@
 from fastapi import Depends
-from core.database import get_db
+from core.db.database import get_db
 from schema.relectionSchema import Reflection
 from repository.ReflectionRepository import ReflectionRepository
 from agent.ReflectionAgent import generate_reflection

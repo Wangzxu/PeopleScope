@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, Text, SmallInteger, DateTime, func
-from core.database import Base
+from core.db.database import Base
 
 
 class ChatModel(Base):

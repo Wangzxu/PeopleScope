@@ -1,6 +1,9 @@
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, Session
+from sqlalchemy.orm import sessionmaker, Session, declarative_base
 from core.config import DATABASE_URL
+
+# 定义 Base，供模型使用
+Base = declarative_base()
 
 class MySQLHandler:
     """

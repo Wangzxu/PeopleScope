@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Text, DateTime
 from sqlalchemy.sql import func
-from core.database import Base
+from core.db.database import Base
 
 
 class SessionModel(Base):
