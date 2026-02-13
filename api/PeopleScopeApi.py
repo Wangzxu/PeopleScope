@@ -11,7 +11,7 @@ from service.QuestionService import QuestionService
 from service.AggregationService import AggregationService
 from fastapi import Depends
 from sqlalchemy.orm import Session
-from core.database import get_db
+from core.db_container import db_container
 from schema.questionSchema import QuestionTraitCreate
 from schema.aggreSchema import AggregationRequest
 from schema.aggreSchema import AggregationResponse
@@ -38,7 +38,7 @@ def read_root():
 
 
 @app.post('/addQuestion')
-def create_questions(question: QuestionTraitCreate, db: Session = Depends(get_db)):
+def create_questions(question: QuestionTraitCreate, db: Session = Depends(db_container.get_mysql_db)):
     logger.info('添加问题')
     if QuestionService.create_question(db, question) is not None:
         logger.info('问题添加成功')
@@ -49,7 +49,7 @@ def create_questions(question: QuestionTraitCreate, db: Session = Depends(get_db
 
 
 @app.get('/generateQuestions/{number}')
-def generate_questions(number: int, db: Session = Depends(get_db)):
+def generate_questions(number: int, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'agent生成{number}个问题')
     result = QuestionService.generate_questions(db, number)
     if result == number:
@@ -61,7 +61,7 @@ def generate_questions(number: int, db: Session = Depends(get_db)):
 
 
 @app.get('/getQuestions/{number}')
-def get_questions(number: int, db: Session = Depends(get_db)):
+def get_questions(number: int, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'获取{number}个问题')
     result = QuestionService.get_questions(db, number)
     if len(result) == number:
@@ -72,14 +72,14 @@ def get_questions(number: int, db: Session = Depends(get_db)):
 
 
 @app.post('/reflection')
-async def reflection(dto: Reflection, background_tasks: BackgroundTasks, db: Session = Depends(get_db)):
+async def reflection(dto: Reflection, background_tasks: BackgroundTasks, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'收到分析请求：{dto}')
     background_tasks.add_task(ReflectionService.get_reflection, db, dto)
     return Result.success("已提交分析任务")
 
 
 @app.post('/aggregation')
-def aggregation(dto: AggregationRequest, db: Session = Depends(get_db)):
+def aggregation(dto: AggregationRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'总结用户{dto.user}的全部测试结果')
     AggregationService.generate_aggregate(db, dto.user)
     logger.info(f'成功存储更新结果')
@@ -87,7 +87,7 @@ def aggregation(dto: AggregationRequest, db: Session = Depends(get_db)):
 
 
 @app.post('/getAggregation')
-def get_aggregation(dto: AggregationRequest, db: Session = Depends(get_db)):
+def get_aggregation(dto: AggregationRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'获取用户{dto.user}的aggregation')
     aggregate = AggregationService.get_aggregate(db, dto.user)
     logger.info(f'成功获取')
@@ -95,7 +95,7 @@ def get_aggregation(dto: AggregationRequest, db: Session = Depends(get_db)):
 
 
 @app.post('/getSessions', response_model=Result[list[SessionRes]])
-def get_sessions(dto: SessionRequest, db: Session = Depends(get_db)):
+def get_sessions(dto: SessionRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'获取用户{dto.user}的Session')
     sessions = SessionService.get_sessions(db, dto.user)
     logger.info(f'成功获取')
@@ -103,7 +103,7 @@ def get_sessions(dto: SessionRequest, db: Session = Depends(get_db)):
 
 
 @app.post('/createSession')
-def create_session(dto: SessionRequest, db: Session = Depends(get_db)):
+def create_session(dto: SessionRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'为用户{dto.user}创建新Session，初始问题：{dto.message}')
     session = SessionService.create_session(db, dto.user, dto.message)
     logger.info(f'成功创建Session: {session.id}')
@@ -111,7 +111,7 @@ def create_session(dto: SessionRequest, db: Session = Depends(get_db)):
 
 
 @app.post('/renameSession')
-def rename_session(dto: SessionRenameRequest, db: Session = Depends(get_db)):
+def rename_session(dto: SessionRenameRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'重命名Session {dto.session_id} 为 {dto.title}')
     session = SessionService.rename_session(db, dto.session_id, dto.title)
     if session:
@@ -120,7 +120,7 @@ def rename_session(dto: SessionRenameRequest, db: Session = Depends(get_db)):
 
 
 @app.post('/deleteSession')
-def delete_session(dto: SessionDeleteRequest, db: Session = Depends(get_db)):
+def delete_session(dto: SessionDeleteRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'删除Session {dto.session_id}')
     success = SessionService.delete_session(db, dto.session_id)
     if success:
@@ -130,14 +130,14 @@ def delete_session(dto: SessionDeleteRequest, db: Session = Depends(get_db)):
 
 
 @app.post('/generateUserTags')
-async def generate_tags(dto: UserRequest, background_tasks: BackgroundTasks, db: Session = Depends(get_db)):
+async def generate_tags(dto: UserRequest, background_tasks: BackgroundTasks, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'收到分析请求：生成{dto.user}对应的tags')
     background_tasks.add_task(UserService.generate_tag(db, dto.user))
     return Result.success("请求已经成功发出")
 
 
 @app.post('/getUser', response_model=Result[UserRes])
-def get_user(dto: UserRequest, db: Session = Depends(get_db)):
+def get_user(dto: UserRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'获取用户{dto.user}的信息')
     user = UserService.get_user(db, dto.user)
     if user:
@@ -146,7 +146,7 @@ def get_user(dto: UserRequest, db: Session = Depends(get_db)):
 
 
 @app.get('/getChats/{session_id}', response_model=Result[ChatListRes])
-def get_chats(session_id: int, db: Session = Depends(get_db)):
+def get_chats(session_id: int, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'获取{session_id}对应的chats')
     chats = ChatService.get_chats(db, session_id)
     logger.info(f'成功获取')
@@ -157,7 +157,7 @@ def get_chats(session_id: int, db: Session = Depends(get_db)):
     return Result.success(data=result)
 
 @app.post('/chat')
-def chat(dto: ChatRequest, db: Session = Depends(get_db)):
+def chat(dto: ChatRequest, db: Session = Depends(db_container.get_mysql_db)):
     logger.info(f'用户{dto.user},session_id={dto.session_id},发来对话')
     ans = ChatService.generate_chat(db, dto.user, dto.session_id, dto.message)
     logger.info("成功回复")
