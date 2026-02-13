@@ -1,48 +1,44 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from pymongo import MongoClient
-from core.config import DATABASE_URL, MONGO_URI, MONGO_DB_NAME
 from datetime import datetime
+from core.db.mysql import MySQLHandler
+from core.db.mongo import MongoHandler
 
 class DBContainer:
     """
     数据库容器类，负责初始化和管理 MySQL 和 MongoDB 的连接。
     """
-    def __init__(self):
-        # 初始化 MySQL 连接池
-        self._mysql_engine = create_engine(
-            DATABASE_URL,
-            pool_pre_ping=True,   # 自动重连
-            pool_size=10,
-            max_overflow=20,
-            echo=False
-        )
-        # 创建 MySQL 会话工厂
-        self._mysql_session_factory = sessionmaker(
-            autocommit=False,
-            autoflush=False,
-            bind=self._mysql_engine
-        )
 
-        # 初始化 MongoDB 客户端
-        self._mongo_client = MongoClient(MONGO_URI)
-        self._mongo_db = self._mongo_client[MONGO_DB_NAME]
+    def __init__(self):
+        # 初始化 MySQL 和 MongoDB 处理器
+        self.mysql_handler = MySQLHandler()
+        self.mongo_handler = MongoHandler()
+
+    def get_mysql(self):
+        """
+        获取 MySQL 会话实例。
+        """
+        return self.mysql_handler.get_session()
+
+    def get_mongodb(self):
+        """
+        获取 MongoDB 数据库实例。
+        """
+        return self.mongo_handler.get_db()
 
     @property
     def mysql_engine(self):
-        """获取 MySQL 引擎实例"""
-        return self._mysql_engine
+        """获取 MySQL 引擎实例 (兼容性)"""
+        return self.mysql_handler.get_engine()
 
     @property
     def mongo_db(self):
-        """获取 MongoDB 数据库实例"""
-        return self._mongo_db
+        """获取 MongoDB 数据库实例 (兼容性)"""
+        return self.mongo_handler.get_db()
 
     def get_mysql_db(self):
         """
         获取 MySQL 数据库会话 (Generator)，用于 FastAPI 依赖注入。
         """
-        db = self._mysql_session_factory()
+        db = self.get_mysql()
         try:
             yield db
         finally:
@@ -50,7 +46,7 @@ class DBContainer:
 
     def get_mongo_collection(self, collection_name: str):
         """获取 MongoDB 集合"""
-        return self._mongo_db[collection_name]
+        return self.mongo_handler.get_collection(collection_name)
 
     # MongoDB 数据存储辅助函数
 
@@ -95,12 +91,13 @@ class DBContainer:
         collection = self.get_mongo_collection("aggregations")
         update_data = aggregation_data.copy()
         update_data["updated_at"] = datetime.utcnow()
-        
+
         collection.update_one(
             {"user": user},
             {"$set": update_data},
             upsert=True
         )
+
 
 # 实例化全局容器
 db_container = DBContainer()
