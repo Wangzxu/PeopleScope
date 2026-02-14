@@ -1,30 +1,38 @@
 from sqlalchemy.orm import Session
-
 from model.chat import ChatModel
 from repository.ChatRepository import ChatRepository
-from service.SessionService import SessionService
 from agent.ChatAgent import generate_answer
-from service.UserService import UserService
+# Removed direct imports of Service classes to avoid circular imports at module level
+# Will inject instances
 
 
 class ChatService:
-    @staticmethod
-    def get_chats(db: Session, session_id: int):
-        return ChatRepository.get_chats_by_session(db, session_id)
+    def __init__(self, chat_repo: ChatRepository):
+        self.chat_repo = chat_repo
+        self.session_service = None
+        self.user_service = None
 
-    @staticmethod
-    def generate_chat(db: Session, user: str, session_id: int, message: str):
-        session = SessionService.get_session(db, session_id)
+    def set_session_service(self, session_service):
+        self.session_service = session_service
+
+    def set_user_service(self, user_service):
+        self.user_service = user_service
+
+    def get_chats(self, session_id: int, db: Session = None):
+        return self.chat_repo.get_chats_by_session(session_id, db)
+
+    def generate_chat(self, user: str, session_id: int, message: str, db: Session = None):
+        # Dependencies: SessionService, UserService
+        session = self.session_service.get_session(session_id, db)
         title = session.title
-        entity = UserService.get_user(db, user)
+        entity = self.user_service.get_user(user, db)
         return generate_answer(title, user, entity.tags, message, session_id)
 
-    @staticmethod
-    def save_chat(db: Session, session_id: int, type: int, content: str):
-        chats = ChatRepository.get_chats_by_session(db, session_id)
+    def save_chat(self, session_id: int, type: int, content: str, db: Session = None):
+        chats = self.chat_repo.get_chats_by_session(session_id, db)
         if len(chats) > 0:
             msg_index = chats[-1].msg_index + 1
         else:
             msg_index = 0
         chat = ChatModel(session_id=session_id, type=type, content=content, msg_index=msg_index)
-        return ChatRepository.save_chat(db, chat)
+        return self.chat_repo.save_chat(chat, db)

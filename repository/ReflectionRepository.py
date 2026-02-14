@@ -1,28 +1,45 @@
 from typing import List
 from sqlalchemy.orm import Session
 from model.reflection import ReflectionModel
+from core.db.mysql import MySQLHandler
+from core.db.mongo import MongoHandler
 
 
 class ReflectionRepository:
-    @staticmethod
-    def list_by_user(db: Session, user: str) -> List[ReflectionModel]:
-        return db.query(ReflectionModel).filter(ReflectionModel.user == user).all()
+    def __init__(self, mysql: MySQLHandler, mongo: MongoHandler):
+        self.mysql = mysql
+        self.mongo = mongo
 
-    @staticmethod
-    def create(db: Session, entity: ReflectionModel):
-        existing = db.query(ReflectionModel).filter(
-            ReflectionModel.user == entity.user,
-            ReflectionModel.question_id == entity.question_id
-        ).first()
+    def list_by_user(self, user: str, db: Session = None) -> List[ReflectionModel]:
+        session = db or self.mysql.get_session()
+        try:
+            return session.query(ReflectionModel).filter(ReflectionModel.user == user).all()
+        finally:
+            if db is None:
+                session.close()
 
-        if existing:
-            existing.answer = entity.answer
-            existing.traits = entity.traits
-            db.commit()
-            db.refresh(existing)
-            return existing
-        else:
-            db.add(entity)
-            db.commit()
-            db.refresh(entity)
-            return entity
+    def create(self, entity: ReflectionModel, db: Session = None):
+        session = db or self.mysql.get_session()
+        try:
+            existing = session.query(ReflectionModel).filter(
+                ReflectionModel.user == entity.user,
+                ReflectionModel.question_id == entity.question_id
+            ).first()
+
+            if existing:
+                existing.answer = entity.answer
+                existing.traits = entity.traits
+                session.commit()
+                session.refresh(existing)
+                return existing
+            else:
+                session.add(entity)
+                session.commit()
+                session.refresh(entity)
+                return entity
+        except:
+            session.rollback()
+            raise
+        finally:
+            if db is None:
+                session.close()

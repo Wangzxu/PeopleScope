@@ -6,8 +6,10 @@ from model.reflection import ReflectionModel
 
 
 class ReflectionService:
-    @staticmethod
-    def get_reflection(db: Session, dto: Reflection):
+    def __init__(self, reflection_repo: ReflectionRepository):
+        self.reflection_repo = reflection_repo
+
+    def get_reflection(self, dto: Reflection, db: Session = None):
         summary, traits = generate_reflection(dto)
         reflection = ReflectionModel.from_model(
             user=dto.user,
@@ -17,5 +19,5 @@ class ReflectionService:
             summary=summary,
             traits=traits
         )
-        ReflectionRepository.create(db, reflection)
+        self.reflection_repo.create(reflection, db)
         return reflection

@@ -6,9 +6,10 @@ from agent.QuestionGenerateAgent import generate_questions
 
 
 class QuestionService:
+    def __init__(self, question_repo: QuestionRepository):
+        self.question_repo = question_repo
 
-    @staticmethod
-    def create_question(db: Session, dto: QuestionTraitCreate):
+    def create_question(self, dto: QuestionTraitCreate, db: Session = None):
         if not (1 <= dto.trait_score <= 10):
             raise ValueError("trait 必须在 1~10 之间")
         entity = QuestionTrait(
@@ -16,16 +17,14 @@ class QuestionService:
             trait_score=dto.trait_score
         )
 
-        return QuestionRepository.create(db, entity)
+        return self.question_repo.create(entity, db)
 
-    @staticmethod
-    def generate_questions(db: Session, number: int):
+    def generate_questions(self, number: int, db: Session = None):
         questions = generate_questions(number)
-        return QuestionRepository.add_list(db, questions)
+        return self.question_repo.add_list(questions, db)
 
-    @staticmethod
-    def get_questions(db: Session, number: int):
-        questions = QuestionRepository.list(db, number)
+    def get_questions(self, number: int, db: Session = None):
+        questions = self.question_repo.list(number, db)
         result = []
         for question in questions:
             dto = QuestionTraitCreate(
@@ -35,4 +34,3 @@ class QuestionService:
             )
             result.append(dto)
         return result
-

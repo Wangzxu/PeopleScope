@@ -4,28 +4,49 @@ from typing import List, cast
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 from model.question import QuestionTrait
+from core.db.mysql import MySQLHandler
+from core.db.mongo import MongoHandler
 
 
 class QuestionRepository:
+    def __init__(self, mysql: MySQLHandler, mongo: MongoHandler):
+        self.mysql = mysql
+        self.mongo = mongo
 
-    @staticmethod
-    def create(db: Session, entity: QuestionTrait):
-        db.add(entity)
-        db.commit()
-        db.refresh(entity)
-        return entity
+    def create(self, entity: QuestionTrait, db: Session = None):
+        session = db or self.mysql.get_session()
+        try:
+            session.add(entity)
+            session.commit()
+            session.refresh(entity)
+            return entity
+        except:
+            session.rollback()
+            raise
+        finally:
+            if db is None:
+                session.close()
 
-    @staticmethod
-    def add_list(db: Session, data: List[QuestionTrait]):
+    def add_list(self, data: List[QuestionTrait], db: Session = None):
         if not data:
             return 0
+        session = db or self.mysql.get_session()
+        try:
+            session.add_all(data)
+            session.commit()
+            return len(data)
+        except:
+            session.rollback()
+            raise
+        finally:
+            if db is None:
+                session.close()
 
-        db.add_all(data)
-        db.commit()
-
-        return len(data)
-
-    @staticmethod
-    def list(db: Session, number: int) -> List[QuestionTrait]:
-        result = db.query(QuestionTrait).order_by(func.random()).limit(number).all()
-        return cast(List[QuestionTrait], result)
+    def list(self, number: int, db: Session = None) -> List[QuestionTrait]:
+        session = db or self.mysql.get_session()
+        try:
+            result = session.query(QuestionTrait).order_by(func.random()).limit(number).all()
+            return cast(List[QuestionTrait], result)
+        finally:
+            if db is None:
+                session.close()
