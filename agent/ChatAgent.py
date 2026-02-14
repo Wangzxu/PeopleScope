@@ -5,7 +5,8 @@ from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import BaseModel, Field
-from core.agent import get_model
+from core.agent import LLMType
+from core.container import db_container
 
 
 class Output(BaseModel):
@@ -49,7 +50,7 @@ checkpointer = InMemorySaver()
 
 def create_chat_agent(system_prompt: str):
     return create_agent(
-        model=get_model(),
+        model=db_container.get_model().get_model(LLMType.CREATIVE),
         system_prompt=system_prompt,
         tools=[],
         response_format=ProviderStrategy(Output),

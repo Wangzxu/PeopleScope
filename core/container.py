@@ -1,3 +1,4 @@
+from core.agent import LLMFactory
 from core.db.mysql import MySQLHandler
 from core.db.mongo import MongoHandler
 
@@ -40,6 +41,8 @@ class Container:
         self._reflection_service = None
         self._session_service = None
         self._user_service = None
+
+        self._llm = None
 
     # --- Database Handlers ---
 
@@ -140,6 +143,15 @@ class Container:
         return self._session_service
 
     # --- Helper Methods ---
+
+    def get_model(self):
+        """
+        获取 Model 工厂
+        :return:
+        """
+        if self._llm is None:
+            self._llm = LLMFactory()
+        return self._llm
 
     def get_mysql_db(self):
         """

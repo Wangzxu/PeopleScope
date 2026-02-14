@@ -10,16 +10,15 @@ class ReflectionRepository:
         self.mysql = mysql
         self.mongo = mongo
 
-    def list_by_user(self, user: str, db: Session = None) -> List[ReflectionModel]:
-        session = db or self.mysql.get_session()
+    def list_by_user(self, user: str) -> List[ReflectionModel]:
+        session = self.mysql.get_session()
         try:
             return session.query(ReflectionModel).filter(ReflectionModel.user == user).all()
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def create(self, entity: ReflectionModel, db: Session = None):
-        session = db or self.mysql.get_session()
+    def create(self, entity: ReflectionModel):
+        session = self.mysql.get_session()
         try:
             existing = session.query(ReflectionModel).filter(
                 ReflectionModel.user == entity.user,
@@ -41,5 +40,4 @@ class ReflectionRepository:
             session.rollback()
             raise
         finally:
-            if db is None:
-                session.close()
+            session.close()

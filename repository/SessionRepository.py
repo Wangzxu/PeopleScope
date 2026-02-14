@@ -9,24 +9,22 @@ class SessionRepository:
         self.mysql = mysql
         self.mongo = mongo
 
-    def get_session_by_user(self, user: str, db: Session = None):
-        session = db or self.mysql.get_session()
+    def get_session_by_user(self, user: str):
+        session = self.mysql.get_session()
         try:
             return session.query(SessionModel).filter(SessionModel.user == user).all()
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def get_session_by_id(self, session_id: int, db: Session = None):
-        session = db or self.mysql.get_session()
+    def get_session_by_id(self, session_id: int):
+        session = self.mysql.get_session()
         try:
             return session.query(SessionModel).filter(SessionModel.id == session_id).first()
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def create_session(self, user: str, title: str, content: str, db: Session = None):
-        session = db or self.mysql.get_session()
+    def create_session(self, user: str, title: str, content: str):
+        session = self.mysql.get_session()
         try:
             session_model = SessionModel(user=user, title=title, content=content)
             session.add(session_model)
@@ -37,11 +35,10 @@ class SessionRepository:
             session.rollback()
             raise
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def update_session_title(self, session_id: int, title: str, db: Session = None):
-        session = db or self.mysql.get_session()
+    def update_session_title(self, session_id: int, title: str):
+        session = self.mysql.get_session()
         try:
             session_model = session.query(SessionModel).filter(SessionModel.id == session_id).first()
             if session_model:
@@ -53,11 +50,10 @@ class SessionRepository:
             session.rollback()
             raise
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def delete_session(self, session_id: int, db: Session = None):
-        session = db or self.mysql.get_session()
+    def delete_session(self, session_id: int):
+        session = self.mysql.get_session()
         try:
             session_model = session.query(SessionModel).filter(SessionModel.id == session_id).first()
             if session_model:
@@ -69,5 +65,4 @@ class SessionRepository:
             session.rollback()
             raise
         finally:
-            if db is None:
-                session.close()
+            session.close()
