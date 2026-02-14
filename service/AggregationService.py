@@ -1,4 +1,3 @@
-from sqlalchemy.orm import Session
 from core import logger
 from core.config import TRAIT_FIELDS
 from agent.AggregateAgent import generate_aggregate
@@ -13,9 +12,9 @@ class AggregationService:
         self.agg_repo = agg_repo
         self.reflection_repo = reflection_repo
 
-    def generate_aggregate(self, user: str, db: Session = None):
-        aggregate = self.agg_repo.get_by_user(user, db)
-        reflections = self.reflection_repo.list_by_user(user, db)
+    def generate_aggregate(self, user: str):
+        aggregate = self.agg_repo.get_by_user(user)
+        reflections = self.reflection_repo.list_by_user(user)
         n = len(reflections)
         alpha = 1 / (n + 1)
         for reflection in reflections:
@@ -27,8 +26,8 @@ class AggregationService:
         summary = generate_aggregate(aggregate)
         logger.info(f"生成新的summary：{summary}")
         aggregate.summary = summary
-        return self.agg_repo.update(aggregate, db)
+        return self.agg_repo.update(aggregate)
 
-    def get_aggregate(self, user: str, db: Session = None):
-        aggregate = self.agg_repo.get_by_user(user, db)
+    def get_aggregate(self, user: str):
+        aggregate = self.agg_repo.get_by_user(user)
         return aggregate

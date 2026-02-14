@@ -1,5 +1,3 @@
-from sqlalchemy.orm import Session
-
 from repository.ChatRepository import ChatRepository
 from repository.UserRepository import UserRepository
 from repository.AggregationRepository import AggregationRepository
@@ -18,17 +16,17 @@ class UserService:
         self.session_repo = session_repo
         self.chat_repo = chat_repo
 
-    def get_user(self, user: str, db: Session = None):
-        return self.user_repo.get_user_by_name(user, db)
+    def get_user(self, user: str):
+        return self.user_repo.get_user_by_name(user)
 
-    def generate_tag(self, user: str, db: Session = None):
-        aggregate = self.agg_repo.get_by_user(user, db)
-        sessions = self.session_repo.get_session_by_user(user, db)
+    def generate_tag(self, user: str):
+        aggregate = self.agg_repo.get_by_user(user)
+        sessions = self.session_repo.get_session_by_user(user)
         conver = []
         title = []
         i = 0
         for session in sessions:
-            chats = self.chat_repo.get_chats_by_session(session.id, db)
+            chats = self.chat_repo.get_chats_by_session(session.id)
             title.append(session.title)
             for chat in chats:
                 if chat.type == 1:
@@ -42,7 +40,7 @@ class UserService:
                 "style": style_tags,
                 "topic": topic_tags
             }
-        user_entity = self.user_repo.get_user_by_name(user, db)
+        user_entity = self.user_repo.get_user_by_name(user)
         user_entity.tags = tags
-        self.user_repo.update_user(user_entity, db)
+        self.user_repo.update_user(user_entity)
         return user_entity

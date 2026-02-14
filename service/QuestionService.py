@@ -1,4 +1,3 @@
-from sqlalchemy.orm import Session
 from repository.QuestionTraitRepository import QuestionRepository
 from schema.questionSchema import QuestionTraitCreate
 from model.question import QuestionTrait
@@ -9,7 +8,7 @@ class QuestionService:
     def __init__(self, question_repo: QuestionRepository):
         self.question_repo = question_repo
 
-    def create_question(self, dto: QuestionTraitCreate, db: Session = None):
+    def create_question(self, dto: QuestionTraitCreate):
         if not (1 <= dto.trait_score <= 10):
             raise ValueError("trait 必须在 1~10 之间")
         entity = QuestionTrait(
@@ -17,14 +16,14 @@ class QuestionService:
             trait_score=dto.trait_score
         )
 
-        return self.question_repo.create(entity, db)
+        return self.question_repo.create(entity)
 
-    def generate_questions(self, number: int, db: Session = None):
+    def generate_questions(self, number: int):
         questions = generate_questions(number)
-        return self.question_repo.add_list(questions, db)
+        return self.question_repo.add_list(questions)
 
-    def get_questions(self, number: int, db: Session = None):
-        questions = self.question_repo.list(number, db)
+    def get_questions(self, number: int):
+        questions = self.question_repo.list(number)
         result = []
         for question in questions:
             dto = QuestionTraitCreate(

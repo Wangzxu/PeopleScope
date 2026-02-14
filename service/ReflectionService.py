@@ -1,4 +1,3 @@
-from sqlalchemy.orm import Session
 from schema.relectionSchema import Reflection
 from repository.ReflectionRepository import ReflectionRepository
 from agent.ReflectionAgent import generate_reflection
@@ -9,7 +8,7 @@ class ReflectionService:
     def __init__(self, reflection_repo: ReflectionRepository):
         self.reflection_repo = reflection_repo
 
-    def get_reflection(self, dto: Reflection, db: Session = None):
+    def get_reflection(self, dto: Reflection):
         summary, traits = generate_reflection(dto)
         reflection = ReflectionModel.from_model(
             user=dto.user,
@@ -19,5 +18,5 @@ class ReflectionService:
             summary=summary,
             traits=traits
         )
-        self.reflection_repo.create(reflection, db)
+        self.reflection_repo.create(reflection)
         return reflection
