@@ -1,3 +1,4 @@
+from api.PeopleScopeApi import logger
 from model.chat import ChatModel
 from repository.ChatRepository import ChatRepository
 
@@ -31,6 +32,8 @@ class ChatService:
         # 获取最相关的3条历史对话
         related_chats = self.chat_repo.get_related_chats(user, message, limit=3)
 
+        logger.info(f"输出最相关的三句话：", related_chats)
+
         return self.chat_agent.generate_answer(title, user, entity.tags, message, session_id, related_chats)
 
     def save_chat(self, session_id: int, type: int, content: str):
@@ -44,10 +47,10 @@ class ChatService:
         # 保存到 MySQL
         saved_chat = self.chat_repo.save_chat(chat)
 
-        # 获取用户信息并保存到 MongoDB
+        # 获取用户信息并保存到 MongoDB (ChromaDB)
         if type == 0:
             session = self.session_service.get_session(session_id)
             if session:
-                self.chat_repo.save_chat_mongo(saved_chat, session.user)
+                self.chat_repo.save_chat_chroma(saved_chat, session.user)
 
         return saved_chat

@@ -1,5 +1,6 @@
 from enum import Enum
 from langchain.chat_models import init_chat_model
+from langchain_openai import OpenAIEmbeddings
 from core.config import OPENAI_API_KEY
 
 
@@ -19,3 +20,13 @@ class LLMFactory:
             temperature=llm_type.value,
             api_key=OPENAI_API_KEY
         )
+
+    @staticmethod
+    def get_embedding_model():
+        return OpenAIEmbeddings(
+            model="Qwen/Qwen3-Embedding-0.6B",
+            openai_api_key=OPENAI_API_KEY,
+            openai_api_base="https://api.siliconflow.cn/v1",
+            check_embedding_ctx_length=False
+        )
+

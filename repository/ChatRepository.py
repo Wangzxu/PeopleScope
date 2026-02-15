@@ -1,13 +1,12 @@
-from sqlalchemy.orm import Session
 from model.chat import ChatModel
 from core.db.mysql import MySQLHandler
-from core.db.mongo import MongoHandler
+from core.db.chroma import ChromaHandler
 
 
 class ChatRepository:
-    def __init__(self, mysql: MySQLHandler, mongo: MongoHandler):
+    def __init__(self, mysql: MySQLHandler, chroma: ChromaHandler):
         self.mysql = mysql
-        self.mongo = mongo
+        self.chroma = chroma
 
     def get_chats_by_session(self, session_id):
         session = self.mysql.get_session()
@@ -32,19 +31,22 @@ class ChatRepository:
         finally:
             session.close()
 
-    def save_chat_mongo(self, chat: ChatModel, user: str):
-        self.mongo.save_chat(
-            session_id=chat.session_id,
-            message_type=chat.type,
+    def save_chat_chroma(self, chat: ChatModel, user: str):
+        # 使用 ChromaDB 存储
+        self.chroma.add_chat(
+            user=user,
             content=chat.content,
-            user=user
+            metadata={
+                "session_id": chat.session_id,
+                "type": chat.type,
+                "user": user
+            }
         )
 
     def get_related_chats(self, user: str, query_text: str, limit: int = 3):
         try:
-            return self.mongo.get_related_chats(user, query_text, limit)
+            return self.chroma.query_similar_chats(user, query_text, n_results=limit)
         except Exception:
-            # 如果文本搜索失败（例如索引未建立），返回空列表或进行错误处理
             return []
 
     def delete_chats_by_session(self, session_id: int):

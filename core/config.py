@@ -30,6 +30,9 @@ MONGO_DB_NAME = os.getenv("MONGO_DB_NAME")
 
 MONGO_URI = f"mongodb://{MONGO_HOST}:{MONGO_PORT}/"
 
+# chroma
+CHROMA_PERSIST_DIRECTORY = os.getenv("CHROMA_PERSIST_DIRECTORY", "./chroma_db")
+
 # logger
 LOG_DIR = os.getenv("LOG_DIR", "logs")
 LOG_LEVEL = os.getenv("LOG_LEVEL", "INFO").upper()
@@ -50,4 +53,3 @@ TRAIT_FIELDS = [
     "emotional_stability",
     "self_control",
 ]
-

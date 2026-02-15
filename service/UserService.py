@@ -2,7 +2,6 @@ from repository.ChatRepository import ChatRepository
 from repository.UserRepository import UserRepository
 from repository.AggregationRepository import AggregationRepository
 from repository.SessionRepository import SessionRepository
-from agent.UserTagGenerateAgent import generate_tag
 
 
 class UserService:
@@ -10,11 +9,13 @@ class UserService:
                  user_repo: UserRepository, 
                  agg_repo: AggregationRepository, 
                  session_repo: SessionRepository, 
-                 chat_repo: ChatRepository):
+                 chat_repo: ChatRepository,
+                 user_tag_agent):
         self.user_repo = user_repo
         self.agg_repo = agg_repo
         self.session_repo = session_repo
         self.chat_repo = chat_repo
+        self.user_tag_agent = user_tag_agent
 
     def get_user(self, user: str):
         return self.user_repo.get_user_by_name(user)
@@ -35,7 +36,7 @@ class UserService:
                 if i >= 10:
                     break
 
-        style_tags, topic_tags = generate_tag(conver, aggregate.summary, title)
+        style_tags, topic_tags = self.user_tag_agent.generate_tag(conver, aggregate.summary, title)
         tags = {
                 "style": style_tags,
                 "topic": topic_tags

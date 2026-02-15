@@ -1,14 +1,13 @@
 from core.agent import LLMFactory
 from core.db.mysql import MySQLHandler
 from core.db.mongo import MongoHandler
-
+from core.db.chroma import ChromaHandler
 from repository.AggregationRepository import AggregationRepository
 from repository.ChatRepository import ChatRepository
 from repository.QuestionTraitRepository import QuestionRepository
 from repository.ReflectionRepository import ReflectionRepository
 from repository.SessionRepository import SessionRepository
 from repository.UserRepository import UserRepository
-
 from service.AggregationService import AggregationService
 from service.ChatService import ChatService
 from service.QuestionService import QuestionService
@@ -34,6 +33,7 @@ class Container:
         # 内部变量初始化为 None
         self._mysql = None
         self._mongo = None
+        self._chroma = None
 
         self._agg_repo = None
         self._chat_repo = None
@@ -58,8 +58,6 @@ class Container:
 
         self._llm = None
 
-
-
     # --- Database Handlers ---
 
     @property
@@ -74,6 +72,12 @@ class Container:
             self._mongo = MongoHandler()
         return self._mongo
 
+    @property
+    def chroma(self):
+        if self._chroma is None:
+            self._chroma = ChromaHandler(LLMFactory.get_embedding_model())
+        return self._chroma
+
     # --- Repositories ---
 
     @property
@@ -85,7 +89,7 @@ class Container:
     @property
     def chat_repo(self):
         if self._chat_repo is None:
-            self._chat_repo = ChatRepository(self.mysql, self.mongo)
+            self._chat_repo = ChatRepository(self.mysql, self.chroma)
         return self._chat_repo
 
     @property

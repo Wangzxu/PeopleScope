@@ -1,12 +1,12 @@
 from repository.SessionRepository import SessionRepository
 from repository.ChatRepository import ChatRepository
-from agent.TitleGenerateAgent import get_title
 
 
 class SessionService:
-    def __init__(self, session_repo: SessionRepository, chat_repo: ChatRepository):
+    def __init__(self, session_repo: SessionRepository, chat_repo: ChatRepository, title_agent):
         self.session_repo = session_repo
         self.chat_repo = chat_repo
+        self.title_agent = title_agent
         self.chat_service = None
 
     def set_chat_service(self, chat_service):
@@ -20,7 +20,7 @@ class SessionService:
 
     def create_session(self, user: str, message: str):
         # 1. 生成标题
-        title = get_title(message)
+        title = self.title_agent.get_title(message)
         
         # 2. 创建Session
         content = message
