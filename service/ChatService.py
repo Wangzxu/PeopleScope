@@ -1,13 +1,13 @@
 from model.chat import ChatModel
 from repository.ChatRepository import ChatRepository
-from agent.ChatAgent import generate_answer
 # Removed direct imports of Service classes to avoid circular imports at module level
 # Will inject instances
 
 
 class ChatService:
-    def __init__(self, chat_repo: ChatRepository):
+    def __init__(self, chat_repo: ChatRepository, chat_agent):
         self.chat_repo = chat_repo
+        self.chat_agent = chat_agent
         self.session_service = None
         self.user_service = None
 
@@ -25,7 +25,8 @@ class ChatService:
         session = self.session_service.get_session(session_id)
         title = session.title
         entity = self.user_service.get_user(user)
-        return generate_answer(title, user, entity.tags, message, session_id)
+        return self.chat_agent.generate_answer(title, user, entity.tags, message, session_id)
+
 
     def save_chat(self, session_id: int, type: int, content: str):
         chats = self.chat_repo.get_chats_by_session(session_id)

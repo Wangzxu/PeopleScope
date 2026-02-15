@@ -2,7 +2,18 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
-from core.container import db_container
+
+from core.agent import LLMType
+
+
+class Output(BaseModel):
+    title: str = Field(..., description="生成的简短讨论主题")
+
+
+from langchain.agents import create_agent
+from langchain.agents.structured_output import ProviderStrategy
+from langchain_core.messages import HumanMessage
+from pydantic import BaseModel, Field
 from core.agent import LLMType
 
 
@@ -29,21 +40,29 @@ SYSTEM_PROMPT = """
 
 """
 
-agent = create_agent(
-    model=db_container.get_model().get_model(LLMType.PRECISE),
-    system_prompt=SYSTEM_PROMPT,
-    tools=[],
-    response_format=ProviderStrategy(Output)
-)
 
+class TitleGenerateAgent:
+    def __init__(self, llm_factory):
+        self.llm_factory = llm_factory
+        self.system_prompt = SYSTEM_PROMPT
+        self.agent = self._create_agent()
 
-def get_title(text: str) -> str:
-    """
-    根据输入的文本生成一个简短的讨论主题。
-    :param text: 输入的文本内容
-    :return: 简短的主题字符串
-    """
-    res = agent.invoke({
-        "messages": [HumanMessage(content=text)]
-    })
-    return res["structured_response"].title
+    def _create_agent(self):
+        return create_agent(
+            model=self.llm_factory.get_model(LLMType.PRECISE),
+            system_prompt=self.system_prompt,
+            tools=[],
+            response_format=ProviderStrategy(Output)
+        )
+
+    def get_title(self, text: str) -> str:
+        """
+        根据输入的文本生成一个简短的讨论主题。
+        :param text: 输入的文本内容
+        :return: 简短的主题字符串
+        """
+        res = self.agent.invoke({
+            "messages": [HumanMessage(content=text)]
+        })
+        return res["structured_response"].title
+

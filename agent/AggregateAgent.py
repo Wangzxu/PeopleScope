@@ -2,8 +2,16 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
+from core.agent import LLMType
+from core.logger import setup_logger
+from model.aggregation import AggregationModel
 
-from core.container import db_container
+
+from langchain.agents import create_agent
+from langchain.agents.structured_output import ProviderStrategy
+from langchain_core.messages import HumanMessage
+from pydantic import BaseModel, Field
+
 from core.agent import LLMType
 from core.logger import setup_logger
 from model.aggregation import AggregationModel
@@ -13,7 +21,10 @@ class Output(BaseModel):
     summary: str = Field(..., description="根据过往用户画像，和过往问题的回答更新后的新用户总结")
 
 
-system_prompt = """
+class AggregateAgent:
+    def __init__(self, llm_factory):
+        self.llm_factory = llm_factory
+        self.system_prompt = """
         你是一个人格分析助手。
 
         你的任务：
@@ -49,20 +60,23 @@ system_prompt = """
         2. traits 的数值为整数 1~10，1 表示最低，10 表示最高。
         3. summary 应简明概括用户特征和变化。
         4. 仅输出 JSON，不要包含额外文字或解释。"""
+        
+        self.agent = self._create_agent()
 
-agent = create_agent(
-    model=db_container.get_model().get_model(LLMType.PRECISE),
-    system_prompt=system_prompt,
-    tools=[],
-    response_format=ProviderStrategy(Output)
-)
+    def _create_agent(self):
+        return create_agent(
+            model=self.llm_factory.get_model(LLMType.PRECISE),
+            system_prompt=self.system_prompt,
+            tools=[],
+            response_format=ProviderStrategy(Output)
+        )
 
+    def generate_aggregate(self, aggregate: AggregationModel):
+        res = self.agent.invoke({
+            "messages": [HumanMessage(content=f"根据{aggregate}中十个维度的打分进行总结")]
+        })
+        logger = setup_logger()
+        logger.info(f"反馈用户本次分析结果：{aggregate.user}的本轮分析为: {res['structured_response']}")
+        summary = res['structured_response'].summary
+        return summary
 
-def generate_aggregate(aggregate: AggregationModel):
-    res = agent.invoke({
-        "messages": [HumanMessage(content=f"根据{aggregate}中十个维度的打分进行总结")]
-    })
-    logger = setup_logger()
-    logger.info(f"反馈用户本次分析结果：{aggregate.user}的本轮分析为: {res['structured_response']}")
-    summary = res['structured_response'].summary
-    return summary

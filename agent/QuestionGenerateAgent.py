@@ -3,8 +3,8 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
+
 from core.logger import setup_logger
-from core.container import db_container
 from core.agent import LLMType
 from model.question import QuestionTrait
 
@@ -33,7 +33,11 @@ TRAIT_INDEX = {
     "self_control": 10
 }
 
-system_prompt = f"""
+
+class QuestionGenerateAgent:
+    def __init__(self, llm_factory):
+        self.llm_factory = llm_factory
+        self.system_prompt = f"""
         你是一名心理测评专家。
         
         你的任务是：
@@ -58,27 +62,29 @@ system_prompt = f"""
               ]
             }}
     """
+        self.agent = self._create_agent()
 
-agent = create_agent(
-    model=db_container.get_model().get_model(LLMType.BALANCED),
-    system_prompt=system_prompt,
-    tools=[],
-    response_format=ProviderStrategy(Output)
-)
-
-
-def generate_questions(number: int) -> List[QuestionTrait]:
-    res = agent.invoke({
-        "messages": [HumanMessage(content=f"生成{number}个问题")]
-    })
-    logger = setup_logger()
-    logger.info(f"生成{number}个问题")
-    entity_list = []
-    for q in res["structured_response"].questions:
-        entity = QuestionTrait(
-            question=q.question,
-            trait_score=q.trait
+    def _create_agent(self):
+        return create_agent(
+            model=self.llm_factory.get_model(LLMType.BALANCED),
+            system_prompt=self.system_prompt,
+            tools=[],
+            response_format=ProviderStrategy(Output)
         )
-        entity_list.append(entity)
-        logger.info(f"生成问题，Trait: {q.trait},question: {q.question}")
-    return entity_list
+
+    def generate_questions(self, number: int) -> List[QuestionTrait]:
+        res = self.agent.invoke({
+            "messages": [HumanMessage(content=f"生成{number}个问题")]
+        })
+        logger = setup_logger()
+        logger.info(f"生成{number}个问题")
+        entity_list = []
+        for q in res["structured_response"].questions:
+            entity = QuestionTrait(
+                question=q.question,
+                trait_score=q.trait
+            )
+            entity_list.append(entity)
+            logger.info(f"生成问题，Trait: {q.trait},question: {q.question}")
+        return entity_list
+

@@ -1,12 +1,12 @@
 from repository.QuestionTraitRepository import QuestionRepository
 from schema.questionSchema import QuestionTraitCreate
 from model.question import QuestionTrait
-from agent.QuestionGenerateAgent import generate_questions
 
 
 class QuestionService:
-    def __init__(self, question_repo: QuestionRepository):
+    def __init__(self, question_repo: QuestionRepository, question_agent):
         self.question_repo = question_repo
+        self.question_agent = question_agent
 
     def create_question(self, dto: QuestionTraitCreate):
         if not (1 <= dto.trait_score <= 10):
@@ -19,7 +19,7 @@ class QuestionService:
         return self.question_repo.create(entity)
 
     def generate_questions(self, number: int):
-        questions = generate_questions(number)
+        questions = self.question_agent.generate_questions(number)
         return self.question_repo.add_list(questions)
 
     def get_questions(self, number: int):
@@ -33,3 +33,4 @@ class QuestionService:
             )
             result.append(dto)
         return result
+

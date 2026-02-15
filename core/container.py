@@ -16,6 +16,13 @@ from service.ReflectionService import ReflectionService
 from service.SessionService import SessionService
 from service.UserService import UserService
 
+from agent.AggregateAgent import AggregateAgent
+from agent.ChatAgent import ChatAgent
+from agent.UserTagGenerateAgent import UserTagGenerateAgent
+from agent.QuestionGenerateAgent import QuestionGenerateAgent
+from agent.ReflectionAgent import ReflectionAgent
+from agent.TitleGenerateAgent import TitleGenerateAgent
+
 
 class Container:
     """
@@ -41,8 +48,17 @@ class Container:
         self._reflection_service = None
         self._session_service = None
         self._user_service = None
+        
+        self._aggregate_agent = None
+        self._chat_agent = None
+        self._user_tag_agent = None
+        self._question_agent = None
+        self._reflection_agent = None
+        self._title_agent = None
 
         self._llm = None
+
+
 
     # --- Database Handlers ---
 
@@ -95,39 +111,77 @@ class Container:
         if self._user_repo is None:
             self._user_repo = UserRepository(self.mysql, self.mongo)
         return self._user_repo
+        
+    # --- Agents ---
+    
+    @property
+    def aggregate_agent(self):
+        if self._aggregate_agent is None:
+            self._aggregate_agent = AggregateAgent(self.get_model())
+        return self._aggregate_agent
+        
+    @property
+    def chat_agent(self):
+        if self._chat_agent is None:
+            self._chat_agent = ChatAgent(self.get_model())
+        return self._chat_agent
+
+    @property
+    def user_tag_agent(self):
+        if self._user_tag_agent is None:
+            self._user_tag_agent = UserTagGenerateAgent(self.get_model())
+        return self._user_tag_agent
+
+    @property
+    def question_agent(self):
+        if self._question_agent is None:
+            self._question_agent = QuestionGenerateAgent(self.get_model())
+        return self._question_agent
+
+    @property
+    def reflection_agent(self):
+        if self._reflection_agent is None:
+            self._reflection_agent = ReflectionAgent(self.get_model())
+        return self._reflection_agent
+
+    @property
+    def title_agent(self):
+        if self._title_agent is None:
+            self._title_agent = TitleGenerateAgent(self.get_model())
+        return self._title_agent
 
     # --- Services ---
 
     @property
     def agg_service(self):
         if self._agg_service is None:
-            self._agg_service = AggregationService(self.agg_repo, self.reflection_repo)
+            self._agg_service = AggregationService(self.agg_repo, self.reflection_repo, self.aggregate_agent)
         return self._agg_service
 
     @property
     def question_service(self):
         if self._question_service is None:
-            self._question_service = QuestionService(self.question_repo)
+            self._question_service = QuestionService(self.question_repo, self.question_agent)
         return self._question_service
 
     @property
     def reflection_service(self):
         if self._reflection_service is None:
-            self._reflection_service = ReflectionService(self.reflection_repo)
+            self._reflection_service = ReflectionService(self.reflection_repo, self.reflection_agent)
         return self._reflection_service
 
     @property
     def user_service(self):
         if self._user_service is None:
             self._user_service = UserService(
-                self.user_repo, self.agg_repo, self.session_repo, self.chat_repo
+                self.user_repo, self.agg_repo, self.session_repo, self.chat_repo, self.user_tag_agent
             )
         return self._user_service
 
     @property
     def chat_service(self):
         if self._chat_service is None:
-            self._chat_service = ChatService(self.chat_repo)
+            self._chat_service = ChatService(self.chat_repo, self.chat_agent)
             # 处理依赖注入 (注意循环依赖的处理顺序)
             self._chat_service.set_user_service(self.user_service)
             # 触发 SessionService 初始化，SessionService 反过来会获取 chat_service (此时已不为 None)
@@ -137,7 +191,7 @@ class Container:
     @property
     def session_service(self):
         if self._session_service is None:
-            self._session_service = SessionService(self.session_repo, self.chat_repo)
+            self._session_service = SessionService(self.session_repo, self.chat_repo, self.title_agent)
             # 触发 ChatService 初始化，ChatService 反过来会获取 session_service (此时已不为 None)
             self._session_service.set_chat_service(self.chat_service)
         return self._session_service

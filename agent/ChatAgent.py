@@ -1,12 +1,10 @@
-import json
-from typing import List, Dict
 from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import BaseModel, Field
+
 from core.agent import LLMType
-from core.container import db_container
 
 
 class Output(BaseModel):
@@ -45,46 +43,47 @@ SYSTEM_PROMPT_TEMPLATE = """
         }}
 """
 
-checkpointer = InMemorySaver()
+class ChatAgent:
+    def __init__(self, llm_factory):
+        self.llm_factory = llm_factory
+        self.checkpointer = InMemorySaver()
 
+    def _create_chat_agent(self, system_prompt: str):
+        return create_agent(
+            model=self.llm_factory.get_model(LLMType.CREATIVE),
+            system_prompt=system_prompt,
+            tools=[],
+            response_format=ProviderStrategy(Output),
+            checkpointer=self.checkpointer
+        )
 
-def create_chat_agent(system_prompt: str):
-    return create_agent(
-        model=db_container.get_model().get_model(LLMType.CREATIVE),
-        system_prompt=system_prompt,
-        tools=[],
-        response_format=ProviderStrategy(Output),
-        checkpointer=checkpointer
-    )
+    def generate_answer(
+        self,
+        title: str,
+        user: str,
+        tags: str,
+        message: str,
+        session_id: int
+    ) -> str:
+        system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
+            user=user,
+            style_tags=tags["style"],
+            topic_tags=tags["topic"],
+            title=title
+        )
 
+        agent = self._create_chat_agent(system_prompt)
 
-def generate_answer(
-    title: str,
-    user: str,
-    tags: str,
-    message: str,
-    session_id: int
-) -> str:
-
-
-    system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
-        user=user,
-        style_tags=tags["style"],
-        topic_tags=tags["topic"],
-        title=title
-    )
-
-    agent = create_chat_agent(system_prompt)
-
-    config = {
-        "configurable": {
-            "thread_id": session_id
+        config = {
+            "configurable": {
+                "thread_id": session_id
+            }
         }
-    }
 
-    res = agent.invoke(
-        {"messages": [HumanMessage(content=message)]},
-        config=config
-    )
+        res = agent.invoke(
+            {"messages": [HumanMessage(content=message)]},
+            config=config
+        )
 
-    return res["structured_response"].answer
+        return res["structured_response"].answer
+

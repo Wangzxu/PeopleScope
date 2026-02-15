@@ -4,8 +4,8 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
+
 from core.logger import setup_logger
-from core.container import db_container
 from core.agent import LLMType
 from model.aggregation import AggregationModel
 
@@ -15,7 +15,10 @@ class Output(BaseModel):
     topic_tags: List[str]
 
 
-system_prompt = """
+class UserTagGenerateAgent:
+    def __init__(self, llm_factory):
+        self.llm_factory = llm_factory
+        self.system_prompt = """
         你是一个用户画像分析 Agent，负责从有限信息中推断用户的聊天偏好标签。
         
         【任务目标】
@@ -48,21 +51,23 @@ system_prompt = """
           "topic_tags": ["标签1", "标签2", "标签3"]
         }
         """
+        self.agent = self._create_agent()
 
-agent = create_agent(
-    model=db_container.get_model().get_model(LLMType.PRECISE),
-    system_prompt=system_prompt,
-    tools=[],
-    response_format=ProviderStrategy(Output)
-)
+    def _create_agent(self):
+        return create_agent(
+            model=self.llm_factory.get_model(LLMType.PRECISE),
+            system_prompt=self.system_prompt,
+            tools=[],
+            response_format=ProviderStrategy(Output)
+        )
 
+    def generate_tag(self, conv: List[str], summary: str, title: List[str]):
+        res = self.agent.invoke({
+            "messages": [HumanMessage(content=f"根据用户的性格{summary}和会话记录{conv},以及几个会话的主题{title}，推测用户喜欢的聊天风格和聊天内容")]
+        })
+        logger = setup_logger()
+        logger.info(f"反馈用户本次分析结果: {res['structured_response']}")
+        style_tags = res['structured_response'].style_tags
+        topic_tags = res['structured_response'].topic_tags
+        return style_tags, topic_tags
 
-def generate_tag(conv: List[str], summary: str, title: List[str]):
-    res = agent.invoke({
-        "messages": [HumanMessage(content=f"根据用户的性格{summary}和会话记录{conv},以及几个会话的主题{title}，推测用户喜欢的聊天风格和聊天内容")]
-    })
-    logger = setup_logger()
-    logger.info(f"反馈用户本次分析结果: {res['structured_response']}")
-    style_tags = res['structured_response'].style_tags
-    topic_tags = res['structured_response'].topic_tags
-    return style_tags, topic_tags
