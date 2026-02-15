@@ -37,6 +37,26 @@ class MongoHandler:
             upsert=True
         )
 
+    def get_related_chats(self, user: str, query_text: str, limit: int = 3):
+        """
+        获取与查询文本最相关的聊天记录。
+        :param user: 用户名
+        :param query_text: 查询文本
+        :param limit: 返回数量限制
+        :return: 相关聊天记录内容列表
+        """
+        collection = self.get_collection("chat")
+        
+        # 确保存在全文索引 (如果不存在则创建)
+        collection.create_index([("content", "text")])
+        
+        cursor = collection.find(
+            {"$text": {"$search": query_text}, "user": user, "type": 0},
+            {"score": {"$meta": "textScore"}, "content": 1, "_id": 0}
+        ).sort([("score", {"$meta": "textScore"})]).limit(limit)
+        
+        return [doc["content"] for doc in cursor]
+
     def save_chat(self, session_id: int, message_type: int, content: str, user: str = None):
         """
         保存聊天记录。
@@ -45,7 +65,7 @@ class MongoHandler:
         :param content: 消息内容
         :param user: 可选关联用户名
         """
-        collection = self.get_collection("chats")
+        collection = self.get_collection("chat")
         chat_doc = {
             "session_id": session_id,
             "type": message_type,
@@ -55,6 +75,7 @@ class MongoHandler:
         if user:
             chat_doc["user"] = user
         collection.insert_one(chat_doc)
+
 
     def save_aggregation(self, user: str, aggregation_data: dict):
         """

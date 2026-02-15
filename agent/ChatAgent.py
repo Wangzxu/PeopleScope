@@ -23,6 +23,10 @@ SYSTEM_PROMPT_TEMPLATE = """
         - 用户偏好聊天风格标签：{style_tags}
         - 用户偏好聊天主题标签：{topic_tags}
         
+        【相关历史对话】
+        以下是用户过去与当前问题最相关的几条发言，可作为参考：
+        {related_chats}
+        
         【当前会话信息】
         - 当前会话主题（title）：{title}
         
@@ -63,12 +67,17 @@ class ChatAgent:
         user: str,
         tags: str,
         message: str,
-        session_id: int
+        session_id: int,
+        related_chats: list = None
     ) -> str:
+        
+        related_chats_str = "\n".join(related_chats) if related_chats else "无"
+
         system_prompt = SYSTEM_PROMPT_TEMPLATE.format(
             user=user,
             style_tags=tags["style"],
             topic_tags=tags["topic"],
+            related_chats=related_chats_str,
             title=title
         )
 
@@ -86,4 +95,5 @@ class ChatAgent:
         )
 
         return res["structured_response"].answer
+
 

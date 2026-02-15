@@ -32,6 +32,21 @@ class ChatRepository:
         finally:
             session.close()
 
+    def save_chat_mongo(self, chat: ChatModel, user: str):
+        self.mongo.save_chat(
+            session_id=chat.session_id,
+            message_type=chat.type,
+            content=chat.content,
+            user=user
+        )
+
+    def get_related_chats(self, user: str, query_text: str, limit: int = 3):
+        try:
+            return self.mongo.get_related_chats(user, query_text, limit)
+        except Exception:
+            # 如果文本搜索失败（例如索引未建立），返回空列表或进行错误处理
+            return []
+
     def delete_chats_by_session(self, session_id: int):
         session = self.mysql.get_session()
         try:
