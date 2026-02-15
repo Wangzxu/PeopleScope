@@ -4,7 +4,8 @@ from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
 from core.logger import setup_logger
-from core.agent import get_model
+from core.container import db_container
+from core.agent import LLMType
 from model.question import QuestionTrait
 
 
@@ -59,7 +60,7 @@ system_prompt = f"""
     """
 
 agent = create_agent(
-    model=get_model(),
+    model=db_container.get_model().get_model(LLMType.BALANCED),
     system_prompt=system_prompt,
     tools=[],
     response_format=ProviderStrategy(Output)

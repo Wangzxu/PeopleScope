@@ -9,16 +9,15 @@ class UserRepository:
         self.mysql = mysql
         self.mongo = mongo
 
-    def get_user_by_name(self, user: str, db: Session = None) -> UserModel:
-        session = db or self.mysql.get_session()
+    def get_user_by_name(self, user: str) -> UserModel:
+        session = self.mysql.get_session()
         try:
             return session.query(UserModel).filter(UserModel.user == user).first()
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def update_user(self, user: UserModel, db: Session = None):
-        session = db or self.mysql.get_session()
+    def update_user(self, user: UserModel):
+        session = self.mysql.get_session()
         try:
             session.add(user)
             session.commit()
@@ -28,5 +27,4 @@ class UserRepository:
             session.rollback()
             raise
         finally:
-            if db is None:
-                session.close()
+            session.close()

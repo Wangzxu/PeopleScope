@@ -9,8 +9,8 @@ class AggregationRepository:
         self.mysql = mysql
         self.mongo = mongo
 
-    def create(self, entity: AggregationModel, db: Session = None):
-        session = db or self.mysql.get_session()
+    def create(self, entity: AggregationModel):
+        session = self.mysql.get_session()
         try:
             session.add(entity)
             session.commit()
@@ -20,11 +20,10 @@ class AggregationRepository:
             session.rollback()
             raise
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def update(self, entity: AggregationModel, db: Session = None):
-        session = db or self.mysql.get_session()
+    def update(self, entity: AggregationModel):
+        session = self.mysql.get_session()
         try:
             session.add(entity)
             session.commit()
@@ -34,22 +33,19 @@ class AggregationRepository:
             session.rollback()
             raise
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def get_by_id(self, entity_id: int, db: Session = None):
-        session = db or self.mysql.get_session()
+    def get_by_id(self, entity_id: int):
+        session = self.mysql.get_session()
         try:
             entity = session.get(AggregationModel, entity_id)
             return entity
         finally:
-            if db is None:
-                session.close()
+            session.close()
 
-    def get_by_user(self, user: str, db: Session = None):
-        session = db or self.mysql.get_session()
+    def get_by_user(self, user: str):
+        session = self.mysql.get_session()
         try:
             return session.query(AggregationModel).filter(AggregationModel.user == user).first()
         finally:
-            if db is None:
-                session.close()
+            session.close()

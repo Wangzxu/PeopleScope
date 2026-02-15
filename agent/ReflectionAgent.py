@@ -3,7 +3,8 @@ from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
 from core.logger import setup_logger
-from core.agent import get_model
+from core.container import db_container
+from core.agent import LLMType
 from schema.relectionSchema import Reflection
 
 
@@ -63,7 +64,7 @@ system_prompt = """
         4. 仅输出 JSON，不要包含额外文字或解释。"""
 
 agent = create_agent(
-    model=get_model(),
+    model=db_container.get_model().get_model(LLMType.PRECISE),
     system_prompt=system_prompt,
     tools=[],
     response_format=ProviderStrategy(Output)

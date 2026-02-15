@@ -2,7 +2,8 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
-from core.agent import get_model
+from core.container import db_container
+from core.agent import LLMType
 
 
 class Output(BaseModel):
@@ -29,7 +30,7 @@ SYSTEM_PROMPT = """
 """
 
 agent = create_agent(
-    model=get_model(),
+    model=db_container.get_model().get_model(LLMType.PRECISE),
     system_prompt=SYSTEM_PROMPT,
     tools=[],
     response_format=ProviderStrategy(Output)
