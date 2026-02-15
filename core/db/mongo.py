@@ -3,10 +3,12 @@ from pymongo import MongoClient
 from pymongo.database import Database
 from core.config import MONGO_URI, MONGO_DB_NAME
 
+
 class MongoHandler:
     """
     MongoDB 数据库处理类，负责初始化客户端连接及具体数据操作。
     """
+
     def __init__(self):
         # 初始化 MongoDB 客户端
         self.client = MongoClient(MONGO_URI)

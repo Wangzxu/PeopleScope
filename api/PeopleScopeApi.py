@@ -1,6 +1,5 @@
 from fastapi import FastAPI, BackgroundTasks
 from starlette.middleware.cors import CORSMiddleware
-from uvicorn import run
 from core import logger
 from schema.relectionSchema import Reflection
 from model.result import Result
@@ -58,6 +57,7 @@ def get_questions(number: int):
     result = db_container.question_service.get_questions(number)
     if len(result) == number:
         logger.info('获取全部问题')
+
     else:
         logger.info(f'获取{number - len(result)}个问题')
     return Result.success(data=result)
@@ -159,5 +159,4 @@ def chat(dto: ChatRequest):
     return Result.success(data=ans)
 
 
-if __name__ == '__main__':
-    run("api.PeopleScopeApi:app", host='127.0.0.1', port=8080, reload=True)
+
