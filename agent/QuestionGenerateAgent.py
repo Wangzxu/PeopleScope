@@ -4,9 +4,11 @@ from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
 
-from core.logger import setup_logger
+from core.logger import get_logger
 from core.agent import LLMType
 from model.question import QuestionTrait
+
+logger = get_logger(__name__)
 
 
 class Question(BaseModel):
@@ -76,7 +78,6 @@ class QuestionGenerateAgent:
         res = self.agent.invoke({
             "messages": [HumanMessage(content=f"生成{number}个问题")]
         })
-        logger = setup_logger()
         logger.info(f"生成{number}个问题")
         entity_list = []
         for q in res["structured_response"].questions:

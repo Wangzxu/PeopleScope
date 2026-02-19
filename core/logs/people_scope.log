@@ -676,3 +676,671 @@
 [2026-02-14 12:59:15,682] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
 [2026-02-14 12:59:15,682] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取7对应的chats
 [2026-02-14 12:59:15,682] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 13:41:52,024] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-15 13:41:54,295] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-15 13:41:54,353] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-15 13:41:54,362] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 13:41:54,439] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-15 13:41:54,449] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-15 13:41:54,468] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-15 13:42:06,956] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 删除Session 7
+[2026-02-15 13:42:08,649] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取6对应的chats
+[2026-02-15 13:42:08,652] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 13:42:19,440] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=6,发来对话
+[2026-02-15 13:44:03,543] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-15 13:44:05,319] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-15 13:44:05,329] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-15 13:44:05,332] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 13:44:05,342] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-15 13:44:05,350] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-15 13:44:05,357] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-15 13:44:07,294] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取6对应的chats
+[2026-02-15 13:44:07,294] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 13:44:13,169] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=6,发来对话
+[2026-02-15 13:44:24,154] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 13:44:24,171] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 18:14:45,744] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取6对应的chats
+[2026-02-15 18:14:47,874] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 18:15:03,008] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=6,发来对话
+[2026-02-15 18:15:11,648] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 18:15:11,707] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 18:19:03,429] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=6,发来对话
+[2026-02-15 18:19:14,556] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 18:19:14,601] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 18:33:11,512] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-15 18:33:13,265] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-15 18:33:15,748] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-15 18:33:17,486] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 18:33:17,497] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-15 18:33:17,506] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-15 18:33:17,515] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-15 18:33:35,385] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 为用户user_1创建新Session，初始问题：你认为我最喜欢的动漫是什么
+[2026-02-15 18:33:45,921] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功创建Session: 8
+[2026-02-15 18:33:45,926] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-15 18:33:45,929] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-15 18:33:45,935] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取8对应的chats
+[2026-02-15 18:33:45,937] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 18:34:25,924] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=8,发来对话
+[2026-02-15 18:34:33,104] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 18:34:33,105] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 18:36:22,123] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 删除Session 8
+[2026-02-15 18:36:24,026] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-15 18:36:24,026] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 18:36:33,126] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 为用户user_1创建新Session，初始问题：你猜我喜欢哪个动漫
+[2026-02-15 18:36:45,837] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功创建Session: 9
+[2026-02-15 18:36:45,837] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-15 18:36:45,837] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-15 18:36:45,837] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取9对应的chats
+[2026-02-15 18:36:45,854] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 18:37:09,364] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=9,发来对话
+[2026-02-15 18:37:18,283] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 18:37:18,300] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 18:38:34,277] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=9,发来对话
+[2026-02-15 18:38:45,526] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 18:38:45,534] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 18:41:13,106] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=9,发来对话
+[2026-02-15 18:41:22,165] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 18:41:22,183] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 21:07:48,892] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-15 21:07:50,846] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-15 21:07:50,852] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-15 21:07:50,862] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 21:07:50,885] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-15 21:07:50,895] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-15 21:07:50,908] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-15 21:07:53,027] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取9对应的chats
+[2026-02-15 21:07:53,027] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 21:07:55,830] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取6对应的chats
+[2026-02-15 21:07:55,832] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 21:08:09,631] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=6,发来对话
+[2026-02-15 21:08:20,160] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 21:08:22,564] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 21:08:40,034] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=6,发来对话
+[2026-02-15 21:08:51,581] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 21:08:53,884] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 21:08:57,495] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取9对应的chats
+[2026-02-15 21:08:57,495] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 21:09:10,383] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=9,发来对话
+[2026-02-15 21:09:21,486] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 21:09:23,816] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-15 21:09:45,011] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取6对应的chats
+[2026-02-15 21:09:45,013] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 21:09:59,418] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取9对应的chats
+[2026-02-15 21:09:59,418] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-15 21:17:02,912] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=9,发来对话
+[2026-02-15 21:17:17,357] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-15 21:17:19,750] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-19 19:47:22,492] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-19 19:47:25,219] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-19 19:47:25,244] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-19 19:47:25,257] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:47:25,332] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-19 19:47:25,344] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-19 19:47:25,365] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-19 19:47:32,430] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取9对应的chats
+[2026-02-19 19:47:32,430] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:47:37,935] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取6对应的chats
+[2026-02-19 19:47:37,935] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:47:39,686] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取9对应的chats
+[2026-02-19 19:47:39,701] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:47:43,734] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 删除Session 9
+[2026-02-19 19:47:43,761] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-19 19:47:43,763] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:47:46,266] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 删除Session 6
+[2026-02-19 19:48:03,620] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 为用户user_1创建新Session，初始问题：根据我的近期喜好给我推荐动漫
+[2026-02-19 19:49:26,649] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-19 19:49:26,655] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-19 19:49:26,664] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-19 19:49:26,667] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:49:26,677] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-19 19:49:26,680] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-19 19:49:26,688] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-19 19:49:38,390] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 为用户user_1创建新Session，初始问题：猜测我喜欢的动漫类型
+[2026-02-19 19:50:45,794] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-19 19:50:47,405] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-19 19:50:47,406] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-19 19:50:47,415] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:50:47,422] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-19 19:50:47,435] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-19 19:50:47,442] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-19 19:50:50,252] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取10对应的chats
+[2026-02-19 19:50:50,254] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:50:58,712] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 删除Session 10
+[2026-02-19 19:50:58,729] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-19 19:50:58,732] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:51:02,795] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 为用户user_1创建新Session，初始问题：猜测我喜欢的动漫类型
+[2026-02-19 19:54:31,729] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-19 19:54:33,312] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-19 19:54:33,318] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取1对应的chats
+[2026-02-19 19:54:33,322] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:54:33,336] [INFO] [PeopleScope] [PeopleScopeApi.py:83] - 获取用户user_1的aggregation
+[2026-02-19 19:54:33,345] [INFO] [PeopleScope] [PeopleScopeApi.py:85] - 成功获取
+[2026-02-19 19:54:33,354] [INFO] [PeopleScope] [PeopleScopeApi.py:132] - 获取用户user_1的信息
+[2026-02-19 19:54:34,787] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取11对应的chats
+[2026-02-19 19:54:34,787] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:54:46,757] [INFO] [PeopleScope] [PeopleScopeApi.py:99] - 为用户user_1创建新Session，初始问题：猜测我喜欢的动漫类型
+[2026-02-19 19:54:54,071] [INFO] [PeopleScope] [PeopleScopeApi.py:116] - 删除Session 11
+[2026-02-19 19:55:36,982] [INFO] [PeopleScope] [PeopleScopeApi.py:101] - 成功创建Session: 12
+[2026-02-19 19:55:36,990] [INFO] [PeopleScope] [PeopleScopeApi.py:91] - 获取用户user_1的Session
+[2026-02-19 19:55:36,991] [INFO] [PeopleScope] [PeopleScopeApi.py:93] - 成功获取
+[2026-02-19 19:55:36,999] [INFO] [PeopleScope] [PeopleScopeApi.py:141] - 获取12对应的chats
+[2026-02-19 19:55:37,001] [INFO] [PeopleScope] [PeopleScopeApi.py:143] - 成功获取
+[2026-02-19 19:56:11,140] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=12,发来对话
+[2026-02-19 19:56:21,616] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-19 19:56:23,940] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-19 19:56:49,960] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=12,发来对话
+[2026-02-19 19:57:17,396] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-19 19:57:19,688] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-19 19:59:46,817] [INFO] [PeopleScope] [PeopleScopeApi.py:153] - 用户user_1,session_id=12,发来对话
+[2026-02-19 19:59:58,115] [INFO] [PeopleScope] [PeopleScopeApi.py:155] - 成功回复
+[2026-02-19 20:00:00,449] [INFO] [PeopleScope] [PeopleScopeApi.py:158] - 成功存储请求和ai返回
+[2026-02-19 20:22:44,470] [INFO] [watchfiles.main] [main.py:308] - 7 changes detected
+[2026-02-19 20:22:45,057] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-19 20:22:45,139] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:22:45,502] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:22:45,864] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:22:46,124] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-19 20:22:46,224] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:22:46,588] [INFO] [watchfiles.main] [main.py:308] - 5 changes detected
+[2026-02-19 20:22:46,780] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-19 20:22:46,792] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-19 20:22:46,796] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 11 条聊天记录。
+[2026-02-19 20:22:46,803] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-19 20:22:46,813] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-19 20:22:46,823] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-19 20:22:46,823] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-19 20:22:46,946] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:22:47,347] [INFO] [watchfiles.main] [main.py:308] - 2 changes detected
+[2026-02-19 20:22:47,700] [INFO] [watchfiles.main] [main.py:308] - 2 changes detected
+[2026-02-19 20:22:49,715] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:49,987] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:57,375] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 12
+[2026-02-19 20:23:57,378] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 8 条聊天记录。
+[2026-02-19 20:23:57,442] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:57,795] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:58,160] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:58,526] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:58,877] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:59,231] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:59,594] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:23:59,611] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:117] - 执行会话删除操作，SessionID: 12
+[2026-02-19 20:23:59,615] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:120] - 会话 [12] 及其相关记录已成功删除。
+[2026-02-19 20:23:59,627] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-19 20:23:59,630] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 11 条聊天记录。
+[2026-02-19 20:23:59,947] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:00,310] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:00,662] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:01,021] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:01,376] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:01,743] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:02,102] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:02,461] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:02,825] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:03,185] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:03,539] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:24:03,894] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:00,580] [INFO] [watchfiles.main] [main.py:308] - 5 changes detected
+[2026-02-19 20:26:13,599] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 4
+[2026-02-19 20:26:13,676] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:14,028] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:14,395] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:14,661] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-19 20:26:14,753] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:15,112] [INFO] [watchfiles.main] [main.py:308] - 5 changes detected
+[2026-02-19 20:26:15,395] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 2 条聊天记录。
+[2026-02-19 20:26:15,463] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:15,827] [INFO] [watchfiles.main] [main.py:308] - 2 changes detected
+[2026-02-19 20:26:16,180] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:16,531] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:16,895] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:17,246] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:17,607] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:17,971] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:18,325] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:18,690] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:19,046] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:19,408] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:19,760] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:20,123] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:20,486] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:20,843] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:21,207] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:21,560] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:21,923] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:22,289] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:22,649] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:23,002] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:23,359] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:23,724] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:24,079] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:24,442] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:24,794] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:24,833] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:158] - 接收到对话请求：用户=[user_1], SessionID=[4]
+[2026-02-19 20:26:25,160] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:25,514] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:25,877] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:26,244] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:26,611] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:26,963] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:27,327] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:27,611] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/embeddings "HTTP/1.1 200 OK"
+[2026-02-19 20:26:27,729] [INFO] [watchfiles.main] [main.py:308] - 5 changes detected
+[2026-02-19 20:26:28,848] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:30,550] [INFO] [backoff] [_common.py:105] - Backing off send_request(...) for 0.2s (requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)))
+[2026-02-19 20:26:30,622] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:30,987] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:31,346] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:31,701] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:32,057] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:32,409] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:32,769] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:33,127] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:33,486] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:33,844] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:34,202] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:34,563] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:34,916] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:35,275] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:35,633] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:35,991] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:36,350] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:36,707] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:37,047] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-19 20:26:37,062] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:160] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-19 20:26:37,071] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:37,425] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:37,781] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:38,135] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:38,492] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:38,852] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:39,207] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:39,429] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/embeddings "HTTP/1.1 200 OK"
+[2026-02-19 20:26:39,495] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:163] - 对话交互记录持久化成功。
+[2026-02-19 20:26:39,566] [INFO] [watchfiles.main] [main.py:308] - 5 changes detected
+[2026-02-19 20:26:39,923] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:40,282] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:40,638] [INFO] [watchfiles.main] [main.py:308] - 2 changes detected
+[2026-02-19 20:26:40,996] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:41,356] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:41,714] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:42,071] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:42,429] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:42,787] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:43,143] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:43,500] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:43,857] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:44,218] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:44,576] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:44,937] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:45,299] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:45,654] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:46,011] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:46,378] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:46,735] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:47,091] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:47,448] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:47,804] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:48,163] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:48,520] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:48,878] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:49,237] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:49,596] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:49,951] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:50,311] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:50,669] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:51,026] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:51,385] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:51,741] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:52,099] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:52,454] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:52,811] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:53,168] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:53,522] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:53,882] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:54,240] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:54,598] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:54,955] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:55,318] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:55,674] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:56,032] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:56,389] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:56,749] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:57,107] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:57,464] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:57,823] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:58,180] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:58,538] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:58,899] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:59,255] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:59,609] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:26:59,966] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:00,326] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:00,682] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:01,038] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:01,394] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:01,754] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:02,111] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:02,470] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:02,824] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:03,178] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:03,539] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:03,895] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:04,248] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:04,607] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:04,962] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:05,320] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:05,677] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:06,034] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:06,394] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:06,754] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:07,111] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:07,468] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:07,822] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:08,178] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:08,537] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:08,899] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:09,258] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:09,616] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:09,974] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:10,339] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:10,700] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:11,061] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:11,414] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:11,771] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:12,125] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:12,481] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:12,839] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:13,197] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:13,554] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:13,910] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:14,268] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:14,625] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:14,982] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:15,342] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:15,696] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:16,057] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:16,414] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:16,773] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:17,133] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:17,492] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:17,848] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:18,210] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:18,562] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:18,920] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:19,277] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:19,634] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:19,987] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:20,351] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:20,705] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:21,059] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:21,415] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:21,769] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:22,124] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:22,483] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:22,843] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:23,201] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:23,561] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:23,917] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:24,273] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:24,636] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:24,989] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:25,346] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:25,706] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:26,063] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:26,417] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:26,776] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:27,130] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:27,490] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:27,846] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:28,202] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:28,566] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:28,932] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:29,295] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:29,656] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:30,020] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:30,374] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:30,737] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:31,090] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:31,452] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:31,810] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:32,166] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:32,521] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:32,880] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:33,236] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:33,594] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:33,950] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:34,303] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:34,669] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:35,032] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:35,397] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:35,751] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:36,108] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:36,473] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:36,838] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:37,203] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:37,568] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:37,933] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:38,285] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:38,643] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:39,000] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:39,359] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:39,716] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:40,081] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:40,440] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:40,791] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:41,150] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:41,514] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:41,867] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:42,223] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:42,575] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:42,935] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:43,294] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:43,658] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:44,019] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:44,383] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:44,749] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:45,114] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:45,468] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:45,822] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:46,180] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:46,534] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:46,885] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:47,250] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:47,601] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:47,967] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:48,318] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:48,670] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:49,034] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:49,389] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:49,750] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:50,109] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:50,464] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:50,818] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:51,184] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:51,550] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:51,901] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:52,266] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:52,618] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:52,983] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:53,335] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:53,701] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:54,067] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:54,432] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:54,785] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:55,150] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:55,513] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:55,865] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:56,216] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:56,579] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:56,934] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:57,300] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:57,665] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:58,016] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:58,370] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:58,724] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:59,084] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:59,449] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:27:59,808] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:00,165] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:00,518] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:00,873] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:01,232] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:01,586] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:01,940] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:02,301] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:02,664] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:03,019] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:03,378] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:03,738] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:04,104] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:04,465] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:04,821] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:05,178] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:05,535] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:05,892] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:06,251] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:06,603] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:06,956] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:07,316] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:07,680] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:08,037] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:08,397] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:08,749] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:09,109] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:09,462] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:09,820] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:10,178] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:10,533] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:10,891] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:11,243] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:11,601] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:11,958] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:12,314] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:12,671] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:13,029] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:13,386] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:13,743] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:14,100] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:14,455] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:14,811] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:15,168] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:15,526] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:15,881] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:16,240] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:16,606] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:16,963] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:17,315] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:17,672] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:18,029] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:18,382] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:18,736] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:19,088] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:19,446] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:19,812] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:20,170] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:20,521] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:20,880] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:21,241] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:21,605] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:21,964] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:22,315] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:22,674] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:23,032] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:23,394] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:23,751] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:24,107] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:24,463] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:24,815] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:25,168] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:25,522] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:25,880] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:26,232] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:26,589] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:26,953] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:27,307] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:27,670] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:28,031] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:28,393] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:28,751] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:29,109] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:29,465] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:29,824] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:30,190] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:30,554] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:30,914] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:31,272] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:31,627] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:31,985] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:32,346] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:32,706] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:33,066] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:33,430] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:33,788] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:34,150] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:34,514] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:34,868] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:35,230] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:35,588] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:35,941] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:36,295] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:36,655] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:37,012] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:37,374] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:37,732] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:38,083] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:38,440] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:38,801] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:39,162] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:39,513] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:39,873] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:40,236] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:40,588] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:40,948] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:41,306] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:41,659] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:42,017] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:42,378] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:42,735] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:43,096] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:43,461] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:43,813] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:44,177] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:44,537] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:44,895] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:45,249] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:45,604] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:45,961] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:46,319] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:46,678] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:47,035] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:47,388] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:47,742] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:48,097] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:48,453] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:48,807] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:49,165] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:49,531] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:49,887] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:50,242] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:50,602] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:50,958] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:51,310] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:51,662] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:52,014] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:52,368] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:52,725] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:53,082] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:53,437] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:53,795] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:54,158] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:54,509] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:54,875] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:55,227] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:55,589] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:55,952] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:56,304] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:28:56,660] [INFO] [watchfiles.main] [main.py:308] - 1 change detected
+[2026-02-19 20:29:03,914] [INFO] [watchfiles.main] [main.py:308] - 4 changes detected
+[2026-02-19 20:30:59,017] [INFO] [watchfiles.main] [main.py:308] - 9 changes detected
+[2026-02-19 20:31:01,852] [INFO] [watchfiles.main] [main.py:308] - 6 changes detected
+[2026-02-19 20:35:49,947] [INFO] [watchfiles.main] [main.py:308] - 2 changes detected

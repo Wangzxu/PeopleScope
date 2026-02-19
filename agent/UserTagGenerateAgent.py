@@ -1,13 +1,12 @@
 from typing import List
-
 from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
-from pydantic import BaseModel, Field
-
-from core.logger import setup_logger
+from pydantic import BaseModel
+from core.logger import get_logger
 from core.agent import LLMType
-from model.aggregation import AggregationModel
+
+logger = get_logger(__name__)
 
 
 class Output(BaseModel):
@@ -65,7 +64,6 @@ class UserTagGenerateAgent:
         res = self.agent.invoke({
             "messages": [HumanMessage(content=f"根据用户的性格{summary}和会话记录{conv},以及几个会话的主题{title}，推测用户喜欢的聊天风格和聊天内容")]
         })
-        logger = setup_logger()
         logger.info(f"反馈用户本次分析结果: {res['structured_response']}")
         style_tags = res['structured_response'].style_tags
         topic_tags = res['structured_response'].topic_tags

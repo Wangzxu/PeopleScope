@@ -1,6 +1,8 @@
-from api.PeopleScopeApi import logger
+from core.logger import get_logger
 from model.chat import ChatModel
 from repository.ChatRepository import ChatRepository
+
+logger = get_logger(__name__)
 
 
 # Removed direct imports of Service classes to avoid circular imports at module level
@@ -32,7 +34,8 @@ class ChatService:
         # 获取最相关的3条历史对话
         related_chats = self.chat_repo.get_related_chats(user, message, limit=3)
 
-        logger.info(f"输出最相关的三句话：", related_chats)
+        # 把变量直接放进字符串大括号里
+        logger.info(f"最相关的三个问题：{related_chats}")
 
         return self.chat_agent.generate_answer(title, user, entity.tags, message, session_id, related_chats)
 

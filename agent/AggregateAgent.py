@@ -3,18 +3,10 @@ from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
 from core.agent import LLMType
-from core.logger import setup_logger
+from core.logger import get_logger
 from model.aggregation import AggregationModel
 
-
-from langchain.agents import create_agent
-from langchain.agents.structured_output import ProviderStrategy
-from langchain_core.messages import HumanMessage
-from pydantic import BaseModel, Field
-
-from core.agent import LLMType
-from core.logger import setup_logger
-from model.aggregation import AggregationModel
+logger = get_logger(__name__)
 
 
 class Output(BaseModel):
@@ -75,7 +67,6 @@ class AggregateAgent:
         res = self.agent.invoke({
             "messages": [HumanMessage(content=f"根据{aggregate}中十个维度的打分进行总结")]
         })
-        logger = setup_logger()
         logger.info(f"反馈用户本次分析结果：{aggregate.user}的本轮分析为: {res['structured_response']}")
         summary = res['structured_response'].summary
         return summary

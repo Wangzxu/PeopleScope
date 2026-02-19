@@ -2,9 +2,11 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
-from core.logger import setup_logger
+from core.logger import get_logger
 from core.agent import LLMType
 from schema.relectionSchema import Reflection
+
+logger = get_logger(__name__)
 
 
 class Traits(BaseModel):
@@ -78,7 +80,6 @@ class ReflectionAgent:
         res = self.agent.invoke({
             "messages": [HumanMessage(content=f"根据本次问答{reflection}生成新的用户画像")]
         })
-        logger = setup_logger()
         logger.info(f"反馈用户本次分析结果：{reflection.user}的本轮分析为: {res['structured_response']}")
         summary = res['structured_response'].summary
         traits = res['structured_response'].traits

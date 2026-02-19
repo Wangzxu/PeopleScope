@@ -1,9 +1,9 @@
-from core import logger
+from core.logger import get_logger
 from core.config import TRAIT_FIELDS
 from repository.AggregationRepository import AggregationRepository
 from repository.ReflectionRepository import ReflectionRepository
 
-logger = logger.setup_logger()
+logger = get_logger(__name__)
 
 
 class AggregationService:

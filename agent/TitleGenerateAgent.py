@@ -2,18 +2,6 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
-
-from core.agent import LLMType
-
-
-class Output(BaseModel):
-    title: str = Field(..., description="生成的简短讨论主题")
-
-
-from langchain.agents import create_agent
-from langchain.agents.structured_output import ProviderStrategy
-from langchain_core.messages import HumanMessage
-from pydantic import BaseModel, Field
 from core.agent import LLMType
 
 
