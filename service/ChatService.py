@@ -31,13 +31,28 @@ class ChatService:
         title = session.title
         entity = self.user_service.get_user(user)
 
-        # 获取最相关的3条历史对话
-        related_chats = self.chat_repo.get_related_chats(user, message, limit=3)
+        # 获取最相关的3条事实记忆
+        related_facts = self.chat_repo.get_related_facts(user, message, limit=3)
 
         # 把变量直接放进字符串大括号里
-        logger.info(f"最相关的三个问题：{related_chats}")
+        logger.info(f"最相关的三个记忆片段：{related_facts}")
 
-        return self.chat_agent.generate_answer(title, user, entity.tags, message, session_id, related_chats)
+        answer, facts = self.chat_agent.generate_answer(title, user, entity.tags, message, session_id, related_facts)
+        
+        # 处理提取的事实
+        if facts:
+            logger.info(f"提取到新事实：{facts}")
+            for fact in facts:
+                # check similarity > 95% (distance < 0.15)
+                if not self.chat_repo.check_fact_exists(user, fact, threshold=0.15):
+                    logger.info(f"存储新事实: {fact}")
+                    self.chat_repo.save_fact_chroma(fact, user, session_id)
+                else:
+                    logger.info(f"事实已存在，跳过存储: {fact}")
+        else:
+            logger.info(f"未提取到事实")
+
+        return answer
 
     def save_chat(self, session_id: int, type: int, content: str):
         chats = self.chat_repo.get_chats_by_session(session_id)
@@ -49,11 +64,5 @@ class ChatService:
 
         # 保存到 MySQL
         saved_chat = self.chat_repo.save_chat(chat)
-
-        # 获取用户信息并保存到 MongoDB (ChromaDB)
-        if type == 0:
-            session = self.session_service.get_session(session_id)
-            if session:
-                self.chat_repo.save_chat_chroma(saved_chat, session.user)
 
         return saved_chat

@@ -42,6 +42,28 @@ class ChatRepository:
                 "user": user
             }
         )
+        
+    def save_fact_chroma(self, fact_text: str, user: str, session_id: int):
+        """保存提取的事实到 ChromaDB"""
+        self.chroma.add_chat(
+            user=user,
+            content=fact_text,
+            metadata={
+                "session_id": session_id,
+                "type": 2, # Use type 2 for facts
+                "user": user
+            }
+        )
+
+    def check_fact_exists(self, user: str, fact_text: str, threshold: float = 0.15) -> bool:
+        """检查是否存在相似事实"""
+        return self.chroma.check_fact_exists(user, fact_text, threshold)
+
+    def get_related_facts(self, user: str, query_text: str, limit: int = 3):
+        try:
+            return self.chroma.query_similar_facts(user, query_text, n_results=limit)
+        except Exception:
+            return []
 
     def get_related_chats(self, user: str, query_text: str, limit: int = 3):
         try:

@@ -69,6 +69,59 @@ class ChromaHandler:
             return results["documents"][0]
         return []
 
+    def query_similar_facts(self, user: str, query_text: str, n_results: int = 3):
+        """
+        查询最相关的事实记忆
+        :param user: 用户名 (用于过滤)
+        :param query_text: 查询文本
+        :param n_results: 返回结果数量
+        :return: 相关事实列表 (content list)
+        """
+        query_embedding = self.embedding_service.embed_query(query_text)
+
+        # 过滤条件：用户匹配 且 类型为事实(type=2)
+        # ChromaDB where dict implies AND
+        where_filter = {
+            "$and": [
+                {"user": {"$eq": user}},
+                {"type": {"$eq": 2}}
+            ]
+        }
+
+        results = self.collection.query(
+            query_embeddings=[query_embedding],
+            n_results=n_results,
+            where=where_filter
+        )
+
+        # results["documents"] 是 list of list
+        if results["documents"] and len(results["documents"]) > 0:
+            return results["documents"][0]
+        return []
+
+    def check_fact_exists(self, user: str, fact_text: str, threshold: float = 0.15) -> bool:
+        """
+        检查是否存在相似的事实
+        :param user: 用户名
+        :param fact_text: 待检查的事实文本
+        :param threshold: 相似度阈值 (距离越小越相似，0为完全相同。默认0.15约为92.5%相似度)
+        :return: True if exists, False otherwise
+        """
+        query_embedding = self.embedding_service.embed_query(fact_text)
+        
+        results = self.collection.query(
+            query_embeddings=[query_embedding],
+            n_results=1,
+            where={"user": user},
+            include=["distances"]
+        )
+        
+        if results["distances"] and len(results["distances"][0]) > 0:
+            distance = results["distances"][0][0]
+            if distance < threshold:
+                return True
+        return False
+
     def delete_chats_by_session(self, session_id: int):
         """
         根据会话ID删除相关聊天记录

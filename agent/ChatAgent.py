@@ -1,3 +1,4 @@
+from typing import List
 from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
@@ -8,14 +9,15 @@ from core.agent import LLMType
 
 class Output(BaseModel):
     answer: str = Field(..., description="根据过往用户画像和现在问题的回答")
+    facts: List[str] = Field(..., description="从当前对话中提取的关于用户的关键事实（如偏好、性格、背景等）。如果没有新的有效事实，返回空列表。忽略闲聊或无意义的信息。")
 
 
 SYSTEM_PROMPT_TEMPLATE = """
         你是一个长期陪伴用户的对话型 AI 助手。
         
         【你的目标】
-        在保持当前会话主题一致的前提下，
-        根据用户的稳定偏好，生成符合其聊天风格和兴趣的回复。
+        1. 在保持当前会话主题一致的前提下，根据用户的稳定偏好，生成符合其聊天风格和兴趣的回复。
+        2. 敏锐地捕捉用户在对话中透露的**长期记忆**信息（如喜好、厌恶、生活背景、性格特质等），并将其提取为独立的事实语句。
         
         【用户画像信息】
         - 用户名：{user}
@@ -36,13 +38,19 @@ SYSTEM_PROMPT_TEMPLATE = """
         4. 如果用户问题模糊，可适度引导澄清
         5. 不要过度说教，不要无关扩展
         
+        【记忆提取规则】
+        - **只提取**具有长期价值的信息（例如：“我喜欢吃川菜”、“我养了一只叫多多的猫”）。
+        - **忽略**临时性状态或闲聊（例如：“今天天气不错”、“猜猜我喜欢谁”、“我不告诉你”）。
+        - 事实描述应尽可能客观、完整，包含主语（用户）。
+        
         【输出要求】
         - 使用中文
         - 直接输出回复内容，不要解释你的思考过程
         请严格按照以下 JSON 格式输出，不要包含任何多余解释文本：
         
         {{
-          "answer": 具体输出内容
+          "answer": "你的回复内容",
+          "facts": ["用户事实1", "用户事实2"]
         }}
 """
 
@@ -68,7 +76,7 @@ class ChatAgent:
         message: str,
         session_id: int,
         related_chats: list = None
-    ) -> str:
+    ):
         
         related_chats_str = "\n".join(related_chats) if related_chats else "无"
 
@@ -93,6 +101,6 @@ class ChatAgent:
             config=config
         )
 
-        return res["structured_response"].answer
+        return res["structured_response"].answer, res["structured_response"].facts
 
 
