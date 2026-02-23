@@ -1,9 +1,10 @@
-from core.agent import LLMFactory
+from core.model import LLMFactory
 from core.db.mysql import MySQLHandler
 from core.db.mongo import MongoHandler
 from core.db.chroma import ChromaHandler
 from repository.AggregationRepository import AggregationRepository
 from repository.ChatRepository import ChatRepository
+from repository.InfoChatRepository import InfoChatRepository
 from repository.QuestionTraitRepository import QuestionRepository
 from repository.ReflectionRepository import ReflectionRepository
 from repository.SessionRepository import SessionRepository
@@ -14,6 +15,7 @@ from service.QuestionService import QuestionService
 from service.ReflectionService import ReflectionService
 from service.SessionService import SessionService
 from service.UserService import UserService
+from service.InfoChatService import InfoChatService
 
 from agent.AggregateAgent import AggregateAgent
 from agent.ChatAgent import ChatAgent
@@ -21,6 +23,8 @@ from agent.UserTagGenerateAgent import UserTagGenerateAgent
 from agent.QuestionGenerateAgent import QuestionGenerateAgent
 from agent.ReflectionAgent import ReflectionAgent
 from agent.TitleGenerateAgent import TitleGenerateAgent
+
+from graph.builder.infoBuilder import app as info_graph_app
 
 
 class Container:
@@ -41,6 +45,7 @@ class Container:
         self._reflection_repo = None
         self._session_repo = None
         self._user_repo = None
+        self._info_repo = None
 
         self._agg_service = None
         self._chat_service = None
@@ -48,6 +53,7 @@ class Container:
         self._reflection_service = None
         self._session_service = None
         self._user_service = None
+        self._info_chat_service = None
         
         self._aggregate_agent = None
         self._chat_agent = None
@@ -55,6 +61,8 @@ class Container:
         self._question_agent = None
         self._reflection_agent = None
         self._title_agent = None
+
+        self._info_graph = None
 
         self._llm = None
 
@@ -115,6 +123,12 @@ class Container:
         if self._user_repo is None:
             self._user_repo = UserRepository(self.mysql, self.mongo)
         return self._user_repo
+
+    @property
+    def info_repo(self):
+        if self._info_repo is None:
+            self._info_repo = InfoChatRepository(self.mysql, self.mongo)
+        return self._info_repo
         
     # --- Agents ---
     
@@ -153,6 +167,13 @@ class Container:
         if self._title_agent is None:
             self._title_agent = TitleGenerateAgent(self.get_model())
         return self._title_agent
+
+    # --- Graph ---
+    @property
+    def info_graph(self):
+        if self._info_graph is None:
+            self._info_graph = info_graph_app
+        return info_graph_app
 
     # --- Services ---
 
@@ -199,6 +220,12 @@ class Container:
             # 触发 ChatService 初始化，ChatService 反过来会获取 session_service (此时已不为 None)
             self._session_service.set_chat_service(self.chat_service)
         return self._session_service
+
+    @property
+    def info_chat_service(self):
+        if self._info_chat_service is None:
+            self._info_chat_service = InfoChatService(self.info_repo, self.info_graph)
+        return self._info_chat_service
 
     # --- Helper Methods ---
 

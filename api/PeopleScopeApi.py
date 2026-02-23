@@ -163,5 +163,13 @@ def chat(dto: ChatRequest):
     logger.info(f"对话交互记录持久化成功。")
     return Result.success(data=ans)
 
-
+@app.post('/info_chat')
+def chat(dto: ChatRequest):
+    logger.info(f"接收到对话请求：用户=[{dto.user}], SessionID=[{dto.session_id}]")
+    ans = db_container.info_chat_service.generate_chat(dto.user, dto.session_id, dto.message)
+    logger.info(f"Agent 响应生成完毕，准备持久化交互记录。")
+    db_container.info_chat_service.save_chat(dto.session_id, 0, dto.message)
+    db_container.info_chat_service.save_chat(dto.session_id, 1, ans)
+    logger.info(f"对话交互记录持久化成功。")
+    return Result.success(data=ans)
 

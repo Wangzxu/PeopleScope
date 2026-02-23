@@ -4,7 +4,7 @@ from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel
 from core.logger import get_logger
-from core.agent import LLMType
+from core.model import LLMType
 
 logger = get_logger(__name__)
 

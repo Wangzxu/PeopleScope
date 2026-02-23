@@ -4,7 +4,7 @@ from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.memory import InMemorySaver
 from pydantic import BaseModel, Field
-from core.agent import LLMType
+from core.model import LLMType
 
 
 class Output(BaseModel):

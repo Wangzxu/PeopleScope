@@ -30,3 +30,12 @@ class LLMFactory:
             check_embedding_ctx_length=False
         )
 
+    @staticmethod
+    def get_extract_model():
+        return init_chat_model(
+            model="Qwen/Qwen2.5-7B-Instruct",
+            model_provider="openai",
+            base_url="https://api.siliconflow.cn/v1",  # 官方域名
+            api_key=OPENAI_API_KEY
+        )
+

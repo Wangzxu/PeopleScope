@@ -652,6 +652,44 @@
         .modal-btn.confirm:hover {
             background-color: #dc2626;
         }
+        #session-list .session-item.special {
+            background-color: #fff1f2;
+            border-color: #fecdd3;
+        }
+        #session-list .session-item.special::before {
+            content: '\f004'; /* Heart icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: #e11d48;
+        }
+        #session-list .session-item.special.active {
+            background-color: #ffe4e6;
+            color: #be123c;
+            border-color: #fda4af;
+        }
+        #session-list .session-item.special.active::before {
+            color: #be123c;
+        }
+        
+        /* Hide delete option for special session in context menu */
+        .session-item.special + .menu-btn {
+             /* This selector won't work because menu-btn is inside the li. 
+                We need to handle this in JS or change HTML structure. 
+                Wait, the menu is global. We should handle the menu item visibility in JS.
+             */
+        }
+
+        .chat-panel.special-mode .chat-header {
+            background: linear-gradient(to right, #fff1f2, #ffffff);
+            border-bottom-color: #fda4af;
+        }
+        .chat-panel.special-mode .chat-header h2 {
+            color: #be123c;
+        }
+        .chat-panel.special-mode .chat-header .status-dot {
+            background-color: #e11d48;
+            box-shadow: 0 0 0 2px rgba(225, 29, 72, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -977,14 +1015,22 @@
                         
                         li.dataset.sessionId = session.id;
                         li.dataset.title = session.title;
+                        li.classList.add('session-item'); // Add base class
+
+                        const isSpecial = session.title.includes('交友助手');
+                        if (isSpecial) {
+                            li.classList.add('special');
+                        }
                         
+                        const menuHtml = isSpecial ? '' : '<button class="menu-btn" title="选项"><i class="fas fa-ellipsis-h"></i></button>';
+
                         li.innerHTML = `
                             <div class="session-item-content">
                                 <div class="text-container" style="display:flex; flex-direction:column; overflow:hidden; flex-grow:1;">
                                     <span class="title-text" style="overflow:hidden; text-overflow:ellipsis;">${session.title}</span>
                                     <span style="font-size:0.75em; color:#9ca3af;">${dateStr}</span>
                                 </div>
-                                <button class="menu-btn" title="选项"><i class="fas fa-ellipsis-h"></i></button>
+                                ${menuHtml}
                             </div>
                         `;
                         sessionList.appendChild(li);
@@ -1022,6 +1068,15 @@
                     const li = menuBtn.closest('li');
                     activeMenuSessionId = li.dataset.sessionId;
                     
+                    const isSpecial = li.classList.contains('special');
+                    
+                    // Show/Hide Delete Button based on session type
+                    if (isSpecial) {
+                        menuDeleteBtn.style.display = 'none';
+                    } else {
+                        menuDeleteBtn.style.display = 'flex'; // Restore default display
+                    }
+
                     const rect = menuBtn.getBoundingClientRect();
                     contextMenu.style.display = 'flex';
                     contextMenu.style.top = `${rect.bottom + window.scrollY}px`;
@@ -1159,10 +1214,17 @@
                 if (currentSessionId === sessionId) return;
                 currentSessionId = sessionId;
                 
+                const chatPanel = document.querySelector('.chat-panel');
+                chatPanel.classList.remove('special-mode');
+
                 document.querySelectorAll('#session-list li').forEach(li => {
                     if (li.dataset.sessionId == sessionId) {
                          li.classList.add('active');
                          if(!title) title = li.dataset.title || li.querySelector('span').textContent;
+                         
+                         if (li.classList.contains('special')) {
+                             chatPanel.classList.add('special-mode');
+                         }
                     } else {
                          li.classList.remove('active');
                     }
@@ -1346,7 +1408,11 @@
                     
                 } else {
                     // Existing Session Chat
-                    const response = await apiFetch('/chat', {
+                    const currentLi = document.querySelector(`li[data-session-id="${currentSessionId}"]`);
+                    const isSpecial = currentLi && currentLi.classList.contains('special');
+                    const endpoint = isSpecial ? '/info_chat' : '/chat';
+
+                    const response = await apiFetch(endpoint, {
                         method: 'POST',
                         body: JSON.stringify({
                             user: USER_ID,

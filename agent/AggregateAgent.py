@@ -2,7 +2,7 @@ from langchain.agents import create_agent
 from langchain.agents.structured_output import ProviderStrategy
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
-from core.agent import LLMType
+from core.model import LLMType
 from core.logger import get_logger
 from model.aggregation import AggregationModel
 

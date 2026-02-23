@@ -5,7 +5,7 @@ from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
 
 from core.logger import get_logger
-from core.agent import LLMType
+from core.model import LLMType
 from model.question import QuestionTrait
 
 logger = get_logger(__name__)
