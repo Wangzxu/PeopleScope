@@ -38,8 +38,10 @@ class InfoChatService:
         if friend_hardware_model:
             friend_hardware_data = FriendHardwareSchema(
                 user=friend_hardware_model.user,
-                birth_year=friend_hardware_model.birth_year,
-                height=friend_hardware_model.height,
+                birth_year_min=friend_hardware_model.birth_year_min,
+                birth_year_max=friend_hardware_model.birth_year_max,
+                height_min=friend_hardware_model.height_min,
+                height_max=friend_hardware_model.height_max,
                 city=friend_hardware_model.city,
                 education=friend_hardware_model.education,
                 occupation=friend_hardware_model.occupation,
@@ -97,8 +99,10 @@ class InfoChatService:
 
         new_friend_hardware = FriendHardware(
             user=user,
-            birth_year=updated_friend_data.birth_year,
-            height=updated_friend_data.height,
+            birth_year_min=updated_friend_data.birth_year_min,
+            birth_year_max=updated_friend_data.birth_year_max,
+            height_min=updated_friend_data.height_min,
+            height_max=updated_friend_data.height_max,
             city=updated_friend_data.city,
             education=updated_friend_data.education,
             occupation=updated_friend_data.occupation,

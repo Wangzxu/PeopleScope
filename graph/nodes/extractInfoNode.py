@@ -23,28 +23,24 @@ def extract_info_node(state: BasicHardwareState):
         4. 你只需要提取信息，不需要回复用户文本。
     """
     
-    # 使用最后一条用户消息进行提取
-    if messages and messages[-1].type == 'human':
-        # 1. 动态获取上下文：如果只有一条消息就取一条，有两条或以上就取最后两条
-        context_messages = messages[-2:]
+    # 获取最后一条用户消息进行提取
+    context_messages = messages[-2:]
 
-        # 2. 扁平化列表拼接（确保 chat_history 是 List[BaseMessage]）
-        chat_history = [SystemMessage(content=system_prompt)] + context_messages
+    # 2. 扁平化列表拼接（确保 chat_history 是 List[BaseMessage]）
+    chat_history = [SystemMessage(content=system_prompt)] + context_messages
 
-        # 3. 调用模型
-        response = llm.invoke(chat_history)
+    # 3. 调用模型
+    response = llm.invoke(chat_history)
         
-        updated_data = hardware_data.model_copy()
+    updated_data = hardware_data.model_copy()
 
-        # 如果有工具调用，更新数据
-        if response.tool_calls:
-            for tool_call in response.tool_calls:
-                if tool_call["name"] == "HardwareUpdate":
-                    args = tool_call["args"]
-                    for key, value in args.items():
-                        if value is not None and key in updated_data.model_dump():
-                            setattr(updated_data, key, value)
+    # 如果有工具调用，更新数据
+    if response.tool_calls:
+        for tool_call in response.tool_calls:
+            if tool_call["name"] == "HardwareUpdate":
+                args = tool_call["args"]
+                for key, value in args.items():
+                    if value is not None and key in updated_data.model_dump():
+                        setattr(updated_data, key, value)
                             
-        return {"hardware_data": updated_data}
-    
-    return {}
+    return {"hardware_data": updated_data}

@@ -13,9 +13,9 @@ class BasicHardwareSchema(BaseModel):
         None,
         description="常住城市。建议格式：'城市-区域'。示例：'上海-浦东'、'杭州-余杭'"
     )
-    education: Optional[str] = Field(
+    education: Optional[int] = Field(
         None,
-        description="最高学历。示例：'本科'、'硕士(海外)'、'博士'"
+        description="最高学历，用数字存储，比如3代表本科，4代表硕士，5代表博士"
     )
     occupation: Optional[str] = Field(
         None,
@@ -46,9 +46,9 @@ class HardwareUpdate(BaseModel):
         None,
         description="常住城市。建议格式：'城市-区域'。示例：'上海-浦东'、'杭州-余杭'"
     )
-    education: Optional[str] = Field(
+    education: Optional[int] = Field(
         None,
-        description="最高学历。示例：'本科'、'硕士(海外)'、'博士'"
+        description="最高学历，用数字存储，比如3代表本科，4代表硕士，5代表博士"
     )
     occupation: Optional[str] = Field(
         None,
@@ -70,18 +70,23 @@ class HardwareUpdate(BaseModel):
 
 class FriendHardwareSchema(BaseModel):
     user: Optional[str] = Field(None, description="用户名")
-    birth_year: Optional[str] = Field(None, description="期望的出生年份或范围")
-    height: Optional[int] = Field(
+    birth_year_min: Optional[int] = Field(None, description="期望的最小出生年份，如1995")
+    birth_year_max: Optional[int] = Field(None, description="期望的最大出生年份，如2000")
+    height_min: Optional[int] = Field(
         None,
-        description="身高数字，单位cm。示例：175。如果是'一米八'请转为180"
+        description="期望的最小身高数字，单位cm。示例：160"
+    )
+    height_max: Optional[int] = Field(
+        None,
+        description="期望的最大身高数字，单位cm。示例：180"
     )
     city: Optional[str] = Field(
         None,
         description="常住城市。建议格式：'城市-区域'。示例：'上海-浦东'、'杭州-余杭'"
     )
-    education: Optional[str] = Field(
+    education: Optional[int] = Field(
         None,
-        description="最高学历。示例：'本科'、'硕士(海外)'、'博士'"
+        description="最高学历，用数字存储，比如3代表本科，4代表硕士，5代表博士"
     )
     occupation: Optional[str] = Field(
         None,
@@ -103,18 +108,23 @@ class FriendHardwareSchema(BaseModel):
 
 class FriendHardwareUpdate(BaseModel):
     """用于更新用户缺失的期望朋友的硬件属性信息。如果用户提到了相关信息，请提取。"""
-    birth_year: Optional[str] = Field(None, description="期望的出生年份或范围")
-    height: Optional[int] = Field(
+    birth_year_min: Optional[int] = Field(None, description="期望的最小出生年份，如1995")
+    birth_year_max: Optional[int] = Field(None, description="期望的最大出生年份，如2000")
+    height_min: Optional[int] = Field(
         None,
-        description="身高数字，单位cm。示例：175。如果是'一米八'请转为180"
+        description="期望的最小身高数字，单位cm。示例：160"
+    )
+    height_max: Optional[int] = Field(
+        None,
+        description="期望的最大身高数字，单位cm。示例：180"
     )
     city: Optional[str] = Field(
         None,
         description="常住城市。建议格式：'城市-区域'。示例：'上海-浦东'、'杭州-余杭'"
     )
-    education: Optional[str] = Field(
+    education: Optional[int] = Field(
         None,
-        description="最高学历。示例：'本科'、'硕士(海外)'、'博士'"
+        description="最高学历，用数字存储，比如3代表本科，4代表硕士，5代表博士"
     )
     occupation: Optional[str] = Field(
         None,

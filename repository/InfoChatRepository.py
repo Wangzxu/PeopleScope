@@ -54,8 +54,10 @@ class InfoChatRepository:
         try:
             existing = session.query(FriendHardware).filter(FriendHardware.user == hardware.user).first()
             if existing:
-                existing.birth_year = hardware.birth_year
-                existing.height = hardware.height
+                existing.birth_year_min = hardware.birth_year_min
+                existing.birth_year_max = hardware.birth_year_max
+                existing.height_min = hardware.height_min
+                existing.height_max = hardware.height_max
                 existing.city = hardware.city
                 existing.education = hardware.education
                 existing.occupation = hardware.occupation
