@@ -1697,3 +1697,625 @@
 [2026-02-23 17:18:54,349] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 13 条聊天记录。
 [2026-02-23 17:18:55,272] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
 [2026-02-23 17:18:55,277] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 22 条聊天记录。
+[2026-02-27 14:47:29,606] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 14:47:31,242] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 14:47:32,654] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 14:47:32,678] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 14:47:32,686] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 22 条聊天记录。
+[2026-02-27 14:47:32,824] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 14:47:32,839] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 14:47:32,855] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 14:47:32,859] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 15:02:50,987] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 15:02:52,068] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 15:02:52,740] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 15:02:52,750] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 15:02:52,755] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 22 条聊天记录。
+[2026-02-27 15:02:52,768] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 15:02:52,776] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 15:02:52,785] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 15:02:52,790] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 15:03:22,290] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 15:03:22,294] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 15:03:22,315] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 15:03:22,318] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 15:03:22,323] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 15:03:22,345] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 15:03:22,352] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 15:03:22,356] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 15:03:29,278] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:03:32,565] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:03:34,275] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:03:34,294] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:03:34,304] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:03:41,925] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:03:44,969] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:03:46,527] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:03:46,538] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:03:46,549] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:04:00,768] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:04:03,256] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:04:06,857] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:04:06,867] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:04:06,877] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:04:29,874] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:04:32,203] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:04:35,110] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:04:35,121] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:04:35,130] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:04:48,358] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:04:51,036] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:04:52,639] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:04:52,649] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:04:52,651] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:06:03,341] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 15:06:04,312] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 15:06:04,982] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 15:06:04,990] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 15:06:04,995] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 8 条聊天记录。
+[2026-02-27 15:06:05,002] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 15:06:05,011] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 15:06:05,019] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 15:06:05,023] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 15:06:10,765] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:06:15,701] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:06:20,056] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:06:20,068] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:06:20,080] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:06:37,629] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:06:40,575] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:06:46,759] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:06:46,768] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:06:46,773] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:06:55,353] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:06:58,118] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:07:00,584] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:07:00,594] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:07:00,606] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:07:21,813] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:07:24,219] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:07:28,258] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:07:28,269] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:07:28,279] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:08:02,767] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:08:05,515] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:08:08,287] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:08:08,297] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:08:08,306] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:18:57,545] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 15:18:58,510] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 15:18:59,197] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 15:18:59,207] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 15:18:59,210] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 15:18:59,217] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 15:18:59,229] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 15:18:59,240] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 15:18:59,244] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 15:19:02,937] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:19:05,887] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:19:08,624] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:19:08,634] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:19:08,647] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:19:17,179] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:19:19,446] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:19:21,176] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:19:21,187] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:19:21,197] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:19:26,667] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:19:28,894] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:19:36,032] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:19:36,042] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:19:36,052] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:20:05,700] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:20:08,497] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:20:10,445] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:20:10,456] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:20:10,469] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:20:17,144] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:20:19,329] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:20:24,648] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:20:24,655] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:20:24,665] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:20:46,093] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:20:49,519] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:20:58,321] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:20:58,331] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:20:58,342] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:21:40,961] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:21:43,255] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:21:46,883] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:21:46,894] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:21:46,904] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:22:11,889] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:22:14,832] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:22:17,079] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:22:17,087] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:22:17,099] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:30:36,842] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 15:30:37,796] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 15:30:38,472] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 15:30:38,476] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 15:30:38,476] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 15:30:38,496] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 15:30:38,504] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 15:30:38,517] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 15:30:38,521] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 15:30:41,911] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:30:45,858] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:30:47,924] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:30:47,936] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:30:47,936] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:31:00,037] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:31:02,446] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:31:04,486] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:31:04,496] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:31:04,496] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:31:13,852] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:31:16,202] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:31:20,793] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:31:20,804] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:31:20,804] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:31:54,077] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:31:56,783] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:31:59,367] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:31:59,377] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:31:59,377] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:32:20,261] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:32:23,255] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:32:25,484] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:32:25,491] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:32:25,492] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:32:39,766] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:32:43,043] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:32:46,525] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:32:46,534] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:32:46,535] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:32:57,195] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:33:00,721] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:33:14,176] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:33:14,183] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:33:14,184] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:33:24,368] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:33:27,863] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:33:30,131] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:33:30,138] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:33:30,138] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:34:23,537] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:34:26,056] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:34:27,492] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:34:27,501] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:34:27,501] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:34:33,788] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:34:36,004] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:34:37,812] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:34:37,818] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:34:37,818] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:34:51,299] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:34:53,679] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:34:57,003] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:34:57,013] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:34:57,014] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:35:30,555] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:35:35,129] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:35:36,938] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:35:36,945] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:35:36,946] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:35:42,861] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:35:45,647] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:35:51,728] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:35:51,735] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:35:51,735] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:36:29,295] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 15:36:30,250] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 15:36:30,920] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 15:36:30,929] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 15:36:30,934] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 15:36:30,940] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 15:36:30,948] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 15:36:30,960] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 15:36:30,963] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 15:36:34,581] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:36:37,479] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:36:40,761] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:36:40,772] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:36:40,780] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:36:46,943] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:36:49,317] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:36:51,431] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:36:51,442] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:36:51,450] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:37:04,361] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:37:07,023] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:37:08,966] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:37:08,975] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:37:08,986] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:37:21,456] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:37:25,313] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:37:28,181] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:37:28,186] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:37:28,202] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:37:37,154] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:37:40,341] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:37:55,050] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:37:55,059] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:37:55,070] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:38:21,040] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:38:23,435] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:38:25,570] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:38:25,580] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:38:25,588] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:38:48,955] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:38:51,748] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:38:53,606] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:38:53,617] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:38:53,629] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:39:00,776] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:39:03,842] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:39:05,755] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:39:05,762] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:39:05,771] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 15:39:32,620] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 15:39:35,795] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:39:37,825] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 15:39:37,834] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 15:39:37,836] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:31:58,895] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 20:31:59,984] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 20:32:00,774] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 20:32:00,792] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 20:32:00,794] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 20:32:00,806] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 20:32:00,813] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 20:32:00,824] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 20:32:00,824] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 20:32:05,237] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:32:09,000] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:32:09,009] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': None, 'city': None, 'education': None, 'occupation': None, 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:32:11,255] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:32:11,268] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:32:11,280] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:32:24,487] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:32:27,655] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:32:27,656] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': None, 'city': None, 'education': None, 'occupation': None, 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:32:29,835] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:32:29,845] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:32:29,857] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:32:48,268] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:32:50,591] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:32:50,592] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': None, 'city': '北京-海淀区', 'education': None, 'occupation': None, 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:32:59,641] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:32:59,650] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:32:59,660] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:33:24,563] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:33:27,153] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:33:27,156] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': None, 'occupation': None, 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:33:28,867] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:33:28,877] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:33:28,886] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:33:40,585] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:33:43,428] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:33:43,431] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': None, 'occupation': None, 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:33:48,488] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:33:48,494] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:33:48,505] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:34:11,906] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:34:15,722] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:34:15,724] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': None, 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:34:20,730] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:34:20,739] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:34:20,747] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:34:26,558] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:34:28,942] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:34:28,944] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:34:31,952] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:34:31,961] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:34:31,971] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:34:47,748] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:34:50,566] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:34:50,568] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '后端开发', 'income_level': '20k~30k', 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:34:53,402] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:34:53,412] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:34:53,422] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:35:05,095] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:35:11,113] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:35:11,115] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '后端开发', 'income_level': '20k~30k', 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:35:13,638] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:35:13,645] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:35:13,655] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:35:35,100] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:35:37,488] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:35:37,489] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '后端开发', 'income_level': '20k~30k', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:35:40,665] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:35:40,675] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:35:40,686] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:36:13,721] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:36:16,992] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:36:16,994] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2000, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '后端开发', 'income_level': '20k~30k', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:36:31,188] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:36:31,197] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:36:31,211] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:45:20,389] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 20:45:21,370] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 20:45:22,045] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 20:45:22,055] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 20:45:22,058] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 20:45:22,068] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 20:45:22,076] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 20:45:22,085] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 20:45:22,089] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 20:45:24,928] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:45:27,912] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:45:27,921] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': None, 'city': None, 'education': None, 'occupation': None, 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:45:36,602] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:45:36,612] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:45:36,625] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:46:05,044] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:46:07,620] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:46:07,622] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': None, 'city': None, 'education': None, 'occupation': '计算机相关专业-后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:46:09,650] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:46:09,660] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:46:09,670] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:46:14,887] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:46:17,292] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:46:17,294] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': None, 'city': None, 'education': None, 'occupation': '计算机相关专业-后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:46:19,542] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:46:19,552] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:46:19,562] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:46:29,010] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:46:31,331] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:46:31,332] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': None, 'education': None, 'occupation': '计算机相关专业-后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': None}
+[2026-02-27 20:46:34,516] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:46:34,526] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:46:34,530] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:46:55,064] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:46:58,126] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:46:58,128] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀', 'education': None, 'occupation': '计算机相关专业-后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:47:00,699] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:47:00,709] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:47:00,720] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:47:10,822] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:47:13,486] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:47:13,488] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀', 'education': '研究生', 'occupation': '计算机相关专业-后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:47:16,353] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:47:16,362] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:47:16,371] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:47:47,331] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:47:51,095] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:47:51,096] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀', 'education': '研究生', 'occupation': '计算机相关专业-后端开发', 'income_level': '20w-30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:47:53,387] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:47:53,397] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:47:53,408] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:47:59,924] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:48:02,037] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:48:02,038] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀', 'education': '研究生', 'occupation': '计算机相关专业-后端开发', 'income_level': '20w-30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:48:05,546] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:48:05,554] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:48:05,560] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:48:14,006] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:48:16,598] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:48:16,600] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀', 'education': '研究生', 'occupation': '计算机相关专业-后端开发', 'income_level': '20w-30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:48:19,516] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:48:19,522] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:48:19,534] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:48:39,121] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:48:41,663] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:48:41,665] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀', 'education': '研究生', 'occupation': '计算机相关专业-后端开发', 'income_level': '20w-30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:48:44,455] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:48:44,461] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:48:44,471] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:51:37,473] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 20:51:38,450] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 20:51:39,164] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 20:51:39,176] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 20:51:39,179] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 20:51:39,186] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 20:51:39,197] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 20:51:39,201] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 20:51:39,209] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 20:52:30,892] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:52:34,701] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:52:34,709] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': None, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:52:37,397] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:52:37,410] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:52:37,421] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:52:55,001] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:52:58,737] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:52:58,738] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': None, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:53:00,565] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:53:00,572] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:53:00,577] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:53:14,620] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:53:39,720] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:53:39,722] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': 172, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:53:42,758] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:53:42,768] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:53:42,776] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:53:50,198] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:53:52,613] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:53:52,613] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:53:54,792] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:53:54,801] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:53:54,811] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:54:06,253] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:54:08,783] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:08,785] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '后端开发', 'income_level': '1w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:54:11,632] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:11,641] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:54:11,652] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:54:20,794] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:54:23,145] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:23,147] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '后端开发', 'income_level': '1w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:54:25,676] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:25,682] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:54:25,691] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:54:33,377] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:54:36,131] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:36,133] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '后端开发', 'income_level': '1w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:54:38,378] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:38,384] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:54:38,390] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:54:49,030] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:54:51,358] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:51,359] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '北京理工大学硕士', 'occupation': '互联网-计算机后端开发', 'income_level': '1w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:54:54,740] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:54:54,749] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:54:54,758] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:55:59,806] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 20:56:00,786] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 20:56:01,417] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 20:56:01,425] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 20:56:01,433] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 20:56:01,440] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 20:56:01,451] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 20:56:01,455] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 20:56:01,463] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 20:56:38,228] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:56:42,335] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:56:42,343] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:56:52,225] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:56:52,237] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:56:52,246] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:57:06,425] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:57:09,727] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:57:09,739] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:57:12,510] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:57:12,520] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:57:12,529] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:57:31,477] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:57:34,338] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:57:34,338] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': None, 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:57:40,077] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:57:40,084] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:57:40,088] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:57:47,934] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:57:50,554] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:57:50,556] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': '20w~30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:57:57,855] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:57:57,865] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:57:57,868] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:58:10,514] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:58:13,524] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:58:13,528] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': '20w~30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:58:15,326] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:58:15,333] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:58:15,339] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:58:29,129] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:58:32,089] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:58:32,091] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': '20w~30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:58:35,332] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:58:35,339] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:58:35,346] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:58:41,920] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:58:44,961] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:58:44,962] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': '20w~30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:58:46,820] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:58:46,826] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:58:46,836] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:59:10,376] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:59:13,230] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:59:13,231] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': '20w~30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:59:15,936] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:59:15,944] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:59:15,948] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 20:59:30,066] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 20:59:32,471] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:59:32,473] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京', 'education': '硕士', 'occupation': '后端开发', 'income_level': '20w~30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 20:59:37,351] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 20:59:37,358] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 20:59:37,368] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:05:17,676] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 21:05:18,654] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 21:05:19,326] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 21:05:19,332] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 21:05:19,335] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 21:05:19,343] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 21:05:19,351] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 21:05:19,357] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 21:05:19,364] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 21:06:16,107] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:09:31,959] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 21:09:32,939] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 21:09:33,606] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 21:09:33,620] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 21:09:33,624] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 0 条聊天记录。
+[2026-02-27 21:09:33,632] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 21:09:33,642] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 21:09:33,653] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 21:09:33,657] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 21:09:36,442] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:09:39,943] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:09:39,950] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': None, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '互联网-程序员', 'income_level': '20w-30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 21:09:47,399] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:09:47,417] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:09:47,423] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:09:58,266] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:10:00,538] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:10:00,540] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '互联网-程序员', 'income_level': '20w-30w', 'smoking_drinking': None, 'hometown': '新疆昌吉'}
+[2026-02-27 21:10:02,787] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:10:02,797] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:10:02,807] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:10:13,986] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:10:16,360] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:10:16,362] [INFO] [graph.nodes.checkStateNode] [checkStateNode.py:10] - DEBUG: Current Hardware Data: {'user': 'user_1', 'birth_year': 2002, 'height': 172, 'city': '北京-海淀区', 'education': '研究生', 'occupation': '互联网-程序员', 'income_level': '20w-30w', 'smoking_drinking': '不抽烟不喝酒', 'hometown': '新疆昌吉'}
+[2026-02-27 21:10:18,255] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:10:20,716] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:10:20,727] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:10:20,737] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:11:27,638] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:11:30,178] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:11:32,631] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:11:32,638] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:11:32,649] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:13:39,080] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 21:13:40,060] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 21:13:40,725] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 21:13:40,730] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 21:13:40,730] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 5 条聊天记录。
+[2026-02-27 21:13:40,746] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 21:13:40,750] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 21:13:40,760] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 21:13:40,765] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 21:14:01,838] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:14:05,160] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:14:07,224] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:14:07,232] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:14:07,240] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:19:15,724] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-02-27 21:19:16,689] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-02-27 21:19:17,358] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-02-27 21:19:17,368] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-02-27 21:19:17,372] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 5 条聊天记录。
+[2026-02-27 21:19:17,378] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-02-27 21:19:17,390] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-02-27 21:19:17,397] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-02-27 21:19:17,401] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-02-27 21:19:26,658] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:19:31,371] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:19:34,069] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:19:34,080] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:19:34,088] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:20:02,762] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:20:05,100] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:07,230] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:07,240] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:20:07,250] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:20:18,620] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:20:22,502] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:25,355] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:25,362] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:20:25,372] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:20:41,788] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:20:44,239] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:46,805] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:46,815] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:20:46,825] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:20:54,448] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:20:56,763] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:59,679] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:20:59,689] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:20:59,699] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-27 21:21:16,659] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-27 21:21:19,038] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:21:21,454] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-27 21:21:21,465] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-27 21:21:21,475] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。

@@ -17,17 +17,21 @@ def extract_info_node(state: BasicHardwareState):
         用户已提供的信息：{hardware_data.model_dump(exclude_none=True)}
     
         任务：
-        1. 检查用户的最新输入，如果包含上述 8 项基础信息中的任何一项，请必须调用工具 `HardwareUpdate` 进行提取。
-        2. 如果没有提取到任何信息，请不要调用工具。
-        3. 你只需要提取信息，不需要回复用户。
+        1. 分析用户的最新输入。如果用户提供了关于自身的、属于上述 8 项基础信息中的任何一项，请调用工具 `HardwareUpdate` 进行提取。
+        2. 【严禁脑补】只提取用户在最新回复中明确提供的确切信息。如果用户没有提到某个字段，在调用工具时绝对不要包含该字段（不要传空字符串、不要传0、不要传"未知"）。
+        3. 如果用户的输入没有包含任何有用的基础信息，请不要调用工具。
+        4. 你只需要提取信息，不需要回复用户文本。
     """
     
     # 使用最后一条用户消息进行提取
     if messages and messages[-1].type == 'human':
-        last_message = messages[-1]
-        chat_history = [SystemMessage(content=system_prompt), last_message]
-        
-        # 调用大模型
+        # 1. 动态获取上下文：如果只有一条消息就取一条，有两条或以上就取最后两条
+        context_messages = messages[-2:]
+
+        # 2. 扁平化列表拼接（确保 chat_history 是 List[BaseMessage]）
+        chat_history = [SystemMessage(content=system_prompt)] + context_messages
+
+        # 3. 调用模型
         response = llm.invoke(chat_history)
         
         updated_data = hardware_data.model_copy()
