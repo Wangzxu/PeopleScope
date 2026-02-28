@@ -9,6 +9,7 @@ from repository.QuestionTraitRepository import QuestionRepository
 from repository.ReflectionRepository import ReflectionRepository
 from repository.SessionRepository import SessionRepository
 from repository.UserRepository import UserRepository
+from repository.MatchResultRepository import MatchResultRepository
 from service.AggregationService import AggregationService
 from service.ChatService import ChatService
 from service.QuestionService import QuestionService
@@ -46,6 +47,7 @@ class Container:
         self._session_repo = None
         self._user_repo = None
         self._info_repo = None
+        self._match_result_repo = None
 
         self._agg_service = None
         self._chat_service = None
@@ -129,6 +131,12 @@ class Container:
         if self._info_repo is None:
             self._info_repo = InfoChatRepository(self.mysql, self.mongo)
         return self._info_repo
+        
+    @property
+    def match_result_repo(self):
+        if self._match_result_repo is None:
+            self._match_result_repo = MatchResultRepository(self.mysql)
+        return self._match_result_repo
         
     # --- Agents ---
     

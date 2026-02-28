@@ -1,4 +1,5 @@
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, TIMESTAMP
+from sqlalchemy.sql import func
 from core.db.mysql import Base
 
 
@@ -46,3 +47,5 @@ class FriendHardware(Base):
 
     # 生活习惯
     smoking_drinking = Column(String(128), comment="烟酒偏好，示例: '不抽烟不喝酒' 或 '社交性饮酒，不吸烟'")
+
+    updated_at = Column(TIMESTAMP, server_default=func.current_timestamp(), onupdate=func.current_timestamp(), comment="更新时间")

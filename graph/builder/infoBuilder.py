@@ -5,8 +5,8 @@ from graph.nodes.checkStateNode import check_status_node
 from graph.nodes.infoAgentNode import info_agent_node
 from graph.nodes.extractInfoNode import extract_info_node
 from graph.nodes.extractFriendInfoNode import extract_friend_info_node
-from graph.nodes.checkFriendStateNode import check_friend_status_node
 from graph.nodes.infoFriendAgentNode import info_friend_agent_node
+from graph.nodes.recommendationNode import recommendation_node
 
 workflow = StateGraph(BasicHardwareState)
 
@@ -18,13 +18,14 @@ workflow.add_node("info_agent", info_agent_node)
 workflow.add_node("stage_transition_node", stage_transition_node)
 
 workflow.add_node("extract_friend_info", extract_friend_info_node)
-workflow.add_node("check_friend_status", check_friend_status_node)
 workflow.add_node("info_friend_agent", info_friend_agent_node)
+workflow.add_node("recommendation_node", recommendation_node)
 
 
 def router_node(state: BasicHardwareState):
-    # 简单的透传节点，用于路由
-    return state
+    # 简单的透传节点，用于路由。返回空字典表示不对 state 进行任何更新，
+    # 避免带有 operator.add 的字段（如 messages）发生内容翻倍的 bug。
+    return {}
 
 
 workflow.add_node("router", router_node)
@@ -78,17 +79,17 @@ workflow.add_edge("info_agent", END)
 workflow.add_edge("stage_transition_node", END)
 
 # 4. 第二阶段连线
-workflow.add_edge("extract_friend_info", "check_friend_status")
+workflow.add_edge("extract_friend_info", "info_friend_agent")
 
 workflow.add_conditional_edges(
-    "check_friend_status",
-    lambda x: "complete" if x["friend_is_complete"] else "continue",
+    "info_friend_agent",
+    lambda x: "complete" if x.get("friend_is_complete") else "continue",
     {
-        "continue": "info_friend_agent",
-        "complete": END  # 已完成所有采集，结束
+        "continue": END,
+        "complete": "recommendation_node"  # 已完成所有采集，进入推荐环节
     }
 )
 
-workflow.add_edge("info_friend_agent", END)
+workflow.add_edge("recommendation_node", END)
 
 app = workflow.compile()

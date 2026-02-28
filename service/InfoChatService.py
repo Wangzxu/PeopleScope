@@ -113,9 +113,16 @@ class InfoChatService:
         self.info_repo.save_or_update_friend_hardware(new_friend_hardware)
 
         # 获取 AI 回复
-        # 如果图执行结束，最后的消息应该是 AI 的追问
-        if result["messages"] and result["messages"][-1].type == 'ai':
-            ai_response_content = result["messages"][-1].content
+        # 如果图执行结束，最后的消息应该是新生成的 AI 消息
+        original_msg_count = len(messages)
+        print(original_msg_count)
+        new_messages = result["messages"][original_msg_count:]
+
+        for message in new_messages:
+            print(message)
+        
+        if new_messages:
+            ai_response_content = "\n\n".join([msg.content for msg in new_messages if msg.type == 'ai'])
         else:
             # 如果没有 AI 回复 (比如已经 complete 了，或者中间状态)，给个默认或者结束语
             if result.get("friend_is_complete"):
