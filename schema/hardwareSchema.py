@@ -108,15 +108,21 @@ class FriendHardwareSchema(BaseModel):
 
 class FriendHardwareUpdate(BaseModel):
     """用于更新用户缺失的期望朋友的硬件属性信息。如果用户提到了相关信息，请提取。"""
-    birth_year_min: Optional[int] = Field(None, description="期望的最小出生年份，如1995")
-    birth_year_max: Optional[int] = Field(None, description="期望的最大出生年份，如2000")
+    birth_year_min: Optional[int] = Field(
+        None,
+        description="期望对象的最小出生年份（即年龄最大值）。当前为2026年，若用户说'30岁'，计算为1996。若用户说'比我大3岁'，则为用户出生年份-3。"
+    )
+    birth_year_max: Optional[int] = Field(
+        None,
+        description="期望对象的最大出生年份（即年龄最小值）。若用户说'比我小2岁'，则为用户出生年份+2。"
+    )
     height_min: Optional[int] = Field(
         None,
-        description="期望的最小身高数字，单位cm。示例：160"
+        description="期望对象的最低身高（cm）。若用户说'比我高点'，取参考身高+2。示例：180"
     )
     height_max: Optional[int] = Field(
         None,
-        description="期望的最大身高数字，单位cm。示例：180"
+        description="期望对象的最高身高（cm）。若用户说'比我低点'，取参考身高-2。示例172"
     )
     city: Optional[str] = Field(
         None,
@@ -124,7 +130,7 @@ class FriendHardwareUpdate(BaseModel):
     )
     education: Optional[int] = Field(
         None,
-        description="最高学历，用数字存储，比如3代表本科，4代表硕士，5代表博士"
+        description="最高学历，用数字存储，1:高中及以下, 2:大专, 3:本科, 4:硕士, 5:博士"
     )
     occupation: Optional[str] = Field(
         None,

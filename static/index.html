@@ -690,6 +690,209 @@
             background-color: #e11d48;
             box-shadow: 0 0 0 2px rgba(225, 29, 72, 0.2);
         }
+        /* --- Match Cards Carousel --- */
+        .cards-carousel {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding: 0.5rem 0 1rem 0;
+            margin-top: -0.5rem;
+            width: 100%;
+            scroll-snap-type: x mandatory;
+            align-self: flex-start; /* align with bot messages */
+        }
+        
+        .cards-carousel::-webkit-scrollbar {
+            height: 6px;
+        }
+        .cards-carousel::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .match-card {
+            flex: 0 0 260px;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1rem;
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            transition: var(--transition);
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .match-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: #a5b4fc;
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-score {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #e11d48;
+            background: #ffe4e6;
+            padding: 0.2rem 0.6rem;
+            border-radius: var(--radius-full);
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .card-tag {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            background: #f3f4f6;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .card-reason {
+            font-size: 0.85rem;
+            color: #4b5563;
+            line-height: 1.4;
+            margin-top: 0.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 0.5rem;
+        }
+
+        /* --- Drawer Styles --- */
+        .drawer-overlay {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(2px);
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .drawer-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .profile-drawer {
+            position: fixed;
+            top: 0; right: -400px; bottom: 0;
+            width: 400px;
+            max-width: 100vw;
+            background: #ffffff;
+            box-shadow: -4px 0 15px rgba(0,0,0,0.1);
+            z-index: 2001;
+            transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .drawer-overlay.active .profile-drawer {
+            right: 0;
+        }
+
+        .drawer-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #fff1f2, #ffffff);
+        }
+
+        .drawer-header h2 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #be123c;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .close-drawer-btn {
+            background: none;
+            border: none;
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-drawer-btn:hover {
+            color: var(--text-main);
+        }
+
+        .drawer-content {
+            padding: 1.5rem;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        
+        .profile-section {
+            margin-bottom: 1.5rem;
+        }
+        .profile-section h4 {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0 0 0.75rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-left: 3px solid #f43f5e;
+            padding-left: 8px;
+        }
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .profile-item {
+            background: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .profile-item-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+        .profile-item-value {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+        
+        .full-width-item {
+            grid-column: span 2;
+        }
     </style>
 </head>
 <body>
@@ -777,6 +980,19 @@
         </div>
     </div>
 
+    <!-- Match Profile Drawer -->
+    <div id="profile-drawer-overlay" class="drawer-overlay">
+        <div class="profile-drawer">
+            <div class="drawer-header">
+                <h2><i class="fas fa-heart"></i> 候选人详情</h2>
+                <button class="close-drawer-btn" id="close-drawer-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="drawer-content" id="drawer-content">
+                <!-- Content injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const API_BASE_URL = 'http://127.0.0.1:8080';
@@ -795,6 +1011,11 @@
             const userSummaryEl = document.getElementById('user-summary');
             const userTagsEl = document.getElementById('user-tags');
             const newChatBtn = document.getElementById('new-chat-btn');
+            
+            // Drawer Elements
+            const drawerOverlay = document.getElementById('profile-drawer-overlay');
+            const closeDrawerBtn = document.getElementById('close-drawer-btn');
+            const drawerContent = document.getElementById('drawer-content');
 
             let currentSessionId = null;
             let radarChart = null; // Store chart instance
@@ -803,6 +1024,86 @@
             const toggleGlobalLoading = (show) => {
                 loadingOverlay.style.display = show ? 'flex' : 'none';
             };
+            
+            const openDrawer = (data) => {
+                const renderField = (val) => (val && val !== '未知') ? val : '-';
+                
+                drawerContent.innerHTML = `
+                    <div class="profile-section">
+                        <h4><i class="fas fa-id-card"></i> 核心信息</h4>
+                        <div class="profile-grid">
+                            <div class="profile-item">
+                                <div class="profile-item-label">用户昵称</div>
+                                <div class="profile-item-value">${renderField(data.nickname)}</div>
+                            </div>
+                            <div class="profile-item">
+                                <div class="profile-item-label">年龄</div>
+                                <div class="profile-item-value">${renderField(data.age)} 岁</div>
+                            </div>
+                            <div class="profile-item">
+                                <div class="profile-item-label">身高</div>
+                                <div class="profile-item-value">${renderField(data.height)} cm</div>
+                            </div>
+                            <div class="profile-item">
+                                <div class="profile-item-label">常驻城市</div>
+                                <div class="profile-item-value">${renderField(data.city)}</div>
+                            </div>
+                            <div class="profile-item full-width-item">
+                                <div class="profile-item-label">家乡/籍贯</div>
+                                <div class="profile-item-value">${renderField(data.hometown)}</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-section">
+                        <h4><i class="fas fa-briefcase"></i> 社会背景</h4>
+                        <div class="profile-grid">
+                            <div class="profile-item">
+                                <div class="profile-item-label">职业行业</div>
+                                <div class="profile-item-value">${renderField(data.occupation)}</div>
+                            </div>
+                            <div class="profile-item">
+                                <div class="profile-item-label">年薪/收入</div>
+                                <div class="profile-item-value">${renderField(data.income_level)}</div>
+                            </div>
+                            <div class="profile-item full-width-item">
+                                <div class="profile-item-label">最高学历</div>
+                                <div class="profile-item-value">${renderField(data.education)}</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-section">
+                        <h4><i class="fas fa-coffee"></i> 生活习惯</h4>
+                        <div class="profile-grid">
+                            <div class="profile-item full-width-item">
+                                <div class="profile-item-label">烟酒偏好</div>
+                                <div class="profile-item-value">${renderField(data.smoking_drinking)}</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-section">
+                        <h4><i class="fas fa-magic"></i> AI 匹配点评</h4>
+                        <div class="profile-item full-width-item" style="background:#fff1f2; border-color:#fecdd3;">
+                            <div class="profile-item-label" style="color:#e11d48; font-weight:bold;">综合匹配分：${data.score}</div>
+                            <div class="profile-item-value" style="font-size:0.9rem; line-height:1.5; margin-top:0.5rem; color:#881337;">
+                                ${data.match_reason}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                drawerOverlay.classList.add('active');
+            };
+
+            const closeDrawer = () => {
+                drawerOverlay.classList.remove('active');
+            };
+
+            closeDrawerBtn.addEventListener('click', closeDrawer);
+            drawerOverlay.addEventListener('click', (e) => {
+                if (e.target === drawerOverlay) closeDrawer();
+            });
 
             const apiFetch = async (endpoint, options = {}, useGlobalLoading = true) => {
                 if (useGlobalLoading) toggleGlobalLoading(true);
@@ -832,6 +1133,22 @@
             };
             
             const appendMessage = (text, type, isHtml = false) => {
+                let actualText = text;
+                let cardsData = null;
+                
+                // Parse AI messages for <cards> JSON
+                if (type === 'bot-message' && text.includes('<cards>')) {
+                    const cardsMatch = text.match(/<cards>([\s\S]*?)<\/cards>/);
+                    if (cardsMatch) {
+                        try {
+                            cardsData = JSON.parse(cardsMatch[1]);
+                            actualText = text.replace(cardsMatch[0], '').trim();
+                        } catch (e) {
+                            console.error('Failed to parse cards JSON', e);
+                        }
+                    }
+                }
+
                 const messageElement = document.createElement('div');
                 messageElement.classList.add('message', type);
                 
@@ -844,10 +1161,10 @@
                     const contentSpan = document.createElement('span');
                     if(isHtml) {
                          const pre = document.createElement('pre');
-                         pre.innerHTML = text;
+                         pre.innerHTML = actualText;
                          contentSpan.appendChild(pre);
                     } else {
-                        contentSpan.textContent = text;
+                        contentSpan.textContent = actualText;
                     }
                     
                     messageElement.appendChild(icon);
@@ -856,14 +1173,41 @@
                 } else {
                     if (isHtml) {
                         const pre = document.createElement('pre');
-                        pre.innerHTML = text;
+                        pre.innerHTML = actualText;
                         messageElement.appendChild(pre);
                     } else {
-                        messageElement.textContent = text;
+                        messageElement.textContent = actualText;
                     }
                 }
 
                 chatWindow.appendChild(messageElement);
+
+                // Render Cards Carousel if data exists
+                if (cardsData && cardsData.length > 0) {
+                    const carousel = document.createElement('div');
+                    carousel.className = 'cards-carousel';
+                    cardsData.forEach(card => {
+                        const cardEl = document.createElement('div');
+                        cardEl.className = 'match-card';
+                        cardEl.innerHTML = `
+                            <div class="card-header">
+                                <span class="card-title"><i class="fas fa-user-circle" style="color: #9ca3af; margin-right: 4px;"></i> ${card.nickname || '匿名用户'}</span>
+                                <span class="card-score"><i class="fas fa-heart"></i> ${card.score}</span>
+                            </div>
+                            <div class="card-tags">
+                                <span class="card-tag"><i class="fas fa-birthday-cake"></i> ${card.age}岁</span>
+                                <span class="card-tag"><i class="fas fa-map-marker-alt"></i> ${card.city || '未知'}</span>
+                                <span class="card-tag"><i class="fas fa-briefcase"></i> ${card.occupation || '未知'}</span>
+                            </div>
+                            <div class="card-reason">${card.match_reason}</div>
+                        `;
+                        // Attach click event to open drawer
+                        cardEl.addEventListener('click', () => openDrawer(card));
+                        carousel.appendChild(cardEl);
+                    });
+                    chatWindow.appendChild(carousel);
+                }
+
                 chatWindow.scrollTop = chatWindow.scrollHeight;
             };
             

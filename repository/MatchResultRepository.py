@@ -38,6 +38,26 @@ class MatchResultRepository:
         finally:
             session.close()
 
+    def get_matches_with_details(self, source_user: str) -> List[dict]:
+        """获取匹配结果，并带上目标用户的硬件信息，按分数倒序排列。"""
+        session = self.mysql.get_session()
+        try:
+            results = session.query(MatchResult, BasicHardware)\
+                .join(BasicHardware, MatchResult.target_user == BasicHardware.user)\
+                .filter(MatchResult.source_user == source_user)\
+                .order_by(MatchResult.score.desc())\
+                .all()
+                
+            return [
+                {
+                    "match": match,
+                    "hardware": hardware
+                }
+                for match, hardware in results
+            ]
+        finally:
+            session.close()
+
     def get_candidates(self, friend_req: FriendHardwareSchema) -> List[BasicHardware]:
         session = self.mysql.get_session()
         try:

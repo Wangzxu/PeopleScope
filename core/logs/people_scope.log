@@ -2922,3 +2922,77 @@
 [2026-02-28 23:15:52,309] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
 [2026-02-28 23:15:52,329] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
 [2026-02-28 23:15:52,339] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-28 23:33:18,733] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-28 23:33:27,487] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-28 23:33:34,065] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-28 23:33:34,085] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-28 23:33:34,096] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-28 23:34:24,608] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-28 23:34:27,445] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-28 23:34:32,660] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-28 23:34:32,674] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-28 23:34:32,690] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-02-28 23:35:19,627] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-02-28 23:35:22,917] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-28 23:35:26,947] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-28 23:35:33,650] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-02-28 23:35:33,670] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-02-28 23:35:33,681] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-03-01 14:19:13,465] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-03-01 14:19:14,705] [INFO] [chromadb.telemetry.product.posthog] [posthog.py:22] - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[2026-03-01 14:19:15,564] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-03-01 14:19:15,586] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-03-01 14:19:15,591] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 22 条聊天记录。
+[2026-03-01 14:19:15,659] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-03-01 14:19:15,670] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-03-01 14:19:15,679] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-03-01 14:19:15,682] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-03-01 14:19:44,303] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-03-01 14:19:44,310] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-03-01 14:19:44,326] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-03-01 14:19:44,334] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 22 条聊天记录。
+[2026-03-01 14:19:44,367] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-03-01 14:19:44,372] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-03-01 14:19:44,386] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-03-01 14:19:44,390] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-03-01 14:20:15,690] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-03-01 14:20:15,694] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-03-01 14:20:15,708] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-03-01 14:20:15,712] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 22 条聊天记录。
+[2026-03-01 14:20:15,750] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-03-01 14:20:15,755] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-03-01 14:20:15,768] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-03-01 14:20:15,777] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-03-01 14:20:30,006] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-03-01 14:20:34,407] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-01 14:20:39,147] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-01 14:22:51,668] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-03-01 14:22:51,673] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-03-01 14:22:51,689] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-03-01 14:22:51,694] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 22 条聊天记录。
+[2026-03-01 14:22:51,710] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-03-01 14:22:51,712] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-03-01 14:22:51,740] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-03-01 14:22:51,743] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-03-01 14:23:01,255] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:168] - 接收到对话请求：用户=[user_1], SessionID=[1]
+[2026-03-01 14:23:08,873] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-01 14:23:12,756] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-01 14:23:16,834] [INFO] [httpx] [_client.py:1025] - HTTP Request: POST https://api.siliconflow.cn/v1/chat/completions "HTTP/1.1 200 OK"
+[2026-03-01 14:23:16,858] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:170] - Agent 响应生成完毕，准备持久化交互记录。
+[2026-03-01 14:23:16,874] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:173] - 对话交互记录持久化成功。
+[2026-03-01 14:23:43,648] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-03-01 14:23:43,648] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-03-01 14:23:43,664] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-03-01 14:23:43,678] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 24 条聊天记录。
+[2026-03-01 14:23:43,698] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-03-01 14:23:43,698] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-03-01 14:23:43,720] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-03-01 14:23:43,722] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。
+[2026-03-01 14:25:42,806] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:90] - 获取用户会话列表，用户ID: user_1
+[2026-03-01 14:25:42,811] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:92] - 成功检索到 5 条会话记录。
+[2026-03-01 14:25:42,834] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:146] - 检索会话历史记录，SessionID: 1
+[2026-03-01 14:25:42,839] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:148] - 成功检索到 24 条聊天记录。
+[2026-03-01 14:25:42,869] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:82] - 获取用户聚合分析结果，用户ID: user_1
+[2026-03-01 14:25:42,872] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:84] - 用户聚合分析结果检索成功。
+[2026-03-01 14:25:42,891] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:135] - 检索用户信息，用户ID: user_1
+[2026-03-01 14:25:42,891] [INFO] [api.PeopleScopeApi] [PeopleScopeApi.py:138] - 用户信息检索成功。

@@ -25,7 +25,14 @@ from agent.QuestionGenerateAgent import QuestionGenerateAgent
 from agent.ReflectionAgent import ReflectionAgent
 from agent.TitleGenerateAgent import TitleGenerateAgent
 
-from graph.builder.infoBuilder import app as info_graph_app
+from graph.builder.infoBuilder import InfoGraphBuilder
+from graph.nodes.checkStateNode import CheckStatusNode
+from graph.nodes.extractInfoNode import ExtractInfoNode
+from graph.nodes.infoAgentNode import InfoAgentNode
+from graph.nodes.stageTransitionNode import StageTransitionNode
+from graph.nodes.extractFriendInfoNode import ExtractFriendInfoNode
+from graph.nodes.infoFriendAgentNode import InfoFriendAgentNode
+from graph.nodes.recommendationNode import RecommendationNode
 
 
 class Container:
@@ -63,6 +70,14 @@ class Container:
         self._question_agent = None
         self._reflection_agent = None
         self._title_agent = None
+
+        self._check_status_node = None
+        self._extract_info_node = None
+        self._info_agent_node = None
+        self._stage_transition_node = None
+        self._extract_friend_info_node = None
+        self._info_friend_agent_node = None
+        self._recommendation_node = None
 
         self._info_graph = None
 
@@ -176,12 +191,65 @@ class Container:
             self._title_agent = TitleGenerateAgent(self.get_model())
         return self._title_agent
 
+    # --- Graph Nodes ---
+    
+    @property
+    def check_status_node(self):
+        if self._check_status_node is None:
+            self._check_status_node = CheckStatusNode()
+        return self._check_status_node
+
+    @property
+    def extract_info_node(self):
+        if self._extract_info_node is None:
+            self._extract_info_node = ExtractInfoNode(LLMFactory.get_extract_model())
+        return self._extract_info_node
+
+    @property
+    def info_agent_node(self):
+        if self._info_agent_node is None:
+            self._info_agent_node = InfoAgentNode(LLMFactory.get_model())
+        return self._info_agent_node
+
+    @property
+    def stage_transition_node(self):
+        if self._stage_transition_node is None:
+            self._stage_transition_node = StageTransitionNode()
+        return self._stage_transition_node
+
+    @property
+    def extract_friend_info_node(self):
+        if self._extract_friend_info_node is None:
+            self._extract_friend_info_node = ExtractFriendInfoNode(LLMFactory.get_extract_model())
+        return self._extract_friend_info_node
+
+    @property
+    def info_friend_agent_node(self):
+        if self._info_friend_agent_node is None:
+            self._info_friend_agent_node = InfoFriendAgentNode(LLMFactory.get_model())
+        return self._info_friend_agent_node
+
+    @property
+    def recommendation_node(self):
+        if self._recommendation_node is None:
+            self._recommendation_node = RecommendationNode(self.match_result_repo, LLMFactory.get_model())
+        return self._recommendation_node
+
     # --- Graph ---
     @property
     def info_graph(self):
         if self._info_graph is None:
-            self._info_graph = info_graph_app
-        return info_graph_app
+            builder = InfoGraphBuilder(
+                self.extract_info_node,
+                self.check_status_node,
+                self.info_agent_node,
+                self.stage_transition_node,
+                self.extract_friend_info_node,
+                self.info_friend_agent_node,
+                self.recommendation_node
+            )
+            self._info_graph = builder.build()
+        return self._info_graph
 
     # --- Services ---
 
