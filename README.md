@@ -1,33 +1,63 @@
 # PeopleScope
 
-PeopleScope 是一个基于 Python 的多智能体（Multi-Agent）人格分析与对话系统，旨在通过深度的智能交互，构建精准、动态的用户画像。系统集成了 LangChain、FastAPI、ChromaDB 等技术，实现了从即时对话到长期记忆的完整认知链路。
+PeopleScope 是一个基于 Python 的深度社交认知与智能推荐系统。它不仅是一个多智能体（Multi-Agent）人格分析助手，更集成了一套高度拟人化的**交友助手 (Matchmaking Assistant)**。系统通过 LangChain、LangGraph、FastAPI 和多模态数据库技术，实现了从对话、理解、反思到精准匹配的完整链路。
 
 ## ✨ 核心特性
 
+- **💓 智能交友助手 (Matchmaking Assistant)**:
+    - **引导式信息采集**: 基于 LangGraph 状态机，以极其自然的聊天口吻引导用户完善自身资料与择偶期望，告别死板的表单填写。
+    - **软硬混合过滤**: 结合 SQL 硬性过滤（年龄、身高）与 LLM 软性打分（性格、职业契合度、家乡背景等），提供更具“人情味”的推荐。
+    - **沉浸式交互**: 自动产出结构化推荐数据，驱动前端渲染“心动预警”话术、滑动卡片组以及全量画像详情抽屉。
+
 - **🧠 智能长期记忆 (Long-Term Memory)**:
-    - **事实提取**: 能够从对话中自动提取关于用户的关键事实（如偏好、经历、性格特征），而非简单存储原始对话流。
-    - **记忆去重**: 引入向量相似度检测机制，避免重复存储相似信息，确保存储库的高效与纯净。
-    - **上下文增强**: 在每次对话中智能检索最相关的 3 条历史事实，赋予 Agent 连贯的个性化记忆能力。
+    - **事实提取**: 自动从对话中提炼关于用户的核心事实（偏好、经历、价值观），构建持久的数字孪生。
+    - **向量化检索**: 引入 ChromaDB 向量相似度检测，确保 Agent 在每次交互中都能“记起”最相关的过往，保持对话的连贯性与深度。
 
-- **💬 深度对话交互**: 通过 `ChatAgent` 与用户进行自然、流畅的对话，能够根据用户画像动态调整回复风格。
+- **📊 全维度用户画像 (User Profiling)**:
+    - **十维人格模型**: `AggregateAgent` 动态迭代用户的十维人格指标（外向、同理、冒险等），并以直观的雷达图展示。
+    - **动态标签系统**: 自动生成风格标签与话题标签，精准刻画用户聊天习惯。
 
-- **📊 全维度用户画像**:
-    - **Tags 生成**: `UserTagGenerateAgent` 基于对话内容自动生成用户风格与话题标签。
-    - **人格聚合**: `AggregateAgent` 综合多维度信息，持续迭代用户的十维人格模型。
-    - **深度反思**: `ReflectionAgent` 对每一轮交互进行元认知分析，提炼深层洞察。
+- **⚙️ 工业级工程架构 (Architecture)**:
+    - **IoC 依赖注入**: 全面采用 Container 模式管理组件生命周期，彻底解耦 Graph、Service、Agent 与 Repo。
+    - **状态机编排**: 使用 LangGraph 构建复杂业务流，支持对话中断、断点续传与逻辑分支动态跳转。
 
-- **⚙️ 专业级工程架构**:
-    - **标准化日志**: 采用集中式日志管理，提供清晰、专业的系统运行状态监控。
-    - **依赖注入**: 基于 Container 模式的依赖注入，确保组件解耦与易于测试。
+## 🛠️ 技术亮点
+
+1.  **复杂 AI 业务流的完美编排 (基于 LangGraph 的状态机设计)**
+    *   传统的 LLM 应用通常是单轮对话或简单的 Prompt Chain，而本项目面对的是“信息采集 -> 意图理解 -> 状态切换 -> 推荐计算”这样复杂的长链路业务。
+    *   **亮点**：系统深度使用了 **LangGraph** 构建了有限状态机 (FSM)。把原本需要写成一团乱麻的 `if-else` 逻辑，拆解成了 `RouterNode`、`ExtractNode`、`TransitionNode` 等职责单一的纯函数/类。
+    *   **优雅中断与接续**：结合大模型的结构化输出与图的状态 (State) 存储，系统能够在用户任何时候偏离话题或下线时保持进度，并在下次对话时精准地从“缺失字段”处继续提问。
+
+2.  **极致的控制反转与依赖注入架构 (IoC & DI Container)**
+    *   很多 Python/AI 项目写到后期会变成代码“面条”，各种全局变量、单例模式和循环导入交织在一起。
+    *   **亮点**：项目在 `core/container.py` 中手工实现了一个企业级的**依赖注入容器 (DI Container)**。
+    *   **彻底解耦**：数据库连接 (MySQL, Mongo, Chroma) -> 数据操作接口 (Repository) -> 业务逻辑 (Service) -> 大模型引擎 (Agent/Node)，全部通过 `@property` 实现懒加载和动态装配。
+    *   **价值**：图节点 (Nodes) 从原本的业务代码变成了完全的无状态组件 (Stateless)，完美消除了循环依赖，使得整个系统极具可测试性和可扩展性。
+
+3.  **多模态/异构数据的混合调度架构 (Polyglot Persistence)**
+    *   项目没有试图用一种数据库解决所有问题，而是根据数据特性进行了教科书级的异构存储设计：
+    *   **MySQL (关系型)**：用于存储高度结构化、强一致性的数据（如 Hardware 物理条件、Session 元数据、MatchResult 匹配分数）。支持精准的年龄、身高区间 SQL 过滤。
+    *   **MongoDB (文档型)**：用于存储大段无模式的 AI 分析结果、长文本的用户反思日志 (Reflection) 和聚合的用户画像报告。
+    *   **ChromaDB (向量型)**：用于处理**长期记忆 (Long-Term Memory)**，将用户偏好和历史事实向量化，实现基于语义相似度的 **RAG (检索增强生成)**。
+
+4.  **创新的“软硬结合”与“时间戳对齐”推荐缓存机制**
+    *   在大模型推荐场景中，如果每次都让 LLM 去遍历数据库打分，会导致 API 耗时极长且成本极其高昂。
+    *   **亮点 - 软硬混合过滤**：在 `MatchResultRepository` 中，先用 SQL 进行硬性条件（如身高、年龄）的筛选，极大缩小候选池；然后再交由 LLM 根据家乡、职业互补等“软性指标”进行打分。
+    *   **亮点 - 智能缓存更新**：在 `RecommendationNode` 中创新性地引入了 **时间戳对齐机制**。系统会比对“用户最新择偶条件更新时间”与“上一批推荐结果生成时间”。只要用户需求没变，系统直接从数据库毫秒级命中缓存卡片返回；一旦发现需求变化，则先触发脏数据清理 (`delete_matches_by_user`)，再确保数据落库后重新调用大模型生成最新推荐。
+
+5.  **AI 能力向 UI 层的破壁联动 (Rich UI 渲染驱动)**
+    *   传统的 AI 聊天机器人只能返回枯燥的文本，而本项目的 AI Agent 具备直接操控前端渲染机制的能力。
+    *   **亮点**：通过 `RecommendationNode` 将数据库中的全量用户画像和打分理由，打包成规范的 JSON 数组，并隐藏在特定的 Markdown 标签 (`<cards>...</cards>`) 中传给前端。
+    *   **体验降维打击**：前端通过正则拦截这段数据，瞬间在传统的聊天气泡下方生成支持水平滑动的**富文本卡片 (Carousel)**，并且数据中已预埋了全量的候选人隐私维度。用户点击卡片后，零延迟、零网络请求地从侧边栏滑出 (Drawer) 详尽的 AI 点评与完整画像。
 
 ## 🚀 快速开始
 
 ### 1. 环境准备
 
 - Python 3.9+
-- MySQL (结构化数据存储)
-- MongoDB (文档型数据存储)
-- ChromaDB (向量记忆存储 - 本地文件模式)
+- MySQL (用户资料与匹配结果存储)
+- MongoDB (人格反思与聚合数据存储)
+- ChromaDB (向量事实记忆存储)
 
 ### 2. 安装
 
@@ -46,24 +76,7 @@ pip install -r requirements.txt
 # LLM
 OPENAI_API_KEY=your_api_key
 
-# MySQL
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=password
-DB_NAME=people_scope
-
-# MongoDB
-MONGO_HOST=localhost
-MONGO_PORT=27017
-MONGO_DB_NAME=people_scope_mongo
-
-# ChromaDB
-CHROMA_PERSIST_DIRECTORY=./chroma_db
-
-# Logger
-LOG_LEVEL=INFO
-LOG_DIR=logs
+# MySQL/MongoDB/ChromaDB 配置...
 ```
 
 ### 4. 运行
@@ -76,38 +89,42 @@ python main.py
 
 ## 🏛️ 系统架构
 
-项目采用清晰的分层架构：
+项目遵循分层解耦的现代化设计模式：
 
-- **`api/`**: **接口层**。处理 HTTP 请求，统一响应格式，集成全局日志与异常处理。
-- **`service/`**: **业务逻辑层**。编排 Agent 与 Repository，实现核心业务流程（如 `ChatService` 负责协调对话生成与记忆存储）。
-- **`agent/`**: **智能体层**。封装 LLM 交互逻辑，定义 Prompt 模板与输出解析（如 `ChatAgent` 负责事实提取与回复生成）。
-- **`repository/`**: **数据访问层**。屏蔽底层数据库差异，提供统一的数据操作接口（支持 MySQL, Mongo, Chroma）。
-- **`model/` & `schema/`**: **数据模型层**。定义数据库实体与 API 交互对象 (DTO)。
-- **`core/`**: **核心组件**。包含数据库连接池、全局配置、日志工厂 (`logger.py`) 与依赖注入容器 (`container.py`)。
+- **`api/` (接口层)**: 提供 RESTful 接口，处理请求路由、异步任务分发与响应标准化。
+- **`graph/` (流程编排层)**: 核心业务引擎。基于 **LangGraph** 实现交友助手的状态流转、信息提取与推荐逻辑。
+- **`service/` (业务逻辑层)**: 协调各个 Agent 模块与仓储层，处理人格分析、记忆检索等原子业务逻辑。
+- **`agent/` (智能体层)**: 封装高度专业化的 LLM 交互逻辑，涵盖对话、标签生成、反思、聚合与标题提取。
+- **`repository/` (数据访问层)**: 统一持久化抽象，透明化管理 MySQL, MongoDB 与 ChromaDB 之间的数据交互。
+- **`core/` (内核设施)**: 包含全局配置、日志工厂、LLM 实例化中心以及 **IoC 依赖注入容器**。
+
+## 🔀 红娘匹配工作流 (LangGraph Workflow)
+
+系统集成了一套基于 **LangGraph** 的复杂状态机工作流 (`info_graph`)，用于高度拟人化地引导用户完成“个人信息采集”与“择偶期望收集”，并最终提供沉浸式的智能推荐。
+
+### 核心流转节点
+1. **智能路由入口 (`Router Node`)**: 动态识别用户当前处于“完善自我”还是“寻找伴侣”阶段。
+2. **自身信息采集 (`Extract & InfoAgent`)**: 提取年龄、身高、学历等 8 项核心指标，并在缺失时进行自然追问。
+3. **平滑转场 (`StageTransition`)**: 当自我介绍结束时，主动切换话题至交友需求。
+4. **意图深度识别 (`ExtractFriendInfo`)**: 具备参照系理解力（如理解“和我一样”的含义）。
+5. **智能截断判定 (`InfoFriendAgent`)**: 识别用户意图（如“没要求了”），智能提前终止收集流程。
+6. **金牌推荐引擎 (`RecommendationNode`)**: 执行时间戳比对缓存、硬性 SQL 过滤、LLM 软性匹配打分，并生成包含结构化卡片数据 (JSON) 的多模态响应。
 
 ## 📁 目录结构
 
 ```
 .
-├── agent/            # 智能体实现 (LangChain Agents)
-├── api/              # FastAPI 路由定义
-├── core/             # 核心基础设施 (DB, Logger, Config)
-├── model/            # SQLAlchemy ORM 模型
+├── agent/            # 各类专业智能体实现
+├── api/              # FastAPI 路由与接口
+├── core/             # 基础设施 (DI 容器, 数据库 Handler)
+├── graph/            # LangGraph 工作流 (节点、状态、构建器)
+├── model/            # 数据库持久化实体
 ├── repository/       # 数据访问对象 (DAO)
-├── schema/           # Pydantic 数据验证模型
-├── service/          # 业务逻辑服务
-├── static/           # 前端静态资源
-├── main.py           # 程序入口
-└── .env              # 环境变量配置
+├── schema/           # Pydantic 验证模型 (DTO)
+├── service/          # 综合业务服务
+├── static/           # 前端拆分后的资源 (HTML, CSS, JS)
+└── main.py           # 入口程序
 ```
-
-## 🤝 贡献指南
-
-1.  Fork 本仓库
-2.  创建特性分支 (`git checkout -b feature/NewFeature`)
-3.  提交更改 (`git commit -m 'Add NewFeature'`)
-4.  推送到分支 (`git push origin feature/NewFeature`)
-5.  提交 Pull Request
 
 ## 📄 许可证
 
