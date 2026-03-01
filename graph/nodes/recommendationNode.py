@@ -6,19 +6,40 @@ from schema.matchResultSchema import RecommendationScore
 
 
 class RecommendationNode:
-    def __init__(self, match_repo, llm):
+    def __init__(self, match_repo, info_repo, llm):
         self.match_repo = match_repo
+        self.info_repo = info_repo
         self.chat_model = llm
         self.structured_model = llm.with_structured_output(RecommendationScore)
 
     def __call__(self, state: BasicHardwareState):
         hardware_data = state["hardware_data"]
         friend_hardware_data = state["friend_hardware_data"]
+        
+        # 0. 在检查缓存前，必须先将内存中最新的要求落库，以确保 updated_at 时间戳是最新的
+        from model.basicHardware import FriendHardware
+        new_friend_hardware = FriendHardware(
+            user=friend_hardware_data.user,
+            birth_year_min=friend_hardware_data.birth_year_min,
+            birth_year_max=friend_hardware_data.birth_year_max,
+            height_min=friend_hardware_data.height_min,
+            height_max=friend_hardware_data.height_max,
+            city=friend_hardware_data.city,
+            education=friend_hardware_data.education,
+            occupation=friend_hardware_data.occupation,
+            income_level=friend_hardware_data.income_level,
+            smoking_drinking=friend_hardware_data.smoking_drinking,
+            hometown=friend_hardware_data.hometown
+        )
+        self.info_repo.save_or_update_friend_hardware(new_friend_hardware)
     
         # 1. 检查是否需要重新进行硬过滤与打分（通过比对更新时间）
         needs_hard_filter = self.match_repo.check_needs_hard_filter(friend_hardware_data.user)
         
         if needs_hard_filter:
+            # 清理旧的匹配结果
+            self.match_repo.delete_matches_by_user(friend_hardware_data.user)
+            
             # 2. 召回候选人 (在 MatchResultRepository.get_candidates 中已经只对年龄、身高进行了严格 SQL 过滤)
             candidates = self.match_repo.get_candidates(friend_hardware_data)
             
@@ -26,29 +47,46 @@ class RecommendationNode:
                 # 3. 为每个候选人打分并生成理由
                 for candidate in candidates:
                     prompt = f"""
-                    你是一个专业的红娘/推荐系统算法。你需要评估当前用户与一名候选人的匹配度。
-                    【当前用户的条件】：
-                    {hardware_data.model_dump(exclude_none=True)}
+                    # Role
+                    你是一位金牌红娘，擅长从细微的职业、生活习惯和地域背景中挖掘两个灵魂的契合点。
                     
-                    【当前用户寻找的朋友（另一半）要求】:
-                    {friend_hardware_data.model_dump(exclude_none=True)}
+                    # Task
+                    对比【用户期望】与【候选人资料】，在基础条件（身高、学历、年龄）已达标的前提下，重点考察软性匹配度。
                     
-                    【候选人实际信息】:
-                    - 年龄/出生年份: {candidate.birth_year}
-                    - 身高: {candidate.height}
-                    - 城市: {candidate.city}
-                    - 籍贯: {candidate.hometown}
-                    - 学历: {candidate.education}
-                    - 职业: {candidate.occupation}
-                    - 收入: {candidate.income_level}
-                    - 烟酒习惯: {candidate.smoking_drinking}
+                    # Data Context
                     
-                    请仔细对比用户的期望和候选人的实际情况。
-                    给出一个 0 到 100 之间的匹配度分数，并生成一段不超过100字的推荐理由，向用户解释为什么匹配。
+                    用户自身资料：{hardware_data.model_dump(exclude_none=True)}
+                    
+                    用户择偶要求：{friend_hardware_data.model_dump(exclude_none=True)}
+                    
+                    候选人资料：
+                    
+                    城市: {candidate.city} / 籍贯: {candidate.hometown}
+                    
+                    职业: {candidate.occupation} / 收入: {candidate.income_level}
+                    
+                    烟酒习惯: {candidate.smoking_drinking}
+                    
+                    # Scoring Logic
+                    
+                    显式要求优先：若用户对城市、烟酒等有明确要求，严格按符合度打分。
+                    
+                    缺位补偿逻辑：若用户对某项（如职业、籍贯）“无所谓”或未填，请基于【用户自身资料】进行协同过滤：
+                    
+                    同行/互补：职业是否属于同一领域或上下游？
+                    
+                    同乡意愿：籍贯是否相近（如都在冀南地区）？
+                    
+                    阶层匹配：收入与生活习惯是否在同一消费层级？
+                    
+                    分值区间：基础契合已达60分，若职业互补或同乡加至85+，若生活习惯高度一致加至95+。
+                    
+                    # Output Format
+                    请严格按 JSON 调用工具，match_reason 需控制在 100 字内，语气要热情且专业。
                     
                     【重要格式要求】：
                     你必须且只能返回包含以下两个字段的 JSON 结构：
-                    - "score": 浮点数，代表匹配得分 (0-100)
+                    - "score": 浮点数，代表匹配得分 (60-100)
                     - "match_reason": 字符串，代表推荐理由 (绝对不要使用 "reason" 或其他字段名)
                     """
                     

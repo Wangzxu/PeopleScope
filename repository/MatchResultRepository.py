@@ -38,6 +38,18 @@ class MatchResultRepository:
         finally:
             session.close()
 
+    def delete_matches_by_user(self, source_user: str):
+        """删除某个用户发起的所有旧匹配结果"""
+        session = self.mysql.get_session()
+        try:
+            session.query(MatchResult).filter(MatchResult.source_user == source_user).delete()
+            session.commit()
+        except:
+            session.rollback()
+            raise
+        finally:
+            session.close()
+
     def get_matches_with_details(self, source_user: str) -> List[dict]:
         """获取匹配结果，并带上目标用户的硬件信息，按分数倒序排列。"""
         session = self.mysql.get_session()
@@ -48,13 +60,17 @@ class MatchResultRepository:
                 .order_by(MatchResult.score.desc())\
                 .all()
                 
-            return [
-                {
-                    "match": match,
-                    "hardware": hardware
-                }
-                for match, hardware in results
-            ]
+            unique_matches = []
+            seen_users = set()
+            for match, hardware in results:
+                if match.target_user not in seen_users:
+                    seen_users.add(match.target_user)
+                    unique_matches.append({
+                        "match": match,
+                        "hardware": hardware
+                    })
+                    
+            return unique_matches
         finally:
             session.close()
 
@@ -65,8 +81,6 @@ class MatchResultRepository:
             query = session.query(BasicHardware).filter(BasicHardware.user != friend_req.user)
             
             # 以下为可选过滤条件，根据 friend_hardware_data 进行筛选
-            # 注意: 为了保证能匹配到人，这里仅做一些基本过滤，复杂的依靠 LLM 打分
-            
             if friend_req.birth_year_min is not None:
                 query = query.filter(BasicHardware.birth_year >= friend_req.birth_year_min)
             if friend_req.birth_year_max is not None:
@@ -77,11 +91,19 @@ class MatchResultRepository:
             if friend_req.height_max is not None:
                 query = query.filter(BasicHardware.height <= friend_req.height_max)
                 
-            # if friend_req.city:
-            #     query = query.filter(BasicHardware.city.like(f"%{friend_req.city}%"))
-                
             # 限制召回数量，避免一次给 LLM 塞太多数据
-            return query.limit(20).all()
+            raw_candidates = query.limit(40).all()
+            
+            unique_candidates = []
+            seen_users = set()
+            for cand in raw_candidates:
+                if cand.user not in seen_users:
+                    seen_users.add(cand.user)
+                    unique_candidates.append(cand)
+                    if len(unique_candidates) == 20: # 最终保留20个去重后的候选人
+                        break
+                        
+            return unique_candidates
         finally:
             session.close()
 

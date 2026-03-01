@@ -232,7 +232,7 @@ class Container:
     @property
     def recommendation_node(self):
         if self._recommendation_node is None:
-            self._recommendation_node = RecommendationNode(self.match_result_repo, LLMFactory.get_model())
+            self._recommendation_node = RecommendationNode(self.match_result_repo, self.info_repo, LLMFactory.get_model())
         return self._recommendation_node
 
     # --- Graph ---
